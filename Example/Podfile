@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LRTSSQliteManager_Example' do
+  pod 'LRTSSQliteManager', :path => '../'
+
+  target 'LRTSSQliteManager_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
