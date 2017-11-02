@@ -1,0 +1,27 @@
+{
+  "name": "LRTSSQliteManager",
+  "version": "0.1.0",
+  "summary": "A short description of LRTSSQliteManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/boilwater/LRTSSQliteManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "boilwater": "baill@adnonstop.com"
+  },
+  "source": {
+    "git": "https://github.com/boilwater/LRTSSQliteManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LRTSSQliteManager/Classes/**/*",
+  "dependencies": {
+    "WCDB": [
+
+    ]
+  }
+}

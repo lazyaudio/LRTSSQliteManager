@@ -1,0 +1,6 @@
+framework module LRTSSQliteManager {
+  umbrella header "LRTSSQliteManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

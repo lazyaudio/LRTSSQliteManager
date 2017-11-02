@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1696D6A01FA9C6890020D43F /* BookDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69D1FA9C6890020D43F /* BookDetail.mm */; };
+		1696D6A11FA9C6890020D43F /* BookDetail+WCTTableCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */; };
+		34589DCF78D381F9675122BE /* Pods_LRTSSQliteManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A00FBAA6C25EEEE6FB812F /* Pods_LRTSSQliteManager_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* LRTSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LRTSAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* LRTSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LRTSViewController.m */; };
+		6003F5A7195388D20070C39A /* LRTSViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LRTSViewController.mm */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -22,7 +25,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		F6527B43172B4AE195FB22BC /* Pods_LRTSSQliteManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A00FBAA6C25EEEE6FB812F /* Pods_LRTSSQliteManager_Example.framework */; };
 		FD9BE9AF7AE0E59D3FEB11E0 /* Pods_LRTSSQliteManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C790DD5F95E3922F7B9495C0 /* Pods_LRTSSQliteManager_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +41,11 @@
 /* Begin PBXFileReference section */
 		027FB7856D09E42E78AF2047 /* Pods-LRTSSQliteManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRTSSQliteManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LRTSSQliteManager_Example/Pods-LRTSSQliteManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		08FCADABC0B3EB1CC07F5F28 /* Pods-LRTSSQliteManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRTSSQliteManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LRTSSQliteManager_Tests/Pods-LRTSSQliteManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1D7A42E7E0F84CA9DD5EE498 /* LRTSSQliteManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LRTSSQliteManager.podspec; path = ../LRTSSQliteManager.podspec; sourceTree = "<group>"; };
+		1696D69C1FA9C6890020D43F /* BookDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetail.h; sourceTree = "<group>"; };
+		1696D69D1FA9C6890020D43F /* BookDetail.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BookDetail.mm; sourceTree = "<group>"; };
+		1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "BookDetail+WCTTableCoding.mm"; sourceTree = "<group>"; };
+		1696D69F1FA9C6890020D43F /* BookDetail+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookDetail+WCTTableCoding.h"; sourceTree = "<group>"; };
+		1D7A42E7E0F84CA9DD5EE498 /* LRTSSQliteManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LRTSSQliteManager.podspec; path = ../LRTSSQliteManager.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LRTSSQliteManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRTSSQliteManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,7 +57,7 @@
 		6003F59C195388D20070C39A /* LRTSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* LRTSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* LRTSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* LRTSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSViewController.m; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* LRTSViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSViewController.mm; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* LRTSSQliteManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRTSSQliteManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,10 +67,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		63A00FBAA6C25EEEE6FB812F /* Pods_LRTSSQliteManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LRTSSQliteManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D116F0C4B18D764005D93F /* Pods-LRTSSQliteManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRTSSQliteManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LRTSSQliteManager_Example/Pods-LRTSSQliteManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		70D415EE8644EF241932283E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		70D415EE8644EF241932283E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B7D894CD6725764CA376693B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B7D894CD6725764CA376693B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C790DD5F95E3922F7B9495C0 /* Pods_LRTSSQliteManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LRTSSQliteManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BAD8A2EC5CE3A913ED85A4 /* Pods-LRTSSQliteManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRTSSQliteManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LRTSSQliteManager_Tests/Pods-LRTSSQliteManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +83,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				F6527B43172B4AE195FB22BC /* Pods_LRTSSQliteManager_Example.framework in Frameworks */,
+				34589DCF78D381F9675122BE /* Pods_LRTSSQliteManager_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +101,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1696D69B1FA9C63B0020D43F /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				1696D69C1FA9C6890020D43F /* BookDetail.h */,
+				1696D69D1FA9C6890020D43F /* BookDetail.mm */,
+				1696D69F1FA9C6890020D43F /* BookDetail+WCTTableCoding.h */,
+				1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */,
+			);
+			name = Book;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,11 +149,12 @@
 		6003F593195388D20070C39A /* Example for LRTSSQliteManager */ = {
 			isa = PBXGroup;
 			children = (
+				1696D69B1FA9C63B0020D43F /* Book */,
 				6003F59C195388D20070C39A /* LRTSAppDelegate.h */,
 				6003F59D195388D20070C39A /* LRTSAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LRTSViewController.h */,
-				6003F5A6195388D20070C39A /* LRTSViewController.m */,
+				6003F5A6195388D20070C39A /* LRTSViewController.mm */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -250,6 +268,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = boilwater;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = X6A5MJ79T7;
+						ProvisioningStyle = Automatic;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -395,8 +417,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* LRTSAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* LRTSViewController.m in Sources */,
+				6003F5A7195388D20070C39A /* LRTSViewController.mm in Sources */,
+				1696D6A11FA9C6890020D43F /* BookDetail+WCTTableCoding.mm in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				1696D6A01FA9C6890020D43F /* BookDetail.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,12 +548,16 @@
 			baseConfigurationReference = 027FB7856D09E42E78AF2047 /* Pods-LRTSSQliteManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6A5MJ79T7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LRTSSQliteManager/LRTSSQliteManager-Prefix.pch";
 				INFOPLIST_FILE = "LRTSSQliteManager/LRTSSQliteManager-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -539,12 +567,16 @@
 			baseConfigurationReference = 63D116F0C4B18D764005D93F /* Pods-LRTSSQliteManager_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6A5MJ79T7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LRTSSQliteManager/LRTSSQliteManager-Prefix.pch";
 				INFOPLIST_FILE = "LRTSSQliteManager/LRTSSQliteManager-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

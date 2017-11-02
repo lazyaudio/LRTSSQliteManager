@@ -1,0 +1,6 @@
+framework module Pods_LRTSSQliteManager_Example {
+  umbrella header "Pods-LRTSSQliteManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
