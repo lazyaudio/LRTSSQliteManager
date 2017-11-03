@@ -305,6 +305,37 @@
                             orderBy:orderList];
 }
 
+#pragma mark - Get Objects From Multi Tables
+#pragma mark -多表查询
+
+- (NSArray * _Nullable)selectRowsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames; {
+    return [self selectRowsOnResults:resultList
+                          fromTables:tableNames
+                               where:nil];
+}
+
+- (NSArray * _Nullable)selectRowsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames where:(const LRTSCondition &)condition; {
+    if(0 == tableNames.count) return nil;
+    WCTRowSelect *rowSelect = [[_wcdb prepareSelectRowsOnResults:resultList
+                                                      fromTables:tableNames]
+                               where:condition];
+    return rowSelect.allRows;
+}
+
+- (NSArray * _Nullable)selectMutableObjectsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames; {
+    return [self selectMutableObjectsOnResults:resultList
+                                    fromTables:tableNames
+                                         where:nil];
+}
+
+- (NSArray * _Nullable)selectMutableObjectsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames where:(const LRTSCondition &)condition; {
+    if(tableNames.count == 0) return nil;
+    WCTMultiSelect *mutiSelect = [[_wcdb prepareSelectMultiObjectsOnResults:resultList
+                                                                 fromTables:tableNames]
+                                  where:condition];
+    return mutiSelect.allMultiObjects;
+}
+
 #pragma  mark - setter & getter
 
 - (NSString *)databaseName {
