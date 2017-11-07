@@ -10,10 +10,13 @@
 #endif
 #endif
 
-#import "LRTSBook+WCTTableCoding.h"
+#import "LRTSDBBookModel+WCTTableCoding.h"
 #import "LRTSSqliteManager.h"
-#import "LRTSBaseModel.h"
-#import "LRTSBook.h"
+#import "LRTSDBBookModel.h"
+#import "LRTSDBModel.h"
+#import "LRTSDBOperationDelegate.h"
+#import "LRTSModel.h"
+#import "LRTSPurchaseTool.h"
 #import "LRTSBaseOperation.h"
 #import "LRTSBookOperation.h"
 #import "LRTSDeclare.h"

@@ -11,7 +11,11 @@
 #import "BookDetail+WCTTableCoding.h"
 #import "LRTSOperation.h"
 
-@interface LRTSViewController ()
+#import "LRTSDBBookModel.h"
+
+@interface LRTSViewController (){
+    Class _cls;
+}
 
 @end
 
@@ -20,28 +24,55 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self initSQLWithWCDB];
+//    [self initSQLWithWCDB];
+    
+    LRTSDBBookModel *bookModel = [[LRTSDBBookModel alloc] init];
+    bookModel.bId = 1;
+//    bookModel.cover = @"www.baidu.com";
+    LRTSOperation *operation = [[LRTSOperation alloc] initWithModel:bookModel];
+    BOOL ret = [bookModel saved];
+    NSArray *array = nil;
+//    [bookModel saveModels:array];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+//    UITableView
 }
 
 - (void)initSQLWithWCDB {
-//    LRTSOperation *operation = [[LRTSOperation alloc] initWithName:@"name"];
-////    operation.tableName = @"";
-//    [operation createTableWithName:@"name" withClass:BookDetail.class];
-//
+
 //    BookDetail *bookDetail = [[BookDetail alloc] init];
 //
 //    bookDetail.bookID = 1;
 //    bookDetail.pubilsher = @"中国出版社";
 //    bookDetail.bookName = @"菲悦科技传";
 //
-//    BOOL ret = [operation insertObject:bookDetail into:@"name"];
+//    NSString *className = NSStringFromClass(BookDetail.class);
+//    NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:className];
 //
+    LRTSDBBookModel *bookModel = [[LRTSDBBookModel alloc] init];
+    bookModel.bId = 1;
+    bookModel.commentCount = 3;
+    NSString *className = NSStringFromClass(LRTSDBBookModel.class);
+    NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:className];
+    
+    NSString *tableName = className;
+    WCTDatabase *wcdb = [[WCTDatabase alloc] initWithPath:path];
+    
+    _cls = LRTSDBBookModel.class;
+    
+    BOOL ret = [wcdb createTableAndIndexesOfName:tableName withClass:_cls];
+
+    
+//    LRTSOperation *operation = [[LRTSOperation alloc] initWithModel:bookDetail];
+
+    
+//    BOOL ret = [operation insertObject:bookDetail into:@"name"];
+
 //    NSArray *book = [operation getAllObjectsOfClass:BookDetail.class forTable:@"name"];
     
     
@@ -124,6 +155,32 @@
 //（18）LMAudio 录音列表相关
 //
 //（19）LMListenerGroupDynamic 带图片的帖子
+//
+
+
+// （1）model 中 包含属性 model 来进行连表的数据修改
+//
+
+// （2）数据库升级过程中版本的数据字段修改
+//解决方案：在实现数据库升级过程中增加相应的字段，只需在相关的属性列表中对属性字段进行相关修改就可以完成数据库字段修改过程。但是 SQLite 不支持对数据字段的删除，所以在字段修改过程中可以对相关字段进行忽略即可。
+//
+
+// （3）model 中数据根据字段的链表查询
+//
+
+// （4）具体 model 的具体操作
+//
+// （5）数据的事务同意过程的处理
+//
+// （6）数据库安全的处理反注入
+//
+// （7）数据库加密
+//
+//
+//
+//
+//
+//
 //
 
 @end

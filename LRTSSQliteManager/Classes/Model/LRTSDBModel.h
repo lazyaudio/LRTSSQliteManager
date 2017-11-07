@@ -1,19 +1,23 @@
 //
-//  LRTSBaseModel.h
+//  LRTSDBModel.h
 //  Kiwi
 //
-//  Created by Jack Bai on 2017/11/1.
+//  Created by JackJin on 2017/11/7.
+//
+//
+//  数据库的操作 model，依托 LRTSOperation 
+//
+//  实现对 model 的最基本的操作实现
 //
 
-#import <Foundation/Foundation.h>
+#import "LRTSModel.h"
 #import "WCTCodingMacro.h"
 #import "WCTCoding.h"
 #import "WCTBinding.h"
 #import "WCTProperty.h"
 #import "WCTAnyProperty.h"
 #import "WCTError.h"
-
-@interface LRTSBaseModel : NSObject
+#import "LRTSDBOperationDelegate.h"
 
 /**
  * 全局实体类型
@@ -32,7 +36,7 @@ typedef NS_ENUM(NSInteger, EntityType) {
 };
 
 /**
- 播放入口,是从在线进入还是从下载进入
+ * 播放入口,是从在线进入还是从下载进入
  */
 typedef NS_ENUM(NSInteger, EnterPlayType) {
     EnterPlayTypeFromOnline = 0,
@@ -47,4 +51,13 @@ typedef  NS_ENUM(NSInteger, StrategyType) {
     StrategyType_AllFreeLimits    = 1 << 4,    // 全部限免
 };
 
+
+@interface LRTSDBModel : LRTSModel <LRTSDBOperationDelegate>
+
+
 @end
+
+
+
+
+

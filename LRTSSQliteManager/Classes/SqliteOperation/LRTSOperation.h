@@ -5,8 +5,10 @@
 //  Created by Jack Bai on 2017/11/1.
 //
 
-#import "LRTSBaseOperation.h"
-#import "LRTSBaseModel.h"
+//#import "LRTSBaseOperation.h"
+#import <Foundation/Foundation.h>
+#import "LRTSDBModel.h"
+#import "LRTSDBBookModel.h"
 #import <WCDB/WCDB.h>
 
 typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
@@ -15,7 +17,7 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
     LRTSOperationPathTypeTmp
 };
 
-@interface LRTSOperation : LRTSBaseOperation
+@interface LRTSOperation : NSObject
 
 @property (nonatomic) LRTSOperationdPathType pathType;
 
@@ -23,13 +25,13 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
 
 @property (readwrite, strong) NSString * _Nonnull tableName;
 
-@property (nonatomic, strong, setter=setTableWithModel:) LRTSBaseModel * _Nullable model;
+@property (nonatomic, strong, setter=setTableWithModel:) LRTSDBModel * _Nullable model;
 
-- (nullable instancetype)initWithModel:(LRTSBaseModel * _Nonnull)model;
+- (nullable instancetype)initWithModel:(LRTSDBModel *_Nullable)model;
 
 - (nullable instancetype)initWithPath:(NSString *_Nullable)path;
 
-+ (nullable instancetype)wcdbWithModel:(LRTSBaseModel * _Nonnull)model;
++ (nullable instancetype)wcdbWithModel:(LRTSDBModel * _Nonnull)model;
 
 + (nullable instancetype)wcdbWithPath:(NSString *_Nullable)path;
 

@@ -1,13 +1,13 @@
 //
-//  LRTSBook+WCTTableCoding.h
+//  LRTSDBBookModel+WCTTableCoding.h
 //  Kiwi
 //
-//  Created by Jack Bai on 2017/11/1.
+//  Created by JackJin on 2017/11/7.
 //
 
-#import "LRTSBook.h"
+#import "LRTSDBBookModel.h"
 
-@interface LRTSBook (WCTTableCoding)<WCTTableCoding>
+@interface LRTSDBBookModel (WCTTableCoding)
 
 WCDB_PROPERTY(bId)
 WCDB_PROPERTY(hot)

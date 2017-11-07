@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1696D6A01FA9C6890020D43F /* BookDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69D1FA9C6890020D43F /* BookDetail.mm */; };
-		1696D6A11FA9C6890020D43F /* BookDetail+WCTTableCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */; };
+		1683146A1FB143B500462AC3 /* BookDetail+WCTTableCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */; };
+		1683146B1FB143B500462AC3 /* LRTSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LRTSAppDelegate.m */; };
+		1683146C1FB143B500462AC3 /* LRTSViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LRTSViewController.mm */; };
+		1683146D1FB143B500462AC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		1683146E1FB143B500462AC3 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		1683146F1FB145DD00462AC3 /* BookDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69D1FA9C6890020D43F /* BookDetail.mm */; };
 		34589DCF78D381F9675122BE /* Pods_LRTSSQliteManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A00FBAA6C25EEEE6FB812F /* Pods_LRTSSQliteManager_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* LRTSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LRTSAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* LRTSViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LRTSViewController.mm */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -416,11 +417,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* LRTSAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* LRTSViewController.mm in Sources */,
-				1696D6A11FA9C6890020D43F /* BookDetail+WCTTableCoding.mm in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
-				1696D6A01FA9C6890020D43F /* BookDetail.mm in Sources */,
+				1683146F1FB145DD00462AC3 /* BookDetail.mm in Sources */,
+				1683146A1FB143B500462AC3 /* BookDetail+WCTTableCoding.mm in Sources */,
+				1683146B1FB143B500462AC3 /* LRTSAppDelegate.m in Sources */,
+				1683146C1FB143B500462AC3 /* LRTSViewController.mm in Sources */,
+				1683146D1FB143B500462AC3 /* main.m in Sources */,
+				1683146E1FB143B500462AC3 /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

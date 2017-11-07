@@ -25,7 +25,7 @@
 
 #pragma  mark - public Methods
 
-- (instancetype)initWithModel:(LRTSBaseModel *)model {
+- (instancetype)initWithModel:(LRTSDBModel *)model {
     if (model == nil) return nil;
     [self configurationParameter];
     _cls = model.class;
@@ -43,7 +43,7 @@
     _pathCreatedSQLDatabase = path;
     NSString *tableName = _mNameTable;
     
-    _wcdb = [[WCTDatabase alloc] initWithPath:path];
+    _wcdb = [[WCTDatabase alloc] initWithPath:_pathCreatedSQLDatabase];
     if(!_wcdb) return nil;
     
     BOOL ret = [_wcdb createTableAndIndexesOfName:tableName withClass:_cls];
@@ -54,7 +54,7 @@
     return nil;
 }
 
-+ (instancetype)wcdbWithModel:(LRTSBaseModel *)model {
++ (instancetype)wcdbWithModel:(LRTSDBModel *)model {
     return [[self alloc] initWithModel:model];
 }
 
@@ -352,7 +352,7 @@
     return [_mNameTable copy];
 }
 
-- (void)setTableWithModel:(LRTSBaseModel *)model {
+- (void)setTableWithModel:(LRTSDBModel *)model {
     if(model == nil) return;
     __unsafe_unretained Class classModel = model.class;
     if (_cls != classModel) {

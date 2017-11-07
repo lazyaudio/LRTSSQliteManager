@@ -1,19 +1,13 @@
 //
-//  LRTSBook+WCTTableCoding.m
+//  LRTSDBBookModel+WCTTableCoding.m
 //  Kiwi
 //
-//  Created by Jack Bai on 2017/11/1.
+//  Created by JackJin on 2017/11/7.
 //
 
-#import "LRTSBook+WCTTableCoding.h"
+#import "LRTSDBBookModel+WCTTableCoding.h"
 
-//@interface LRTSBook ()
-//
-//@property(readwrite, nonatomic) NSString *cover;
-//
-//@end
-
-@implementation LRTSBook (WCTTableCoding)
+@implementation LRTSDBBookModel (WCTTableCoding)
 
 - (id)initWithDict:(NSDictionary *)data {
     if (self && data) {
@@ -28,12 +22,13 @@
         self.announcer = [data valueForKey:@"announcer"];
         self.cover = [data valueForKey:@"cover"];
         self.payType = (LMPriceModelPayType)
-                        [[data valueForKey:@"payType"] integerValue] ;
+        [[data valueForKey:@"payType"] integerValue] ;
         self.freeEndTime = [[data objectForKey:@"freeEndTime"] doubleValue];
     }
     return self;
 }
 
+/*
 - (void)setName:(NSString *)name {
     if ([name isKindOfClass:[NSString class]] && name.length > 0) {
         self.name = [name copy];
@@ -64,7 +59,7 @@
         return NO;
     }
     
-    LRTSBook *book = (LRTSBook *)object;
+    LRTSDBBookModel *book = (LRTSDBBookModel *)object;
     if (book.bId == self.bId) {
         return YES;
     }
@@ -111,6 +106,6 @@
     NSString *newImageUrlStr = [urlStr stringByReplacingOccurrencesOfString:@"." withString:formatTailStr options:NSBackwardsSearch range:makerange];
     
     return [newImageUrlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-}
+}*/
 
 @end

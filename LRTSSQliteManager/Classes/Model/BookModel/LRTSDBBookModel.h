@@ -1,17 +1,15 @@
 //
-//  LRTSBook.h
+//  LRTSDBBookModel.h
 //  Kiwi
 //
-//  Created by Jack Bai on 2017/11/1.
+//  Created by JackJin on 2017/11/7.
 //
 
-//在此类中 对相关的方法又进行修改 --后续需要对其进行补充
-//LMPriceModelPayType
-
-#import "LRTSBaseModel.h"
+#import "LRTSDBModel.h"
 #import "LRTSPurchaseTool.h"
 
-@interface LRTSBook : LRTSBaseModel
+
+@interface LRTSDBBookModel : LRTSDBModel
 
 @property (nonatomic,assign) NSInteger bId;          //书籍id
 @property (nonatomic,assign) NSInteger hot;          //书籍人气
@@ -27,7 +25,7 @@
 @property (strong,nonatomic) NSString *author;       //作者
 @property (strong,nonatomic) NSString *announcer;    //播音
 @property (strong,nonatomic) NSString *cover;        //封面
-@property (strong,nonatomic) NSString *update;       //更新时间(保留：因为从1.9.x版本恢复数据需要这个字段值，2.1.x版本之后都使用lastUpdateTime这个字段)
+//@property (strong,nonatomic) NSString *update;       //更新时间(保留：因为从1.9.x版本恢复数据需要这个字段值，2.1.x版本之后都使用lastUpdateTime这个字段)
 
 @property (nonatomic, assign) NSInteger refId;       //关联的书籍Id
 
