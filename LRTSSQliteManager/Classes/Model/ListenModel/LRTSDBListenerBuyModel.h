@@ -6,6 +6,8 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
+#import "LRTSDBModel.h"
+
 
 typedef NS_OPTIONS(NSUInteger, LRTSAudioPayItemAction) {
     LRTSAudioPayItemActionPay  = 1 << 0,           //支付

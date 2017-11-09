@@ -6,6 +6,7 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
+#import "LRTSDBModel.h"
 
 /**
  用户标签数据模型类

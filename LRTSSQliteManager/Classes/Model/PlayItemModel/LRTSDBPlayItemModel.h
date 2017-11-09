@@ -6,6 +6,7 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
+#import "LRTSDBModel.h"
 
 @interface LRTSDBPlayItemModel : LRTSDBModel
 

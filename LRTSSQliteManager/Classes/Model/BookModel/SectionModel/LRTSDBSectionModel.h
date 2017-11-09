@@ -6,6 +6,7 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
+#import "LRTSDownloadState.h"
 
 @interface LRTSDBSectionModel : LRTSDBModel
 
@@ -38,6 +39,6 @@
 @property (assign, nonatomic) DownloadStatus downloadStatus;  // 下载状态
 @property (assign, nonatomic) CGFloat downloadProgress; // 下载进度
 
-@property (nonatomic,assign)NSInteger  strategy; // 1 VIP限时免费 2 VIP限时免费（会员书库） 3 VIP整本抢先听 4 VIP章节抢先听 5 全部限免
+@property (nonatomic,assign) NSInteger  strategy; // 1 VIP限时免费 2 VIP限时免费（会员书库） 3 VIP整本抢先听 4 VIP章节抢先听 5 全部限免
 
 @end

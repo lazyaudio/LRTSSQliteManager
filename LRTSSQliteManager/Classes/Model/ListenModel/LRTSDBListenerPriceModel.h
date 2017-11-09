@@ -7,7 +7,7 @@
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBListenerDiscountModel.h"
-
+#import "LRTSDBModel.h"
 
 @interface LRTSDBListenerPriceModel : LRTSDBModel
 
