@@ -54,4 +54,25 @@
 // vip策略
 @property (nonatomic,assign) NSInteger strategy;
 
+
+#pragma mark - WVDB 数据绑定
+
+WCDB_PROPERTY(et_id)
+WCDB_PROPERTY(et_name)
+WCDB_PROPERTY(et_desc)
+WCDB_PROPERTY(et_cover)
+
+WCDB_PROPERTY(et_type)
+WCDB_PROPERTY(et_sort)
+WCDB_PROPERTY(et_tag)
+WCDB_PROPERTY(et_attatchAd)
+WCDB_PROPERTY(et_attatchModel)
+WCDB_PROPERTY(et_umCountName)
+WCDB_PROPERTY(author)
+WCDB_PROPERTY(playCount)
+WCDB_PROPERTY(userCount)
+WCDB_PROPERTY(contentCount)
+WCDB_PROPERTY(userState)
+WCDB_PROPERTY(strategy)
+
 @end

@@ -61,4 +61,54 @@
 @property (nonatomic,assign ) NSInteger      isShowGuide;
 
 
+#pragma mark - WCDB 数据绑定
+
+WCDB_PROPERTY(userId)
+
+WCDB_PROPERTY(account)
+WCDB_PROPERTY(token)
+WCDB_PROPERTY(gender)
+WCDB_PROPERTY(nickname)
+WCDB_PROPERTY(cover)
+WCDB_PROPERTY(backCover)
+WCDB_PROPERTY(areaIds)
+WCDB_PROPERTY(address)
+WCDB_PROPERTY(desrc)
+WCDB_PROPERTY(birthday)
+
+WCDB_PROPERTY(phone)
+WCDB_PROPERTY(email)
+WCDB_PROPERTY(state)
+WCDB_PROPERTY(purchaseTime)
+WCDB_PROPERTY(point)
+WCDB_PROPERTY(timeRemaining)
+WCDB_PROPERTY(mSectionCount)
+WCDB_PROPERTY(sectionCount)
+WCDB_PROPERTY(grade)
+WCDB_PROPERTY(coin)
+WCDB_PROPERTY(newPoint)
+
+WCDB_PROPERTY(receiveLetter)
+
+WCDB_PROPERTY(questionA)
+WCDB_PROPERTY(anwserA)
+WCDB_PROPERTY(questionB)
+WCDB_PROPERTY(anwserB)
+WCDB_PROPERTY(isFollowLogin)
+WCDB_PROPERTY(isFollow)
+
+WCDB_PROPERTY(attentionCount)
+WCDB_PROPERTY(fansCount)
+
+WCDB_PROPERTY(collectionCount)
+WCDB_PROPERTY(albumCount)
+WCDB_PROPERTY(bookCount)
+WCDB_PROPERTY(bbCount)
+WCDB_PROPERTY(bbReadCount)
+WCDB_PROPERTY(collectReadCount)
+
+WCDB_PROPERTY(ticketBalance)
+
+WCDB_PROPERTY(isShowGuide)
+
 @end

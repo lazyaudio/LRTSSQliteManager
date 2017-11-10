@@ -1,0 +1,48 @@
+//
+//  LRTSDBTopicModel.m
+//  Kiwi
+//
+//  Created by JackJin on 2017/11/9.
+//
+
+#import "LRTSDBTopicModel.h"
+
+@implementation LRTSDBTopicModel
+
+WCDB_IMPLEMENTATION(LRTSDBTopicModel)
+
+WCDB_SYNTHESIZE(LRTSDBTopicModel, tId)
+WCDB_SYNTHESIZE(LRTSDBTopicModel,  name)
+WCDB_SYNTHESIZE(LRTSDBTopicModel,  desc)
+WCDB_SYNTHESIZE(LRTSDBTopicModel,  cover)
+WCDB_SYNTHESIZE(LRTSDBTopicModel,  count)
+WCDB_SYNTHESIZE(LRTSDBTopicModel,  type)
+WCDB_SYNTHESIZE(LRTSDBTopicModel,  top)
+WCDB_SYNTHESIZE(LRTSDBTopicModel,  booklistArray)
+WCDB_SYNTHESIZE(LRTSDBTopicModel,  likeCount)
+WCDB_SYNTHESIZE(LRTSDBTopicModel,  isLike)
+
+
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+////
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+//WCDB_SYNTHESIZE(LRTSDBTopicModel,  )
+
+@end

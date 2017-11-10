@@ -22,4 +22,20 @@
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 
+
+#pragma mark - WVDB 数据绑定
+
+WCDB_PROPERTY(name)
+WCDB_PROPERTY(cover)
+WCDB_PROPERTY(resourceId)
+WCDB_PROPERTY(playCount)
+WCDB_PROPERTY(anncouncer)
+WCDB_PROPERTY(author)
+WCDB_PROPERTY(desc)
+WCDB_PROPERTY(state)
+WCDB_PROPERTY(tags)
+WCDB_PROPERTY(entityType)
+
+
+
 @end

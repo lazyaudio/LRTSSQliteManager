@@ -18,4 +18,17 @@
 @property (nonatomic, assign) NSInteger publishType;
 @property (nonatomic, strong) NSString *entityName;
 
+#pragma mark - WVDB 数据绑定
+
+WCDB_PROPERTY(cId)
+WCDB_PROPERTY(cover)
+WCDB_PROPERTY(name)
+WCDB_PROPERTY(desc)
+WCDB_PROPERTY(openUrl)
+WCDB_PROPERTY(alert)
+WCDB_PROPERTY(publishType)
+WCDB_PROPERTY(entityName)
+
+
+
 @end

@@ -30,4 +30,15 @@
 @property (strong, nonatomic) NSString *insideCover;// 内部精品封面
 @property (assign, nonatomic) NSTimeInterval lastUpdateTime;
 
+#pragma mark - WVDB 数据绑定
+
+WCDB_PROPERTY(ccType)
+WCDB_PROPERTY(ccOther)
+WCDB_PROPERTY(cFId)
+WCDB_PROPERTY(desc)
+WCDB_PROPERTY(insideCover)
+WCDB_PROPERTY(lastUpdateTime)
+
+
+
 @end

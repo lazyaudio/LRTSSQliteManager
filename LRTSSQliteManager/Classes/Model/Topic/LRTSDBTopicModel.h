@@ -23,4 +23,19 @@
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 
+#pragma mark - WVDB 数据绑定
+
+WCDB_PROPERTY(tId)
+WCDB_PROPERTY( name)
+WCDB_PROPERTY( desc)
+WCDB_PROPERTY( cover)
+WCDB_PROPERTY( count)
+WCDB_PROPERTY( type)
+WCDB_PROPERTY( top)
+WCDB_PROPERTY( booklistArray)
+WCDB_PROPERTY( likeCount)
+WCDB_PROPERTY( isLike)
+
+
+
 @end

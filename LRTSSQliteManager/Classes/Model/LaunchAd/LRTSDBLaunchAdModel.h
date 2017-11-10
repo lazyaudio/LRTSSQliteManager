@@ -156,5 +156,44 @@ typedef NS_ENUM(NSUInteger, LMAdSubType) {
 @property (nonatomic, strong) id sdkAdModel;
 
 
+#pragma mark - WVDB 数据绑定
+
+WCDB_PROPERTY(adId)
+WCDB_PROPERTY(adName)
+WCDB_PROPERTY(owner)
+WCDB_PROPERTY(adIcon)
+WCDB_PROPERTY(adTitle)
+WCDB_PROPERTY(adDesc)
+WCDB_PROPERTY(adType)
+WCDB_PROPERTY(adCategory)
+WCDB_PROPERTY(adIconList)
+WCDB_PROPERTY(adClickType)
+WCDB_PROPERTY(adClickUrl)
+WCDB_PROPERTY(adShowStartTime)
+WCDB_PROPERTY(adShowEndTime)
+WCDB_PROPERTY(adStayTime)
+WCDB_PROPERTY(sort)
+WCDB_PROPERTY(adPriority)
+WCDB_PROPERTY(isShowed)
+WCDB_PROPERTY(adPagePublishType)
+WCDB_PROPERTY(targetId)
+WCDB_PROPERTY(parentTargetId)
+WCDB_PROPERTY(targetType)
+WCDB_PROPERTY(subTargetType)
+WCDB_PROPERTY(animated)
+WCDB_PROPERTY(showUrlAddParam)
+WCDB_PROPERTY(openUrlAddParam)
+WCDB_PROPERTY(openArguDic)
+WCDB_PROPERTY(openArgName)
+WCDB_PROPERTY(showArguDic)
+WCDB_PROPERTY(showArgName)
+WCDB_PROPERTY(showStatisticUrls)
+WCDB_PROPERTY(clickStatisticUrls)
+WCDB_PROPERTY(loadedStatisticUrls)
+WCDB_PROPERTY(advertSubType)
+WCDB_PROPERTY(attachModel)
+WCDB_PROPERTY(sdkAdModel)
+
+
 
 @end

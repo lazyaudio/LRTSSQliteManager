@@ -64,33 +64,33 @@
 		15479D8CAD501697A69117A1772C1EF5 /* KWExampleSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E000343383B99F38A9F4BFF36F21A4F /* KWExampleSuite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		159CCFEFDEDBD49CA1C65B5A0FE9FAB2 /* KWSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 20642CFC125F172118154711271A3730 /* KWSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		16019E851FB42B0700264EE0 /* LRTSCommentModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019E831FB42B0700264EE0 /* LRTSCommentModel.h */; };
-		16019E861FB42B0700264EE0 /* LRTSCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019E841FB42B0700264EE0 /* LRTSCommentModel.m */; };
+		16019E861FB42B0700264EE0 /* LRTSCommentModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019E841FB42B0700264EE0 /* LRTSCommentModel.mm */; };
 		16019E8B1FB42BE900264EE0 /* LRTSCommentModel+InitializationAndConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019E891FB42BE900264EE0 /* LRTSCommentModel+InitializationAndConfiguration.h */; };
 		16019E8C1FB42BE900264EE0 /* LRTSCommentModel+InitializationAndConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019E8A1FB42BE900264EE0 /* LRTSCommentModel+InitializationAndConfiguration.m */; };
 		16019E901FB42CE900264EE0 /* LRTSSystemNotice.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019E8E1FB42CE900264EE0 /* LRTSSystemNotice.h */; };
-		16019E911FB42CE900264EE0 /* LRTSSystemNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019E8F1FB42CE900264EE0 /* LRTSSystemNotice.m */; };
+		16019E911FB42CE900264EE0 /* LRTSSystemNotice.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019E8F1FB42CE900264EE0 /* LRTSSystemNotice.mm */; };
 		16019E971FB4308300264EE0 /* LRTSDBEntityModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019E951FB4308300264EE0 /* LRTSDBEntityModel.h */; };
-		16019E981FB4308300264EE0 /* LRTSDBEntityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019E961FB4308300264EE0 /* LRTSDBEntityModel.m */; };
+		16019E981FB4308300264EE0 /* LRTSDBEntityModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019E961FB4308300264EE0 /* LRTSDBEntityModel.mm */; };
 		16019E9C1FB4318100264EE0 /* LRTSDBProgrammeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019E9A1FB4318100264EE0 /* LRTSDBProgrammeModel.h */; };
-		16019E9D1FB4318100264EE0 /* LRTSDBProgrammeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019E9B1FB4318100264EE0 /* LRTSDBProgrammeModel.m */; };
+		16019E9D1FB4318100264EE0 /* LRTSDBProgrammeModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019E9B1FB4318100264EE0 /* LRTSDBProgrammeModel.mm */; };
 		16019EA11FB431E200264EE0 /* LRTSDBTopicModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019E9F1FB431E200264EE0 /* LRTSDBTopicModel.h */; };
-		16019EA21FB431E200264EE0 /* LRTSDBTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019EA01FB431E200264EE0 /* LRTSDBTopicModel.m */; };
+		16019EA21FB431E200264EE0 /* LRTSDBTopicModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019EA01FB431E200264EE0 /* LRTSDBTopicModel.mm */; };
 		16019EA61FB4321B00264EE0 /* LRTSDBAnnoucerModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019EA41FB4321B00264EE0 /* LRTSDBAnnoucerModel.h */; };
-		16019EA71FB4321B00264EE0 /* LRTSDBAnnoucerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019EA51FB4321B00264EE0 /* LRTSDBAnnoucerModel.m */; };
+		16019EA71FB4321B00264EE0 /* LRTSDBAnnoucerModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019EA51FB4321B00264EE0 /* LRTSDBAnnoucerModel.mm */; };
 		16019EAB1FB4327600264EE0 /* LRTSDBCategoryModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019EA91FB4327600264EE0 /* LRTSDBCategoryModel.h */; };
-		16019EAC1FB4327600264EE0 /* LRTSDBCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019EAA1FB4327600264EE0 /* LRTSDBCategoryModel.m */; };
+		16019EAC1FB4327600264EE0 /* LRTSDBCategoryModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019EAA1FB4327600264EE0 /* LRTSDBCategoryModel.mm */; };
 		16019EB01FB432B700264EE0 /* LRTSDBCustomCategoryModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019EAE1FB432B700264EE0 /* LRTSDBCustomCategoryModel.h */; };
-		16019EB11FB432B700264EE0 /* LRTSDBCustomCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019EAF1FB432B700264EE0 /* LRTSDBCustomCategoryModel.m */; };
+		16019EB11FB432B700264EE0 /* LRTSDBCustomCategoryModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019EAF1FB432B700264EE0 /* LRTSDBCustomCategoryModel.mm */; };
 		16019EB51FB432F500264EE0 /* LRTSDBListenCollectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019EB31FB432F500264EE0 /* LRTSDBListenCollectionModel.h */; };
-		16019EB61FB432F500264EE0 /* LRTSDBListenCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019EB41FB432F500264EE0 /* LRTSDBListenCollectionModel.m */; };
+		16019EB61FB432F500264EE0 /* LRTSDBListenCollectionModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019EB41FB432F500264EE0 /* LRTSDBListenCollectionModel.mm */; };
 		16019EBA1FB4332300264EE0 /* LRTSDBLaunchAdModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019EB81FB4332300264EE0 /* LRTSDBLaunchAdModel.h */; };
-		16019EBB1FB4332300264EE0 /* LRTSDBLaunchAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019EB91FB4332300264EE0 /* LRTSDBLaunchAdModel.m */; };
+		16019EBB1FB4332300264EE0 /* LRTSDBLaunchAdModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019EB91FB4332300264EE0 /* LRTSDBLaunchAdModel.mm */; };
 		16019EBF1FB4336600264EE0 /* LRTSDBDiscoverCategoryModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019EBD1FB4336600264EE0 /* LRTSDBDiscoverCategoryModel.h */; };
 		16019EC01FB4336600264EE0 /* LRTSDBDiscoverCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019EBE1FB4336600264EE0 /* LRTSDBDiscoverCategoryModel.m */; };
 		16019EC41FB433D800264EE0 /* LRTSDBTecentO2AdModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019EC21FB433D800264EE0 /* LRTSDBTecentO2AdModel.h */; };
-		16019EC51FB433D800264EE0 /* LRTSDBTecentO2AdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019EC31FB433D800264EE0 /* LRTSDBTecentO2AdModel.m */; };
+		16019EC51FB433D800264EE0 /* LRTSDBTecentO2AdModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019EC31FB433D800264EE0 /* LRTSDBTecentO2AdModel.mm */; };
 		16019ECB1FB434B700264EE0 /* LRTSDBLabelResourceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019EC91FB434B700264EE0 /* LRTSDBLabelResourceModel.h */; };
-		16019ECC1FB434B700264EE0 /* LRTSDBLabelResourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019ECA1FB434B700264EE0 /* LRTSDBLabelResourceModel.m */; };
+		16019ECC1FB434B700264EE0 /* LRTSDBLabelResourceModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16019ECA1FB434B700264EE0 /* LRTSDBLabelResourceModel.mm */; };
 		16019ED01FB4363000264EE0 /* LRTSDBEntityModel+InitializationAndConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019ECE1FB4363000264EE0 /* LRTSDBEntityModel+InitializationAndConfiguration.h */; };
 		16019ED11FB4363000264EE0 /* LRTSDBEntityModel+InitializationAndConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16019ECF1FB4363000264EE0 /* LRTSDBEntityModel+InitializationAndConfiguration.m */; };
 		16019ED91FB4586900264EE0 /* LRTSDBProgrammeModel+InitializationAndConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16019ED71FB4586900264EE0 /* LRTSDBProgrammeModel+InitializationAndConfiguration.h */; };
@@ -156,20 +156,60 @@
 		16A3D37F1FB3FE6800B32FF7 /* LRTSTagModel+WCTTableCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D37D1FB3FE6800B32FF7 /* LRTSTagModel+WCTTableCoding.m */; };
 		16A3D3831FB4001800B32FF7 /* LRTSDBPlayItemModel+WCTTableCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A3D3811FB4001800B32FF7 /* LRTSDBPlayItemModel+WCTTableCoding.h */; };
 		16A3D3841FB4001800B32FF7 /* LRTSDBPlayItemModel+WCTTableCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D3821FB4001800B32FF7 /* LRTSDBPlayItemModel+WCTTableCoding.m */; };
-		16A3D38A1FB4043200B32FF7 /* LRTSDBDownloadModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A3D3881FB4043200B32FF7 /* LRTSDBDownloadModel.h */; };
-		16A3D38B1FB4043200B32FF7 /* LRTSDBDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D3891FB4043200B32FF7 /* LRTSDBDownloadModel.m */; };
+		16A3D38A1FB4043200B32FF7 /* LRTSDBDownloadItemModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A3D3881FB4043200B32FF7 /* LRTSDBDownloadItemModel.h */; };
+		16A3D38B1FB4043200B32FF7 /* LRTSDBDownloadItemModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D3891FB4043200B32FF7 /* LRTSDBDownloadItemModel.mm */; };
 		16A3D3931FB405F600B32FF7 /* LRTSDBDownloadItemModel+InitializationAndCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A3D3911FB405F600B32FF7 /* LRTSDBDownloadItemModel+InitializationAndCategories.h */; };
 		16A3D3941FB405F600B32FF7 /* LRTSDBDownloadItemModel+InitializationAndCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D3921FB405F600B32FF7 /* LRTSDBDownloadItemModel+InitializationAndCategories.m */; };
 		16A3D3981FB407FB00B32FF7 /* LRTSDBUserModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A3D3961FB407FB00B32FF7 /* LRTSDBUserModel.h */; };
-		16A3D3991FB407FB00B32FF7 /* LRTSDBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D3971FB407FB00B32FF7 /* LRTSDBUserModel.m */; };
+		16A3D3991FB407FB00B32FF7 /* LRTSDBUserModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D3971FB407FB00B32FF7 /* LRTSDBUserModel.mm */; };
 		16A3D39D1FB408D400B32FF7 /* LRTSDBUserModel+Convention.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A3D39B1FB408D400B32FF7 /* LRTSDBUserModel+Convention.h */; };
 		16A3D39E1FB408D400B32FF7 /* LRTSDBUserModel+Convention.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D39C1FB408D400B32FF7 /* LRTSDBUserModel+Convention.m */; };
 		16A3D3A21FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A3D3A01FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.h */; };
-		16A3D3A31FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D3A11FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.m */; };
+		16A3D3A31FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D3A11FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.mm */; };
 		16A3D3A71FB40AF900B32FF7 /* LRTSDBCommentNoticeModel+InitializationAndConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A3D3A51FB40AF900B32FF7 /* LRTSDBCommentNoticeModel+InitializationAndConfiguration.h */; };
 		16A3D3A81FB40AF900B32FF7 /* LRTSDBCommentNoticeModel+InitializationAndConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A3D3A61FB40AF900B32FF7 /* LRTSDBCommentNoticeModel+InitializationAndConfiguration.m */; };
 		16B225501FB32E7A0036E125 /* LRTSDBPlayItemModel+Configurations.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B2254E1FB32E7A0036E125 /* LRTSDBPlayItemModel+Configurations.h */; };
 		16B225511FB32E7A0036E125 /* LRTSDBPlayItemModel+Configurations.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B2254F1FB32E7A0036E125 /* LRTSDBPlayItemModel+Configurations.m */; };
+		16D965F51FB5409A00684D70 /* LRTSDBChatMessageDetailModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D965F31FB5409A00684D70 /* LRTSDBChatMessageDetailModel.h */; };
+		16D965F61FB5409A00684D70 /* LRTSDBChatMessageDetailModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16D965F41FB5409A00684D70 /* LRTSDBChatMessageDetailModel.mm */; };
+		16D965FA1FB541D600684D70 /* LRTSDBProgrammeAudioModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D965F81FB541D600684D70 /* LRTSDBProgrammeAudioModel.h */; };
+		16D965FB1FB541D600684D70 /* LRTSDBProgrammeAudioModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16D965F91FB541D600684D70 /* LRTSDBProgrammeAudioModel.mm */; };
+		16D965FF1FB5424700684D70 /* LRTSDBProgrammeAudioModel+InitializationAndConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D965FD1FB5424700684D70 /* LRTSDBProgrammeAudioModel+InitializationAndConfiguration.h */; };
+		16D966001FB5424700684D70 /* LRTSDBProgrammeAudioModel+InitializationAndConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D965FE1FB5424700684D70 /* LRTSDBProgrammeAudioModel+InitializationAndConfiguration.m */; };
+		16D966091FB543E000684D70 /* LRTSDBAudioEntityModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D966071FB543E000684D70 /* LRTSDBAudioEntityModel.h */; };
+		16D9660A1FB543E000684D70 /* LRTSDBAudioEntityModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16D966081FB543E000684D70 /* LRTSDBAudioEntityModel.mm */; };
+		16D9660D1FB5442F00684D70 /* LRTSDBPlayHistoryModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D9660B1FB5442F00684D70 /* LRTSDBPlayHistoryModel.h */; };
+		16D9660E1FB5442F00684D70 /* LRTSDBPlayHistoryModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16D9660C1FB5442F00684D70 /* LRTSDBPlayHistoryModel.mm */; };
+		16D966121FB5454100684D70 /* LRTSDBPlayHistoryModel+InitializationAndConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D966101FB5454100684D70 /* LRTSDBPlayHistoryModel+InitializationAndConfiguration.h */; };
+		16D966131FB5454100684D70 /* LRTSDBPlayHistoryModel+InitializationAndConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D966111FB5454100684D70 /* LRTSDBPlayHistoryModel+InitializationAndConfiguration.m */; };
+		16D966191FB5476600684D70 /* LRTSDBCollectionModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16D966171FB5476600684D70 /* LRTSDBCollectionModel.mm */; };
+		16D9661D1FB5485400684D70 /* LRTSDBCollectionModel+InitializationAndConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D9661B1FB5485400684D70 /* LRTSDBCollectionModel+InitializationAndConfiguration.h */; };
+		16D9661E1FB5485400684D70 /* LRTSDBCollectionModel+InitializationAndConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D9661C1FB5485400684D70 /* LRTSDBCollectionModel+InitializationAndConfiguration.m */; };
+		16D966221FB54A5600684D70 /* LRTSLGDynamicEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D966201FB54A5600684D70 /* LRTSLGDynamicEntity.h */; };
+		16D966231FB54A5600684D70 /* LRTSLGDynamicEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16D966211FB54A5600684D70 /* LRTSLGDynamicEntity.mm */; };
+		16D966281FB54D6100684D70 /* LRTSDBAudioModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D966261FB54D6100684D70 /* LRTSDBAudioModel.h */; };
+		16D966291FB54D6100684D70 /* LRTSDBAudioModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16D966271FB54D6100684D70 /* LRTSDBAudioModel.mm */; };
+		16D9662C1FB54DD900684D70 /* LRTSDBListenerGroupDynamicModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D9662A1FB54DD900684D70 /* LRTSDBListenerGroupDynamicModel.h */; };
+		16D9662D1FB54DD900684D70 /* LRTSDBListenerGroupDynamicModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16D9662B1FB54DD900684D70 /* LRTSDBListenerGroupDynamicModel.mm */; };
+		16D966311FB54E4F00684D70 /* LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D9662F1FB54E4F00684D70 /* LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.h */; };
+		16D966321FB54E4F00684D70 /* LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D966301FB54E4F00684D70 /* LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.m */; };
+		16D966371FB54F2B00684D70 /* NSObject+LRTSUserStateVerify.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D966351FB54F2B00684D70 /* NSObject+LRTSUserStateVerify.h */; };
+		16D966381FB54F2B00684D70 /* NSObject+LRTSUserStateVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D966361FB54F2B00684D70 /* NSObject+LRTSUserStateVerify.m */; };
+		16D9663B1FB54FD700684D70 /* NSObject+LRTSVipAndBoutique.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D966391FB54FD700684D70 /* NSObject+LRTSVipAndBoutique.h */; };
+		16D9663C1FB54FD700684D70 /* NSObject+LRTSVipAndBoutique.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D9663A1FB54FD700684D70 /* NSObject+LRTSVipAndBoutique.m */; };
+		16D966401FB5515700684D70 /* LRTSDBBuyBookModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D9663E1FB5515700684D70 /* LRTSDBBuyBookModel.h */; };
+		16D966411FB5515700684D70 /* LRTSDBBuyBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D9663F1FB5515700684D70 /* LRTSDBBuyBookModel.m */; };
+		16D966461FB552EE00684D70 /* LRTSDBBuyBookModel+InitializationAndConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D966441FB552EE00684D70 /* LRTSDBBuyBookModel+InitializationAndConfiguration.h */; };
+		16D966471FB552EE00684D70 /* LRTSDBBuyBookModel+InitializationAndConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D966451FB552EE00684D70 /* LRTSDBBuyBookModel+InitializationAndConfiguration.m */; };
+		16D9664B1FB5534600684D70 /* LRTSDBVipBookModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D966491FB5534600684D70 /* LRTSDBVipBookModel.h */; };
+		16D9664C1FB5534600684D70 /* LRTSDBVipBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D9664A1FB5534600684D70 /* LRTSDBVipBookModel.m */; };
+		16D966501FB553DE00684D70 /* LRTSDBVipBookModel+InitializationAndConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D9664E1FB553DE00684D70 /* LRTSDBVipBookModel+InitializationAndConfiguration.h */; };
+		16D966511FB553DE00684D70 /* LRTSDBVipBookModel+InitializationAndConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D9664F1FB553DE00684D70 /* LRTSDBVipBookModel+InitializationAndConfiguration.m */; };
+		16D966551FB554CC00684D70 /* LRTSDBDetailPriceCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D966531FB554CC00684D70 /* LRTSDBDetailPriceCellModel.h */; };
+		16D966561FB554CC00684D70 /* LRTSDBDetailPriceCellModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16D966541FB554CC00684D70 /* LRTSDBDetailPriceCellModel.mm */; };
+		16D9665F1FB555A300684D70 /* LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D9665D1FB555A300684D70 /* LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.h */; };
+		16D966601FB555A300684D70 /* LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D9665E1FB555A300684D70 /* LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.m */; };
+		16D966611FB5599300684D70 /* LRTSDBCollectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D966161FB5476600684D70 /* LRTSDBCollectionModel.h */; };
 		16F311C0978BA0196A305CA278A74EA4 /* KWBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 718F2F411E701A004695C55C162B1A02 /* KWBackgroundTask.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		16F4313F6EF208AEA0351691EB1C20EA /* KWObjCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F52AAF71CEBC045AD9984B6CEF4E916 /* KWObjCUtilities.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		17902CEFE48E6D6CBFBFC675B6B2EC4B /* KWNotificationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 023BC1AAFD612049CC99467D067CBD85 /* KWNotificationMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -842,35 +882,35 @@
 		14FD7BAF71F0F5CAEA2D814DF0F67F8B /* vdbeapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = vdbeapi.c; path = sqlcipher/src/vdbeapi.c; sourceTree = "<group>"; };
 		15DD1C331E8AD410D11DB8E8404706D3 /* WCTORM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WCTORM.h; path = apple/WCDB/interface/orm/WCTORM.h; sourceTree = "<group>"; };
 		16019E831FB42B0700264EE0 /* LRTSCommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSCommentModel.h; sourceTree = "<group>"; };
-		16019E841FB42B0700264EE0 /* LRTSCommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSCommentModel.m; sourceTree = "<group>"; };
+		16019E841FB42B0700264EE0 /* LRTSCommentModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSCommentModel.mm; sourceTree = "<group>"; };
 		16019E891FB42BE900264EE0 /* LRTSCommentModel+InitializationAndConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSCommentModel+InitializationAndConfiguration.h"; sourceTree = "<group>"; };
 		16019E8A1FB42BE900264EE0 /* LRTSCommentModel+InitializationAndConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSCommentModel+InitializationAndConfiguration.m"; sourceTree = "<group>"; };
 		16019E8E1FB42CE900264EE0 /* LRTSSystemNotice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSSystemNotice.h; sourceTree = "<group>"; };
-		16019E8F1FB42CE900264EE0 /* LRTSSystemNotice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSSystemNotice.m; sourceTree = "<group>"; };
+		16019E8F1FB42CE900264EE0 /* LRTSSystemNotice.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSSystemNotice.mm; sourceTree = "<group>"; };
 		16019E931FB42F6100264EE0 /* LRTSDBMessageState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBMessageState.h; sourceTree = "<group>"; };
 		16019E951FB4308300264EE0 /* LRTSDBEntityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBEntityModel.h; sourceTree = "<group>"; };
-		16019E961FB4308300264EE0 /* LRTSDBEntityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBEntityModel.m; sourceTree = "<group>"; };
+		16019E961FB4308300264EE0 /* LRTSDBEntityModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBEntityModel.mm; sourceTree = "<group>"; };
 		16019E9A1FB4318100264EE0 /* LRTSDBProgrammeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBProgrammeModel.h; sourceTree = "<group>"; };
-		16019E9B1FB4318100264EE0 /* LRTSDBProgrammeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBProgrammeModel.m; sourceTree = "<group>"; };
+		16019E9B1FB4318100264EE0 /* LRTSDBProgrammeModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBProgrammeModel.mm; sourceTree = "<group>"; };
 		16019E9F1FB431E200264EE0 /* LRTSDBTopicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBTopicModel.h; sourceTree = "<group>"; };
-		16019EA01FB431E200264EE0 /* LRTSDBTopicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBTopicModel.m; sourceTree = "<group>"; };
+		16019EA01FB431E200264EE0 /* LRTSDBTopicModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBTopicModel.mm; sourceTree = "<group>"; };
 		16019EA41FB4321B00264EE0 /* LRTSDBAnnoucerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBAnnoucerModel.h; sourceTree = "<group>"; };
-		16019EA51FB4321B00264EE0 /* LRTSDBAnnoucerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBAnnoucerModel.m; sourceTree = "<group>"; };
+		16019EA51FB4321B00264EE0 /* LRTSDBAnnoucerModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBAnnoucerModel.mm; sourceTree = "<group>"; };
 		16019EA91FB4327600264EE0 /* LRTSDBCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBCategoryModel.h; sourceTree = "<group>"; };
-		16019EAA1FB4327600264EE0 /* LRTSDBCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBCategoryModel.m; sourceTree = "<group>"; };
+		16019EAA1FB4327600264EE0 /* LRTSDBCategoryModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBCategoryModel.mm; sourceTree = "<group>"; };
 		16019EAE1FB432B700264EE0 /* LRTSDBCustomCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBCustomCategoryModel.h; sourceTree = "<group>"; };
-		16019EAF1FB432B700264EE0 /* LRTSDBCustomCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBCustomCategoryModel.m; sourceTree = "<group>"; };
+		16019EAF1FB432B700264EE0 /* LRTSDBCustomCategoryModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBCustomCategoryModel.mm; sourceTree = "<group>"; };
 		16019EB31FB432F500264EE0 /* LRTSDBListenCollectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBListenCollectionModel.h; sourceTree = "<group>"; };
-		16019EB41FB432F500264EE0 /* LRTSDBListenCollectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBListenCollectionModel.m; sourceTree = "<group>"; };
+		16019EB41FB432F500264EE0 /* LRTSDBListenCollectionModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBListenCollectionModel.mm; sourceTree = "<group>"; };
 		16019EB81FB4332300264EE0 /* LRTSDBLaunchAdModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBLaunchAdModel.h; sourceTree = "<group>"; };
-		16019EB91FB4332300264EE0 /* LRTSDBLaunchAdModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBLaunchAdModel.m; sourceTree = "<group>"; };
+		16019EB91FB4332300264EE0 /* LRTSDBLaunchAdModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBLaunchAdModel.mm; sourceTree = "<group>"; };
 		16019EBD1FB4336600264EE0 /* LRTSDBDiscoverCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBDiscoverCategoryModel.h; sourceTree = "<group>"; };
 		16019EBE1FB4336600264EE0 /* LRTSDBDiscoverCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBDiscoverCategoryModel.m; sourceTree = "<group>"; };
 		16019EC21FB433D800264EE0 /* LRTSDBTecentO2AdModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBTecentO2AdModel.h; sourceTree = "<group>"; };
-		16019EC31FB433D800264EE0 /* LRTSDBTecentO2AdModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBTecentO2AdModel.m; sourceTree = "<group>"; };
+		16019EC31FB433D800264EE0 /* LRTSDBTecentO2AdModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBTecentO2AdModel.mm; sourceTree = "<group>"; };
 		16019EC71FB4345700264EE0 /* LRTSDBPublicTypeDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBPublicTypeDefine.h; sourceTree = "<group>"; };
 		16019EC91FB434B700264EE0 /* LRTSDBLabelResourceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBLabelResourceModel.h; sourceTree = "<group>"; };
-		16019ECA1FB434B700264EE0 /* LRTSDBLabelResourceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBLabelResourceModel.m; sourceTree = "<group>"; };
+		16019ECA1FB434B700264EE0 /* LRTSDBLabelResourceModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBLabelResourceModel.mm; sourceTree = "<group>"; };
 		16019ECE1FB4363000264EE0 /* LRTSDBEntityModel+InitializationAndConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBEntityModel+InitializationAndConfiguration.h"; sourceTree = "<group>"; };
 		16019ECF1FB4363000264EE0 /* LRTSDBEntityModel+InitializationAndConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBEntityModel+InitializationAndConfiguration.m"; sourceTree = "<group>"; };
 		16019ED71FB4586900264EE0 /* LRTSDBProgrammeModel+InitializationAndConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBProgrammeModel+InitializationAndConfiguration.h"; sourceTree = "<group>"; };
@@ -938,21 +978,62 @@
 		16A3D3811FB4001800B32FF7 /* LRTSDBPlayItemModel+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBPlayItemModel+WCTTableCoding.h"; sourceTree = "<group>"; };
 		16A3D3821FB4001800B32FF7 /* LRTSDBPlayItemModel+WCTTableCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBPlayItemModel+WCTTableCoding.m"; sourceTree = "<group>"; };
 		16A3D3861FB4019700B32FF7 /* LRTSDownloadState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDownloadState.h; sourceTree = "<group>"; };
-		16A3D3881FB4043200B32FF7 /* LRTSDBDownloadModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBDownloadModel.h; sourceTree = "<group>"; };
-		16A3D3891FB4043200B32FF7 /* LRTSDBDownloadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBDownloadModel.m; sourceTree = "<group>"; };
+		16A3D3881FB4043200B32FF7 /* LRTSDBDownloadItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBDownloadItemModel.h; sourceTree = "<group>"; };
+		16A3D3891FB4043200B32FF7 /* LRTSDBDownloadItemModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBDownloadItemModel.mm; sourceTree = "<group>"; };
 		16A3D3911FB405F600B32FF7 /* LRTSDBDownloadItemModel+InitializationAndCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBDownloadItemModel+InitializationAndCategories.h"; sourceTree = "<group>"; };
 		16A3D3921FB405F600B32FF7 /* LRTSDBDownloadItemModel+InitializationAndCategories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBDownloadItemModel+InitializationAndCategories.m"; sourceTree = "<group>"; };
 		16A3D3961FB407FB00B32FF7 /* LRTSDBUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBUserModel.h; sourceTree = "<group>"; };
-		16A3D3971FB407FB00B32FF7 /* LRTSDBUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBUserModel.m; sourceTree = "<group>"; };
+		16A3D3971FB407FB00B32FF7 /* LRTSDBUserModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBUserModel.mm; sourceTree = "<group>"; };
 		16A3D39B1FB408D400B32FF7 /* LRTSDBUserModel+Convention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBUserModel+Convention.h"; sourceTree = "<group>"; };
 		16A3D39C1FB408D400B32FF7 /* LRTSDBUserModel+Convention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBUserModel+Convention.m"; sourceTree = "<group>"; };
 		16A3D3A01FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBCommentNoticeModel.h; sourceTree = "<group>"; };
-		16A3D3A11FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBCommentNoticeModel.m; sourceTree = "<group>"; };
+		16A3D3A11FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBCommentNoticeModel.mm; sourceTree = "<group>"; };
 		16A3D3A51FB40AF900B32FF7 /* LRTSDBCommentNoticeModel+InitializationAndConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBCommentNoticeModel+InitializationAndConfiguration.h"; sourceTree = "<group>"; };
 		16A3D3A61FB40AF900B32FF7 /* LRTSDBCommentNoticeModel+InitializationAndConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBCommentNoticeModel+InitializationAndConfiguration.m"; sourceTree = "<group>"; };
 		16B1CCC78A16C3EC8D9D08D70CA88E60 /* vdbesort.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = vdbesort.c; path = sqlcipher/src/vdbesort.c; sourceTree = "<group>"; };
 		16B2254E1FB32E7A0036E125 /* LRTSDBPlayItemModel+Configurations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBPlayItemModel+Configurations.h"; sourceTree = "<group>"; };
 		16B2254F1FB32E7A0036E125 /* LRTSDBPlayItemModel+Configurations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBPlayItemModel+Configurations.m"; sourceTree = "<group>"; };
+		16D965F31FB5409A00684D70 /* LRTSDBChatMessageDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBChatMessageDetailModel.h; sourceTree = "<group>"; };
+		16D965F41FB5409A00684D70 /* LRTSDBChatMessageDetailModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBChatMessageDetailModel.mm; sourceTree = "<group>"; };
+		16D965F81FB541D600684D70 /* LRTSDBProgrammeAudioModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBProgrammeAudioModel.h; sourceTree = "<group>"; };
+		16D965F91FB541D600684D70 /* LRTSDBProgrammeAudioModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBProgrammeAudioModel.mm; sourceTree = "<group>"; };
+		16D965FD1FB5424700684D70 /* LRTSDBProgrammeAudioModel+InitializationAndConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBProgrammeAudioModel+InitializationAndConfiguration.h"; sourceTree = "<group>"; };
+		16D965FE1FB5424700684D70 /* LRTSDBProgrammeAudioModel+InitializationAndConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBProgrammeAudioModel+InitializationAndConfiguration.m"; sourceTree = "<group>"; };
+		16D966071FB543E000684D70 /* LRTSDBAudioEntityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBAudioEntityModel.h; sourceTree = "<group>"; };
+		16D966081FB543E000684D70 /* LRTSDBAudioEntityModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBAudioEntityModel.mm; sourceTree = "<group>"; };
+		16D9660B1FB5442F00684D70 /* LRTSDBPlayHistoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBPlayHistoryModel.h; sourceTree = "<group>"; };
+		16D9660C1FB5442F00684D70 /* LRTSDBPlayHistoryModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBPlayHistoryModel.mm; sourceTree = "<group>"; };
+		16D966101FB5454100684D70 /* LRTSDBPlayHistoryModel+InitializationAndConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBPlayHistoryModel+InitializationAndConfiguration.h"; sourceTree = "<group>"; };
+		16D966111FB5454100684D70 /* LRTSDBPlayHistoryModel+InitializationAndConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBPlayHistoryModel+InitializationAndConfiguration.m"; sourceTree = "<group>"; };
+		16D966161FB5476600684D70 /* LRTSDBCollectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBCollectionModel.h; sourceTree = "<group>"; };
+		16D966171FB5476600684D70 /* LRTSDBCollectionModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBCollectionModel.mm; sourceTree = "<group>"; };
+		16D9661B1FB5485400684D70 /* LRTSDBCollectionModel+InitializationAndConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBCollectionModel+InitializationAndConfiguration.h"; sourceTree = "<group>"; };
+		16D9661C1FB5485400684D70 /* LRTSDBCollectionModel+InitializationAndConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBCollectionModel+InitializationAndConfiguration.m"; sourceTree = "<group>"; };
+		16D966201FB54A5600684D70 /* LRTSLGDynamicEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSLGDynamicEntity.h; sourceTree = "<group>"; };
+		16D966211FB54A5600684D70 /* LRTSLGDynamicEntity.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSLGDynamicEntity.mm; sourceTree = "<group>"; };
+		16D966261FB54D6100684D70 /* LRTSDBAudioModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBAudioModel.h; sourceTree = "<group>"; };
+		16D966271FB54D6100684D70 /* LRTSDBAudioModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBAudioModel.mm; sourceTree = "<group>"; };
+		16D9662A1FB54DD900684D70 /* LRTSDBListenerGroupDynamicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBListenerGroupDynamicModel.h; sourceTree = "<group>"; };
+		16D9662B1FB54DD900684D70 /* LRTSDBListenerGroupDynamicModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBListenerGroupDynamicModel.mm; sourceTree = "<group>"; };
+		16D9662F1FB54E4F00684D70 /* LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.h"; sourceTree = "<group>"; };
+		16D966301FB54E4F00684D70 /* LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.m"; sourceTree = "<group>"; };
+		16D966351FB54F2B00684D70 /* NSObject+LRTSUserStateVerify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LRTSUserStateVerify.h"; sourceTree = "<group>"; };
+		16D966361FB54F2B00684D70 /* NSObject+LRTSUserStateVerify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LRTSUserStateVerify.m"; sourceTree = "<group>"; };
+		16D966391FB54FD700684D70 /* NSObject+LRTSVipAndBoutique.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LRTSVipAndBoutique.h"; sourceTree = "<group>"; };
+		16D9663A1FB54FD700684D70 /* NSObject+LRTSVipAndBoutique.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LRTSVipAndBoutique.m"; sourceTree = "<group>"; };
+		16D9663E1FB5515700684D70 /* LRTSDBBuyBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBBuyBookModel.h; sourceTree = "<group>"; };
+		16D9663F1FB5515700684D70 /* LRTSDBBuyBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBBuyBookModel.m; sourceTree = "<group>"; };
+		16D966421FB551E700684D70 /* LRTSCellDataSourceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSCellDataSourceDelegate.h; sourceTree = "<group>"; };
+		16D966441FB552EE00684D70 /* LRTSDBBuyBookModel+InitializationAndConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBBuyBookModel+InitializationAndConfiguration.h"; sourceTree = "<group>"; };
+		16D966451FB552EE00684D70 /* LRTSDBBuyBookModel+InitializationAndConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBBuyBookModel+InitializationAndConfiguration.m"; sourceTree = "<group>"; };
+		16D966491FB5534600684D70 /* LRTSDBVipBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBVipBookModel.h; sourceTree = "<group>"; };
+		16D9664A1FB5534600684D70 /* LRTSDBVipBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBVipBookModel.m; sourceTree = "<group>"; };
+		16D9664E1FB553DE00684D70 /* LRTSDBVipBookModel+InitializationAndConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBVipBookModel+InitializationAndConfiguration.h"; sourceTree = "<group>"; };
+		16D9664F1FB553DE00684D70 /* LRTSDBVipBookModel+InitializationAndConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBVipBookModel+InitializationAndConfiguration.m"; sourceTree = "<group>"; };
+		16D966531FB554CC00684D70 /* LRTSDBDetailPriceCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBDetailPriceCellModel.h; sourceTree = "<group>"; };
+		16D966541FB554CC00684D70 /* LRTSDBDetailPriceCellModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBDetailPriceCellModel.mm; sourceTree = "<group>"; };
+		16D9665D1FB555A300684D70 /* LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.h"; sourceTree = "<group>"; };
+		16D9665E1FB555A300684D70 /* LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.m"; sourceTree = "<group>"; };
 		179522D82467B941E42E102C5466F3AF /* mutex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mutex.h; path = sqlcipher/src/mutex.h; sourceTree = "<group>"; };
 		17C37D409388C18629DC74266FB50F23 /* order_term.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = order_term.hpp; path = apple/WCDB/abstract/order_term.hpp; sourceTree = "<group>"; };
 		1815D2B36ECC71854CCED96E5C16EBB0 /* KWSharedExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWSharedExample.m; path = "Classes/Shared Examples/KWSharedExample.m"; sourceTree = "<group>"; };
@@ -1630,7 +1711,7 @@
 			isa = PBXGroup;
 			children = (
 				16019E831FB42B0700264EE0 /* LRTSCommentModel.h */,
-				16019E841FB42B0700264EE0 /* LRTSCommentModel.m */,
+				16019E841FB42B0700264EE0 /* LRTSCommentModel.mm */,
 			);
 			path = Comment;
 			sourceTree = "<group>";
@@ -1657,7 +1738,7 @@
 			isa = PBXGroup;
 			children = (
 				16019E8E1FB42CE900264EE0 /* LRTSSystemNotice.h */,
-				16019E8F1FB42CE900264EE0 /* LRTSSystemNotice.m */,
+				16019E8F1FB42CE900264EE0 /* LRTSSystemNotice.mm */,
 			);
 			path = SystemNotice;
 			sourceTree = "<group>";
@@ -1674,7 +1755,7 @@
 			isa = PBXGroup;
 			children = (
 				16019E951FB4308300264EE0 /* LRTSDBEntityModel.h */,
-				16019E961FB4308300264EE0 /* LRTSDBEntityModel.m */,
+				16019E961FB4308300264EE0 /* LRTSDBEntityModel.mm */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -1683,7 +1764,7 @@
 			isa = PBXGroup;
 			children = (
 				16019E9A1FB4318100264EE0 /* LRTSDBProgrammeModel.h */,
-				16019E9B1FB4318100264EE0 /* LRTSDBProgrammeModel.m */,
+				16019E9B1FB4318100264EE0 /* LRTSDBProgrammeModel.mm */,
 			);
 			path = Programme;
 			sourceTree = "<group>";
@@ -1692,7 +1773,7 @@
 			isa = PBXGroup;
 			children = (
 				16019E9F1FB431E200264EE0 /* LRTSDBTopicModel.h */,
-				16019EA01FB431E200264EE0 /* LRTSDBTopicModel.m */,
+				16019EA01FB431E200264EE0 /* LRTSDBTopicModel.mm */,
 			);
 			path = Topic;
 			sourceTree = "<group>";
@@ -1701,7 +1782,7 @@
 			isa = PBXGroup;
 			children = (
 				16019EA41FB4321B00264EE0 /* LRTSDBAnnoucerModel.h */,
-				16019EA51FB4321B00264EE0 /* LRTSDBAnnoucerModel.m */,
+				16019EA51FB4321B00264EE0 /* LRTSDBAnnoucerModel.mm */,
 			);
 			path = Announcer;
 			sourceTree = "<group>";
@@ -1710,7 +1791,7 @@
 			isa = PBXGroup;
 			children = (
 				16019EA91FB4327600264EE0 /* LRTSDBCategoryModel.h */,
-				16019EAA1FB4327600264EE0 /* LRTSDBCategoryModel.m */,
+				16019EAA1FB4327600264EE0 /* LRTSDBCategoryModel.mm */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1719,7 +1800,7 @@
 			isa = PBXGroup;
 			children = (
 				16019EAE1FB432B700264EE0 /* LRTSDBCustomCategoryModel.h */,
-				16019EAF1FB432B700264EE0 /* LRTSDBCustomCategoryModel.m */,
+				16019EAF1FB432B700264EE0 /* LRTSDBCustomCategoryModel.mm */,
 			);
 			path = CustomCategory;
 			sourceTree = "<group>";
@@ -1728,7 +1809,7 @@
 			isa = PBXGroup;
 			children = (
 				16019EB31FB432F500264EE0 /* LRTSDBListenCollectionModel.h */,
-				16019EB41FB432F500264EE0 /* LRTSDBListenCollectionModel.m */,
+				16019EB41FB432F500264EE0 /* LRTSDBListenCollectionModel.mm */,
 			);
 			path = ListenCollection;
 			sourceTree = "<group>";
@@ -1737,7 +1818,7 @@
 			isa = PBXGroup;
 			children = (
 				16019EB81FB4332300264EE0 /* LRTSDBLaunchAdModel.h */,
-				16019EB91FB4332300264EE0 /* LRTSDBLaunchAdModel.m */,
+				16019EB91FB4332300264EE0 /* LRTSDBLaunchAdModel.mm */,
 			);
 			path = LaunchAd;
 			sourceTree = "<group>";
@@ -1755,7 +1836,7 @@
 			isa = PBXGroup;
 			children = (
 				16019EC21FB433D800264EE0 /* LRTSDBTecentO2AdModel.h */,
-				16019EC31FB433D800264EE0 /* LRTSDBTecentO2AdModel.m */,
+				16019EC31FB433D800264EE0 /* LRTSDBTecentO2AdModel.mm */,
 			);
 			path = TecentO2Ad;
 			sourceTree = "<group>";
@@ -1772,7 +1853,7 @@
 			isa = PBXGroup;
 			children = (
 				16019EC91FB434B700264EE0 /* LRTSDBLabelResourceModel.h */,
-				16019ECA1FB434B700264EE0 /* LRTSDBLabelResourceModel.m */,
+				16019ECA1FB434B700264EE0 /* LRTSDBLabelResourceModel.mm */,
 			);
 			path = LabelResource;
 			sourceTree = "<group>";
@@ -1843,6 +1924,8 @@
 		1683147E1FB1B87000462AC3 /* BookModel */ = {
 			isa = PBXGroup;
 			children = (
+				16D966481FB5532E00684D70 /* VipBook */,
+				16D9663D1FB5513400684D70 /* BuyBook */,
 				16955C071FB3009A00585C8F /* SectionModel */,
 				A82CDAAEBACBFCD992087F25263BD8FF /* LRTSDBBookModel.h */,
 				BF8627E7EA622C007D3E38096D2424F4 /* LRTSDBBookModel.mm */,
@@ -2007,6 +2090,7 @@
 				16955C1C1FB30D2E00585C8F /* LRTSDBDownloadableDelegate.h */,
 				16955C1E1FB30DB100585C8F /* LRTSDBAudioSubEntityDelegate.h */,
 				16955C201FB30E1100585C8F /* LRTSDBAudioPlayBuy.h */,
+				16D966421FB551E700684D70 /* LRTSCellDataSourceDelegate.h */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -2058,8 +2142,8 @@
 		16A3D3871FB4040F00B32FF7 /* DownloadItemModel */ = {
 			isa = PBXGroup;
 			children = (
-				16A3D3881FB4043200B32FF7 /* LRTSDBDownloadModel.h */,
-				16A3D3891FB4043200B32FF7 /* LRTSDBDownloadModel.m */,
+				16A3D3881FB4043200B32FF7 /* LRTSDBDownloadItemModel.h */,
+				16A3D3891FB4043200B32FF7 /* LRTSDBDownloadItemModel.mm */,
 			);
 			path = DownloadItemModel;
 			sourceTree = "<group>";
@@ -2077,7 +2161,7 @@
 			isa = PBXGroup;
 			children = (
 				16A3D3961FB407FB00B32FF7 /* LRTSDBUserModel.h */,
-				16A3D3971FB407FB00B32FF7 /* LRTSDBUserModel.m */,
+				16A3D3971FB407FB00B32FF7 /* LRTSDBUserModel.mm */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -2095,7 +2179,7 @@
 			isa = PBXGroup;
 			children = (
 				16A3D3A01FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.h */,
-				16A3D3A11FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.m */,
+				16A3D3A11FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.mm */,
 			);
 			path = CommentNotice;
 			sourceTree = "<group>";
@@ -2116,6 +2200,188 @@
 				16B2254F1FB32E7A0036E125 /* LRTSDBPlayItemModel+Configurations.m */,
 			);
 			path = "DBPlayItem+Category";
+			sourceTree = "<group>";
+		};
+		16D965F21FB5403700684D70 /* ChatMessageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				16D965F31FB5409A00684D70 /* LRTSDBChatMessageDetailModel.h */,
+				16D965F41FB5409A00684D70 /* LRTSDBChatMessageDetailModel.mm */,
+			);
+			path = ChatMessageDetail;
+			sourceTree = "<group>";
+		};
+		16D965F71FB5419500684D70 /* ProgrammeAudio */ = {
+			isa = PBXGroup;
+			children = (
+				16D965F81FB541D600684D70 /* LRTSDBProgrammeAudioModel.h */,
+				16D965F91FB541D600684D70 /* LRTSDBProgrammeAudioModel.mm */,
+			);
+			path = ProgrammeAudio;
+			sourceTree = "<group>";
+		};
+		16D965FC1FB5421300684D70 /* DBProgrammeAudio+Categories */ = {
+			isa = PBXGroup;
+			children = (
+				16D965FD1FB5424700684D70 /* LRTSDBProgrammeAudioModel+InitializationAndConfiguration.h */,
+				16D965FE1FB5424700684D70 /* LRTSDBProgrammeAudioModel+InitializationAndConfiguration.m */,
+			);
+			path = "DBProgrammeAudio+Categories";
+			sourceTree = "<group>";
+		};
+		16D966011FB5432300684D70 /* PlayHistory */ = {
+			isa = PBXGroup;
+			children = (
+				16D9660B1FB5442F00684D70 /* LRTSDBPlayHistoryModel.h */,
+				16D9660C1FB5442F00684D70 /* LRTSDBPlayHistoryModel.mm */,
+			);
+			path = PlayHistory;
+			sourceTree = "<group>";
+		};
+		16D966061FB543A300684D70 /* AudioEntity */ = {
+			isa = PBXGroup;
+			children = (
+				16D966071FB543E000684D70 /* LRTSDBAudioEntityModel.h */,
+				16D966081FB543E000684D70 /* LRTSDBAudioEntityModel.mm */,
+			);
+			path = AudioEntity;
+			sourceTree = "<group>";
+		};
+		16D9660F1FB544CB00684D70 /* DBPlayHistory+Categories */ = {
+			isa = PBXGroup;
+			children = (
+				16D966101FB5454100684D70 /* LRTSDBPlayHistoryModel+InitializationAndConfiguration.h */,
+				16D966111FB5454100684D70 /* LRTSDBPlayHistoryModel+InitializationAndConfiguration.m */,
+			);
+			path = "DBPlayHistory+Categories";
+			sourceTree = "<group>";
+		};
+		16D966141FB546A300684D70 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				16D966161FB5476600684D70 /* LRTSDBCollectionModel.h */,
+				16D966171FB5476600684D70 /* LRTSDBCollectionModel.mm */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		16D9661A1FB547DD00684D70 /* DBCollection+Categories */ = {
+			isa = PBXGroup;
+			children = (
+				16D9661B1FB5485400684D70 /* LRTSDBCollectionModel+InitializationAndConfiguration.h */,
+				16D9661C1FB5485400684D70 /* LRTSDBCollectionModel+InitializationAndConfiguration.m */,
+			);
+			path = "DBCollection+Categories";
+			sourceTree = "<group>";
+		};
+		16D9661F1FB54A0300684D70 /* LGDynamicEntity */ = {
+			isa = PBXGroup;
+			children = (
+				16D966201FB54A5600684D70 /* LRTSLGDynamicEntity.h */,
+				16D966211FB54A5600684D70 /* LRTSLGDynamicEntity.mm */,
+			);
+			path = LGDynamicEntity;
+			sourceTree = "<group>";
+		};
+		16D966241FB54CEE00684D70 /* ListenerGroupDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				16D9662A1FB54DD900684D70 /* LRTSDBListenerGroupDynamicModel.h */,
+				16D9662B1FB54DD900684D70 /* LRTSDBListenerGroupDynamicModel.mm */,
+			);
+			path = ListenerGroupDynamic;
+			sourceTree = "<group>";
+		};
+		16D966251FB54D2F00684D70 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				16D966261FB54D6100684D70 /* LRTSDBAudioModel.h */,
+				16D966271FB54D6100684D70 /* LRTSDBAudioModel.mm */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		16D9662E1FB54E2800684D70 /* DBListenerGroupDynamic+Categories */ = {
+			isa = PBXGroup;
+			children = (
+				16D9662F1FB54E4F00684D70 /* LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.h */,
+				16D966301FB54E4F00684D70 /* LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.m */,
+			);
+			path = "DBListenerGroupDynamic+Categories";
+			sourceTree = "<group>";
+		};
+		16D966331FB54EBB00684D70 /* NSOject+Categories */ = {
+			isa = PBXGroup;
+			children = (
+				16D966351FB54F2B00684D70 /* NSObject+LRTSUserStateVerify.h */,
+				16D966361FB54F2B00684D70 /* NSObject+LRTSUserStateVerify.m */,
+				16D966391FB54FD700684D70 /* NSObject+LRTSVipAndBoutique.h */,
+				16D9663A1FB54FD700684D70 /* NSObject+LRTSVipAndBoutique.m */,
+			);
+			path = "NSOject+Categories";
+			sourceTree = "<group>";
+		};
+		16D966341FB54EDC00684D70 /* Fundation+Categories */ = {
+			isa = PBXGroup;
+			children = (
+				16955BF01FB2AE5500585C8F /* NSString+Categories */,
+				16D966331FB54EBB00684D70 /* NSOject+Categories */,
+			);
+			path = "Fundation+Categories";
+			sourceTree = "<group>";
+		};
+		16D9663D1FB5513400684D70 /* BuyBook */ = {
+			isa = PBXGroup;
+			children = (
+				16D9663E1FB5515700684D70 /* LRTSDBBuyBookModel.h */,
+				16D9663F1FB5515700684D70 /* LRTSDBBuyBookModel.m */,
+			);
+			path = BuyBook;
+			sourceTree = "<group>";
+		};
+		16D966431FB552B400684D70 /* DBBuyBook+Categories */ = {
+			isa = PBXGroup;
+			children = (
+				16D966441FB552EE00684D70 /* LRTSDBBuyBookModel+InitializationAndConfiguration.h */,
+				16D966451FB552EE00684D70 /* LRTSDBBuyBookModel+InitializationAndConfiguration.m */,
+			);
+			path = "DBBuyBook+Categories";
+			sourceTree = "<group>";
+		};
+		16D966481FB5532E00684D70 /* VipBook */ = {
+			isa = PBXGroup;
+			children = (
+				16D966491FB5534600684D70 /* LRTSDBVipBookModel.h */,
+				16D9664A1FB5534600684D70 /* LRTSDBVipBookModel.m */,
+			);
+			path = VipBook;
+			sourceTree = "<group>";
+		};
+		16D9664D1FB553A500684D70 /* DBVipBook+Categories */ = {
+			isa = PBXGroup;
+			children = (
+				16D9664E1FB553DE00684D70 /* LRTSDBVipBookModel+InitializationAndConfiguration.h */,
+				16D9664F1FB553DE00684D70 /* LRTSDBVipBookModel+InitializationAndConfiguration.m */,
+			);
+			path = "DBVipBook+Categories";
+			sourceTree = "<group>";
+		};
+		16D966521FB5547400684D70 /* DetailPriceCell */ = {
+			isa = PBXGroup;
+			children = (
+				16D966531FB554CC00684D70 /* LRTSDBDetailPriceCellModel.h */,
+				16D966541FB554CC00684D70 /* LRTSDBDetailPriceCellModel.mm */,
+			);
+			path = DetailPriceCell;
+			sourceTree = "<group>";
+		};
+		16D9665C1FB5556900684D70 /* DBDetailPriceCell+Categories */ = {
+			isa = PBXGroup;
+			children = (
+				16D9665D1FB555A300684D70 /* LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.h */,
+				16D9665E1FB555A300684D70 /* LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.m */,
+			);
+			path = "DBDetailPriceCell+Categories";
 			sourceTree = "<group>";
 		};
 		18F60B061E53466A9A0D27A96A470016 /* Support Files */ = {
@@ -2202,6 +2468,15 @@
 		50AAF0F4845D91220D72EB4162E9DDA8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				16D966521FB5547400684D70 /* DetailPriceCell */,
+				16D966251FB54D2F00684D70 /* Audio */,
+				16D966241FB54CEE00684D70 /* ListenerGroupDynamic */,
+				16D9661F1FB54A0300684D70 /* LGDynamicEntity */,
+				16D966141FB546A300684D70 /* Collection */,
+				16D966011FB5432300684D70 /* PlayHistory */,
+				16D966061FB543A300684D70 /* AudioEntity */,
+				16D965F71FB5419500684D70 /* ProgrammeAudio */,
+				16D965F21FB5403700684D70 /* ChatMessageDetail */,
 				16019EC81FB4348E00264EE0 /* LabelResource */,
 				16019EC11FB433A100264EE0 /* TecentO2Ad */,
 				16019EBC1FB4334A00264EE0 /* DiscoverCategory */,
@@ -2235,6 +2510,14 @@
 		50F58C88E673CB681518E8F60B91EF0E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				16D966341FB54EDC00684D70 /* Fundation+Categories */,
+				16D9665C1FB5556900684D70 /* DBDetailPriceCell+Categories */,
+				16D9664D1FB553A500684D70 /* DBVipBook+Categories */,
+				16D966431FB552B400684D70 /* DBBuyBook+Categories */,
+				16D9662E1FB54E2800684D70 /* DBListenerGroupDynamic+Categories */,
+				16D9661A1FB547DD00684D70 /* DBCollection+Categories */,
+				16D9660F1FB544CB00684D70 /* DBPlayHistory+Categories */,
+				16D965FC1FB5421300684D70 /* DBProgrammeAudio+Categories */,
 				16019EF01FB45EE900264EE0 /* DBLabelResource+Categories */,
 				16019EEB1FB45DA100264EE0 /* DBDiscoveryCategory+Initialization */,
 				16019EE51FB45B5300264EE0 /* DBLaunchAd+Categories */,
@@ -2248,7 +2531,6 @@
 				16B2254D1FB32DBA0036E125 /* DBPlayItem+Category */,
 				16955C0D1FB3030F00585C8F /* DBSection+Initialization */,
 				16955C021FB2F3FB00585C8F /* DBTag+Categories */,
-				16955BF01FB2AE5500585C8F /* NSString+Categories */,
 				1683148D1FB1BDF500462AC3 /* DBListenModel+Section */,
 				16955BE71FB2A66D00585C8F /* DBBookDetailModel+Link */,
 				16955C0C1FB302B800585C8F /* WCTTableCoding */,
@@ -3194,6 +3476,7 @@
 			files = (
 				B6FB21DCD638999FA2A3484D0F8F0EBF /* Kiwi-umbrella.h in Headers */,
 				16955BF31FB2AE8F00585C8F /* NSString+LRTSAddition.h in Headers */,
+				16D965F51FB5409A00684D70 /* LRTSDBChatMessageDetailModel.h in Headers */,
 				8AE140717EC43CB6CD24D3E58D00E3CC /* Kiwi.h in Headers */,
 				4F932F5B556C639DDB006453EF1A65D0 /* KiwiBlockMacros.h in Headers */,
 				14C172F887AAA3A27F274372CB815659 /* KiwiConfiguration.h in Headers */,
@@ -3203,7 +3486,9 @@
 				16019EBF1FB4336600264EE0 /* LRTSDBDiscoverCategoryModel.h in Headers */,
 				93C735DEF23D21771E67B8D0614E1937 /* KWAfterAllNode.h in Headers */,
 				16A3D3A21FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.h in Headers */,
+				16D9660D1FB5442F00684D70 /* LRTSDBPlayHistoryModel.h in Headers */,
 				96EA8C50F8B764CEC8A8963ECD14EBFC /* KWAfterEachNode.h in Headers */,
+				16D966091FB543E000684D70 /* LRTSDBAudioEntityModel.h in Headers */,
 				40C29E91A157EF6D0EE70422CF55D3AE /* KWAny.h in Headers */,
 				16801030729AEF5A88BC5C05C2D85A65 /* KWAsyncVerifier.h in Headers */,
 				BFD1E60DE3BE78A3438C35F0E2A2A778 /* KWBackgroundTask.h in Headers */,
@@ -3211,6 +3496,7 @@
 				16955C251FB3113900585C8F /* LRTSDBPlayItemModel.h in Headers */,
 				F90A8097D3CE59DE0D13C484BA833EE8 /* KWBeEmptyMatcher.h in Headers */,
 				9754C75C21F39ED9880180C5A888588F /* KWBeforeAllNode.h in Headers */,
+				16D966311FB54E4F00684D70 /* LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.h in Headers */,
 				70AF8257EBAD9CA5BB5BC083C17A7B21 /* KWBeforeEachNode.h in Headers */,
 				FB902766CDFF2B5CC4C21971DE885D53 /* KWBeIdenticalToMatcher.h in Headers */,
 				16019E901FB42CE900264EE0 /* LRTSSystemNotice.h in Headers */,
@@ -3221,6 +3507,7 @@
 				4A808EC1C48615D7FA1DD34AF61757ED /* KWBeTrueMatcher.h in Headers */,
 				806AB8895248BCAB889BF4E8EA63FF81 /* KWBeWithinMatcher.h in Headers */,
 				47F98243680759A47F66E898E2B94EAE /* KWBeZeroMatcher.h in Headers */,
+				16D966501FB553DE00684D70 /* LRTSDBVipBookModel+InitializationAndConfiguration.h in Headers */,
 				2D8C34670E26D08F907EB46BB5E27149 /* KWBlock.h in Headers */,
 				1683149C1FB1C1F500462AC3 /* LRTSDBListenerDiscountModel+Configuration.h in Headers */,
 				59C0697E3F9D0C8057FD340EB3F8710E /* KWBlockNode.h in Headers */,
@@ -3228,13 +3515,14 @@
 				16A3D39D1FB408D400B32FF7 /* LRTSDBUserModel+Convention.h in Headers */,
 				A73C37C44D91CB867CFCADBD0F614423 /* KWCallSite.h in Headers */,
 				07B32A126F329CB17E5BF006F79479A4 /* KWCaptureSpy.h in Headers */,
-				16A3D38A1FB4043200B32FF7 /* LRTSDBDownloadModel.h in Headers */,
+				16A3D38A1FB4043200B32FF7 /* LRTSDBDownloadItemModel.h in Headers */,
 				168314811FB1B8CE00462AC3 /* LRTSDBBookDetailModel.h in Headers */,
 				EF00E91C93E9D6C93F7BF7B43951EB50 /* KWChangeMatcher.h in Headers */,
 				16A3D3931FB405F600B32FF7 /* LRTSDBDownloadItemModel+InitializationAndCategories.h in Headers */,
 				16019EE31FB45AEA00264EE0 /* LRTSDBListenCollectionModel+Convention.h in Headers */,
 				9554DEE7D6922CB22CD99230311114BB /* KWConformToProtocolMatcher.h in Headers */,
 				24C599CAD24FADEAD041A86C510A3E6F /* KWContainMatcher.h in Headers */,
+				16D966281FB54D6100684D70 /* LRTSDBAudioModel.h in Headers */,
 				A6DAF6CB9A191442FB2446B9C267428E /* KWContainStringMatcher.h in Headers */,
 				16019EEE1FB45E0500264EE0 /* LRTSDBDiscoverCategoryModel+InitializationAndConfiguration.h in Headers */,
 				10BFAF99C6082BB14A7A4B8D81DA01CD /* KWContextNode.h in Headers */,
@@ -3243,6 +3531,7 @@
 				16955C141FB3044600585C8F /* LRTSDBSectionModel+InitializationAndConfiguration.h in Headers */,
 				16A3D37E1FB3FE6800B32FF7 /* LRTSTagModel+WCTTableCoding.h in Headers */,
 				B8BF4CF4222A4ACAA0D206B4E7E06E8F /* KWDeviceInfo.h in Headers */,
+				16D966461FB552EE00684D70 /* LRTSDBBuyBookModel+InitializationAndConfiguration.h in Headers */,
 				F74FBDC7491459DE3309B6C4DCC5D386 /* KWEqualMatcher.h in Headers */,
 				C7F299326D824C745064842306F960B8 /* KWExample.h in Headers */,
 				DAC698C0A7CD737F76544375B381AB5D /* KWExampleDelegate.h in Headers */,
@@ -3260,13 +3549,18 @@
 				3EA60288F60E8A4331D531B7210C728D /* KWFormatter.h in Headers */,
 				459CBAC0F9654AE4B2F9508F53A76D63 /* KWFutureObject.h in Headers */,
 				8D2D417B70A23B31A52D16456CF99C00 /* KWGenericMatcher.h in Headers */,
+				16D965FF1FB5424700684D70 /* LRTSDBProgrammeAudioModel+InitializationAndConfiguration.h in Headers */,
 				4425BFC8B2CF9AB54234EDA521B9E1E6 /* KWGenericMatchEvaluator.h in Headers */,
 				57DD09D6D2C847A54896BED64D030DB9 /* KWGenericMatchingAdditions.h in Headers */,
+				16D966551FB554CC00684D70 /* LRTSDBDetailPriceCellModel.h in Headers */,
 				D39A72DF27AE7C327520FF20E4D841A6 /* KWHaveMatcher.h in Headers */,
 				16019EE81FB45BF000264EE0 /* LRTSDBLaunchAdModel+Categories.h in Headers */,
+				16D9661D1FB5485400684D70 /* LRTSDBCollectionModel+InitializationAndConfiguration.h in Headers */,
 				657AD60491C07FBEC41B7034D0A0625E /* KWHaveValueMatcher.h in Headers */,
 				DB31C93F13EC1923DBF01F5024EBFFDD /* KWInequalityMatcher.h in Headers */,
 				16955BEE1FB2A84D00585C8F /* LRTSDBBookDetailModel+LinkAndConfiguration.h in Headers */,
+				16D9662C1FB54DD900684D70 /* LRTSDBListenerGroupDynamicModel.h in Headers */,
+				16D9664B1FB5534600684D70 /* LRTSDBVipBookModel.h in Headers */,
 				A5C4AA471824BDA48E13B7F547FEE996 /* KWIntercept.h in Headers */,
 				D9FAF572C013C1F957FB56E2B12BD9CA /* KWInvocationCapturer.h in Headers */,
 				F60E411CD4BDD959ADFFC1434EAC461B /* KWItNode.h in Headers */,
@@ -3280,6 +3574,7 @@
 				16A3D3791FB3FA9300B32FF7 /* LRTSDBSectionModel+WCTTableCoding.h in Headers */,
 				B7F022431FB6693EF5A4C4A3E792803F /* KWMatchers.h in Headers */,
 				2D41DA4103E603B263BD5151B9145AE0 /* KWMatching.h in Headers */,
+				16D966611FB5599300684D70 /* LRTSDBCollectionModel.h in Headers */,
 				D6E2C3C07B9C62974074FCA0A1169A5B /* KWMatchVerifier.h in Headers */,
 				165CF948B4444B2D4A738A644DBD6991 /* KWMessagePattern.h in Headers */,
 				01392827EA1441FA4146AC1422DEB8E5 /* KWMessageSpying.h in Headers */,
@@ -3296,10 +3591,13 @@
 				16019EF31FB45F3000264EE0 /* LRTSDBLabelResourceModel+Configuration.h in Headers */,
 				9E842DCBEE5504B1DC8B8A8A6850B2EB /* KWProbe.h in Headers */,
 				447423B46DF3F053F72934986DAB4599 /* KWProbePoller.h in Headers */,
+				16D966371FB54F2B00684D70 /* NSObject+LRTSUserStateVerify.h in Headers */,
 				FA8820A9B211F92ED2ADF97F503502EB /* KWReceiveMatcher.h in Headers */,
 				EF787460589440DF143C814F84CA64C8 /* KWRegisterMatchersNode.h in Headers */,
 				CDF8DA51DBC9880DEE92C282BD1FC1F2 /* KWRegularExpressionPatternMatcher.h in Headers */,
+				16D966121FB5454100684D70 /* LRTSDBPlayHistoryModel+InitializationAndConfiguration.h in Headers */,
 				16019EC41FB433D800264EE0 /* LRTSDBTecentO2AdModel.h in Headers */,
+				16D966221FB54A5600684D70 /* LRTSLGDynamicEntity.h in Headers */,
 				F3A3E05FDF4E819622F38D7F503ECA88 /* KWReporting.h in Headers */,
 				1683148A1FB1BA5500462AC3 /* LRTSDBListenerPriceModel.h in Headers */,
 				16019EAB1FB4327600264EE0 /* LRTSDBCategoryModel.h in Headers */,
@@ -3309,8 +3607,10 @@
 				16955C0A1FB300F700585C8F /* LRTSDBSectionModel.h in Headers */,
 				16955C1F1FB30DB100585C8F /* LRTSDBAudioSubEntityDelegate.h in Headers */,
 				16A3D3831FB4001800B32FF7 /* LRTSDBPlayItemModel+WCTTableCoding.h in Headers */,
+				16D966401FB5515700684D70 /* LRTSDBBuyBookModel.h in Headers */,
 				16A3D3A71FB40AF900B32FF7 /* LRTSDBCommentNoticeModel+InitializationAndConfiguration.h in Headers */,
 				168314981FB1BFE500462AC3 /* LRTSDBListenerDiscountModel.h in Headers */,
+				16D9665F1FB555A300684D70 /* LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.h in Headers */,
 				16019EB51FB432F500264EE0 /* LRTSDBListenCollectionModel.h in Headers */,
 				4242422F8C700157752250ACA7965188 /* KWSharedExample.h in Headers */,
 				7C2C56BA1AEC2476C914F30AAA538B26 /* KWSharedExampleRegistry.h in Headers */,
@@ -3343,7 +3643,9 @@
 				24B11EAB7378969F3C517AAF990C15C7 /* NSObject+KiwiSpyAdditions.h in Headers */,
 				669BA4A9C8132D790275A585702FE1AF /* NSObject+KiwiStubAdditions.h in Headers */,
 				9F1A7CD0601EFEFC5FC8FD3FEC90EF09 /* NSObject+KiwiVerifierAdditions.h in Headers */,
+				16D9663B1FB54FD700684D70 /* NSObject+LRTSVipAndBoutique.h in Headers */,
 				A3C5A375C8C196E0A12CF0F2FC3DB25F /* NSProxy+KiwiVerifierAdditions.h in Headers */,
+				16D965FA1FB541D600684D70 /* LRTSDBProgrammeAudioModel.h in Headers */,
 				16955C191FB30B5500585C8F /* LRTSDBPlayableDelegate.h in Headers */,
 				651E711E9EB3BE180F64C29861522900 /* NSValue+KiwiAdditions.h in Headers */,
 			);
@@ -3506,14 +3808,17 @@
 				DE51443F84DFFFB7633D85C257097937 /* KWBeBetweenMatcher.m in Sources */,
 				C892FBAA9C8A82D4E28C3A10D819DB75 /* KWBeEmptyMatcher.m in Sources */,
 				16019ED11FB4363000264EE0 /* LRTSDBEntityModel+InitializationAndConfiguration.m in Sources */,
-				16A3D3A31FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.m in Sources */,
+				16A3D3A31FB4095B00B32FF7 /* LRTSDBCommentNoticeModel.mm in Sources */,
 				16019EEF1FB45E0500264EE0 /* LRTSDBDiscoverCategoryModel+InitializationAndConfiguration.m in Sources */,
 				76F14C992CFFF06401BB053612016947 /* KWBeforeAllNode.m in Sources */,
+				16D966321FB54E4F00684D70 /* LRTSDBListenerGroupDynamicModel+InitializationAndConfiguration.m in Sources */,
 				05FE0F2F0AA21B529737BA004D7053B6 /* KWBeforeEachNode.m in Sources */,
 				D4D25E3DC1D8B567BF9B1B9A5567BF29 /* KWBeIdenticalToMatcher.m in Sources */,
 				DB71648982519BCB86F8474C6BDF33C7 /* KWBeKindOfClassMatcher.m in Sources */,
 				16019EDA1FB4586900264EE0 /* LRTSDBProgrammeModel+InitializationAndConfiguration.m in Sources */,
 				9D741A6F6E8DA3AA4261B211078E7FDB /* KWBeMemberOfClassMatcher.m in Sources */,
+				16D966291FB54D6100684D70 /* LRTSDBAudioModel.mm in Sources */,
+				16D966001FB5424700684D70 /* LRTSDBProgrammeAudioModel+InitializationAndConfiguration.m in Sources */,
 				16955C151FB3044600585C8F /* LRTSDBSectionModel+InitializationAndConfiguration.m in Sources */,
 				168314991FB1BFE500462AC3 /* LRTSDBListenerDiscountModel.mm in Sources */,
 				A24B41AAC19D22642512A8AB5179D7A7 /* KWBeSubclassOfClassMatcher.m in Sources */,
@@ -3523,14 +3828,17 @@
 				587AF4F6DECAAE07F71883216262A188 /* KWBeWithinMatcher.m in Sources */,
 				1449518041503E7ACDB77022A68261D2 /* KWBeZeroMatcher.m in Sources */,
 				1888DD05B2E579178C86ADC6A8505902 /* KWBlock.m in Sources */,
+				16D9662D1FB54DD900684D70 /* LRTSDBListenerGroupDynamicModel.mm in Sources */,
 				0C9EB2C4578DB163B5261FDA4EA13F2B /* KWBlockNode.m in Sources */,
 				16019EE91FB45BF000264EE0 /* LRTSDBLaunchAdModel+Categories.m in Sources */,
 				99A0F20E65D7E9B41484A538F72C7F36 /* KWBlockRaiseMatcher.m in Sources */,
 				54BECFDC58AD3FC45F083276D07A7596 /* KWCallSite.m in Sources */,
-				16019E861FB42B0700264EE0 /* LRTSCommentModel.m in Sources */,
+				16019E861FB42B0700264EE0 /* LRTSCommentModel.mm in Sources */,
+				16D9664C1FB5534600684D70 /* LRTSDBVipBookModel.m in Sources */,
 				E6E957356F911A54887DC4C15BF4287D /* KWCaptureSpy.m in Sources */,
 				9B5F50B22572D79B691CF3A8A29199A9 /* KWChangeMatcher.m in Sources */,
-				16019EA71FB4321B00264EE0 /* LRTSDBAnnoucerModel.m in Sources */,
+				16019EA71FB4321B00264EE0 /* LRTSDBAnnoucerModel.mm in Sources */,
+				16D9660E1FB5442F00684D70 /* LRTSDBPlayHistoryModel.mm in Sources */,
 				16A3D3941FB405F600B32FF7 /* LRTSDBDownloadItemModel+InitializationAndCategories.m in Sources */,
 				0629F1455B078FB79932D188A5F5586B /* KWConformToProtocolMatcher.m in Sources */,
 				8D6F104C797EFD6DA6F73DC633757654 /* KWContainMatcher.m in Sources */,
@@ -3538,67 +3846,78 @@
 				E3ADFD68A6A2756F44F838DD12C95BD1 /* KWContextNode.m in Sources */,
 				52FF6D9BE2D5B3604472B9D1005BC6D6 /* KWDeviceInfo.m in Sources */,
 				6CF934D1B305BDF50780187B752C167C /* KWEqualMatcher.m in Sources */,
-				16019EB61FB432F500264EE0 /* LRTSDBListenCollectionModel.m in Sources */,
+				16019EB61FB432F500264EE0 /* LRTSDBListenCollectionModel.mm in Sources */,
 				8C0C52BB13AD64014555B9C49855D2A8 /* KWExample.m in Sources */,
 				15479D8CAD501697A69117A1772C1EF5 /* KWExampleSuite.m in Sources */,
 				16019EE41FB45AEA00264EE0 /* LRTSDBListenCollectionModel+Convention.m in Sources */,
 				94B88AE0EBBB8D8D34B7E10BBA535AEF /* KWExampleSuiteBuilder.m in Sources */,
+				16D965FB1FB541D600684D70 /* LRTSDBProgrammeAudioModel.mm in Sources */,
 				2FE8C88733D882FAAB455CEC6D893B4F /* KWExistVerifier.m in Sources */,
 				168314951FB1BE9900462AC3 /* LRTSDBListenerBuyModel+SectionIndex.m in Sources */,
 				16019EF41FB45F3000264EE0 /* LRTSDBLabelResourceModel+Configuration.m in Sources */,
 				A5B563D9DDEF5338E9353A4F3C701F12 /* KWFailure.m in Sources */,
 				16955BEF1FB2A84D00585C8F /* LRTSDBBookDetailModel+LinkAndConfiguration.m in Sources */,
-				16019E981FB4308300264EE0 /* LRTSDBEntityModel.m in Sources */,
+				16019E981FB4308300264EE0 /* LRTSDBEntityModel.mm in Sources */,
+				16D966191FB5476600684D70 /* LRTSDBCollectionModel.mm in Sources */,
 				AFD2D4089547F692DE623D62EEC5F307 /* KWFormatter.m in Sources */,
 				16955BF91FB2E75000585C8F /* LRTSGTMBase64.m in Sources */,
 				0E13B04C70C4C2895C4DD9C7ACE957F3 /* KWFutureObject.m in Sources */,
+				16D966601FB555A300684D70 /* LRTSDBDetailPriceCellModel+InitizializationAndConfiguration.m in Sources */,
 				16A3D3A81FB40AF900B32FF7 /* LRTSDBCommentNoticeModel+InitializationAndConfiguration.m in Sources */,
 				16A3D37F1FB3FE6800B32FF7 /* LRTSTagModel+WCTTableCoding.m in Sources */,
 				6B71E732BCD10095E842764A1058D8C3 /* KWGenericMatcher.m in Sources */,
+				16D9660A1FB543E000684D70 /* LRTSDBAudioEntityModel.mm in Sources */,
 				168314A11FB1C63A00462AC3 /* LRTSDBListenerPriceModel+PriceOperations.m in Sources */,
 				FCC998854ADBB58DCFF82E9A7DBE761D /* KWGenericMatchEvaluator.m in Sources */,
 				D7B3AEE6204645A834A2D8241E6D2052 /* KWGenericMatchingAdditions.m in Sources */,
 				1908725F0DB3D1342D45098615927308 /* KWHaveMatcher.m in Sources */,
 				9399EBDF1CE5B61DFA55BB8E6C56683E /* KWHaveValueMatcher.m in Sources */,
 				F29A54D7517A487F22D0656553E50654 /* KWInequalityMatcher.m in Sources */,
+				16D9661E1FB5485400684D70 /* LRTSDBCollectionModel+InitializationAndConfiguration.m in Sources */,
 				16955BE61FB2A00600585C8F /* LRTSDBListenerPriceModel+WCTTableCoding.m in Sources */,
 				16019E8C1FB42BE900264EE0 /* LRTSCommentModel+InitializationAndConfiguration.m in Sources */,
 				FC7BBF409B992C1E6F991C87525CB45A /* KWIntercept.m in Sources */,
 				51685EE3CA379CA71AF72AA8332A45AF /* KWInvocationCapturer.m in Sources */,
+				16D966381FB54F2B00684D70 /* NSObject+LRTSUserStateVerify.m in Sources */,
 				168314871FB1BA2000462AC3 /* LRTSDBListenerBuyModel.mm in Sources */,
 				F22651AF9DA46409C693F034D705E698 /* KWItNode.m in Sources */,
 				C412C17E999025542E8EA3990BF58E3D /* KWLetNode.m in Sources */,
 				4F7C808A15E665124D98DFC80DD1AA61 /* KWMatcher.m in Sources */,
 				72F50571F30989328F61464449213EDF /* KWMatcherFactory.m in Sources */,
+				16D966411FB5515700684D70 /* LRTSDBBuyBookModel.m in Sources */,
 				94ABAA8761CF91C2892566315C8F989D /* KWMatchers.m in Sources */,
+				16D966561FB554CC00684D70 /* LRTSDBDetailPriceCellModel.mm in Sources */,
 				83B1E2D9C70F3856A1166ED3913448AA /* KWMatchVerifier.m in Sources */,
 				16955BE21FB29F2E00585C8F /* LRTSDBListenerBuyModel+WCTTableCoding.m in Sources */,
-				16019ECC1FB434B700264EE0 /* LRTSDBLabelResourceModel.m in Sources */,
+				16019ECC1FB434B700264EE0 /* LRTSDBLabelResourceModel.mm in Sources */,
 				DE12A0A46797BF8060E09703E8507AEE /* KWMessagePattern.m in Sources */,
+				16D966471FB552EE00684D70 /* LRTSDBBuyBookModel+InitializationAndConfiguration.m in Sources */,
 				AB2697B643429809F1A63CCEE35E7938 /* KWMessageTracker.m in Sources */,
 				6588243C3226D4E28F1CEEB7F68E12AC /* KWMock.m in Sources */,
 				23B0255C045844F5E1FFC96FBCA16AA2 /* KWNilMatcher.m in Sources */,
 				16955C261FB3113900585C8F /* LRTSDBPlayItemModel.mm in Sources */,
-				16019EA21FB431E200264EE0 /* LRTSDBTopicModel.m in Sources */,
+				16019EA21FB431E200264EE0 /* LRTSDBTopicModel.mm in Sources */,
 				17902CEFE48E6D6CBFBFC675B6B2EC4B /* KWNotificationMatcher.m in Sources */,
 				D59E7DF486DAB09783B4FDA50AE968B8 /* KWNull.m in Sources */,
-				16A3D3991FB407FB00B32FF7 /* LRTSDBUserModel.m in Sources */,
+				16A3D3991FB407FB00B32FF7 /* LRTSDBUserModel.mm in Sources */,
 				16F4313F6EF208AEA0351691EB1C20EA /* KWObjCUtilities.m in Sources */,
-				16019EBB1FB4332300264EE0 /* LRTSDBLaunchAdModel.m in Sources */,
+				16019EBB1FB4332300264EE0 /* LRTSDBLaunchAdModel.mm in Sources */,
+				16D965F61FB5409A00684D70 /* LRTSDBChatMessageDetailModel.mm in Sources */,
 				79F448AE353804CD1C66B9ADBB8688B3 /* KWPendingNode.m in Sources */,
 				1683148B1FB1BA5500462AC3 /* LRTSDBListenerPriceModel.mm in Sources */,
 				76FB291ABA51660B09168EFF34227056 /* KWProbePoller.m in Sources */,
 				FAE64C1F78866AB31F3E3337060FF9B5 /* KWReceiveMatcher.m in Sources */,
 				CA97C5CC52FEA7C777CAEE7D07C92CE2 /* KWRegisterMatchersNode.m in Sources */,
-				16A3D38B1FB4043200B32FF7 /* LRTSDBDownloadModel.m in Sources */,
+				16A3D38B1FB4043200B32FF7 /* LRTSDBDownloadItemModel.mm in Sources */,
 				BC8CCE24E583DFF4F7922EE69C6EFDC2 /* KWRegularExpressionPatternMatcher.m in Sources */,
-				16019E911FB42CE900264EE0 /* LRTSSystemNotice.m in Sources */,
+				16019E911FB42CE900264EE0 /* LRTSSystemNotice.mm in Sources */,
 				39171E035448177C4C6CE5A9DCEE10A7 /* KWRespondToSelectorMatcher.m in Sources */,
 				16955BDE1FB29E6400585C8F /* LRTSDBListenerDiscountModel+WCTTableCoding.m in Sources */,
 				16019EDF1FB459B500264EE0 /* LRTSDBAnnoucerModel+InitializationAndConfiguration.m in Sources */,
 				16019EC01FB4336600264EE0 /* LRTSDBDiscoverCategoryModel.m in Sources */,
 				F6EBF111EBCACF88F4AFCF42FD905813 /* KWSharedExample.m in Sources */,
 				16A3D37A1FB3FA9300B32FF7 /* LRTSDBSectionModel+WCTTableCoding.m in Sources */,
+				16D966511FB553DE00684D70 /* LRTSDBVipBookModel+InitializationAndConfiguration.m in Sources */,
 				462CD4A943E501CB9269720E8D645AF6 /* KWSharedExampleRegistry.m in Sources */,
 				159CCFEFDEDBD49CA1C65B5A0FE9FAB2 /* KWSpec.m in Sources */,
 				0BF24BCAE0DE2F8182C659AA71C3429D /* KWStringContainsMatcher.m in Sources */,
@@ -3609,20 +3928,21 @@
 				EBC07284CCF4DE10B8D23C89B102C282 /* KWSuiteConfigurationBase.m in Sources */,
 				16A3D36D1FB3F70200B32FF7 /* LRTSDBBookDetailModel+WCTTableCoding.m in Sources */,
 				1683149D1FB1C1F500462AC3 /* LRTSDBListenerDiscountModel+Configuration.m in Sources */,
-				16019EB11FB432B700264EE0 /* LRTSDBCustomCategoryModel.m in Sources */,
+				16019EB11FB432B700264EE0 /* LRTSDBCustomCategoryModel.mm in Sources */,
 				168314821FB1B8CE00462AC3 /* LRTSDBBookDetailModel.mm in Sources */,
 				4A81E6CDBC85B95C30C161709A26A432 /* KWSymbolicator.m in Sources */,
-				16019E9D1FB4318100264EE0 /* LRTSDBProgrammeModel.m in Sources */,
+				16019E9D1FB4318100264EE0 /* LRTSDBProgrammeModel.mm in Sources */,
 				5BED57C87680E229586A0A3D380CF1FD /* KWUserDefinedMatcher.m in Sources */,
-				16019EAC1FB4327600264EE0 /* LRTSDBCategoryModel.m in Sources */,
+				16019EAC1FB4327600264EE0 /* LRTSDBCategoryModel.mm in Sources */,
 				A4BD1BA7B7E105CB4887C102FD4C3EC8 /* KWValue.m in Sources */,
 				16955C011FB2F38100585C8F /* LRTSTagModel.mm in Sources */,
 				66255FC1F1EC359EEA38824A3CDE0DD9 /* KWWorkarounds.m in Sources */,
+				16D966131FB5454100684D70 /* LRTSDBPlayHistoryModel+InitializationAndConfiguration.m in Sources */,
 				7A3B05D2C3CD94AF966486267BA74C4F /* NSInvocation+KiwiAdditions.m in Sources */,
 				DB721EE87F7F1053599A1F2A0750851B /* NSInvocation+OCMAdditions.m in Sources */,
 				2643AA16C7326FD180E02ADCE038E679 /* NSMethodSignature+KiwiAdditions.m in Sources */,
 				16B225511FB32E7A0036E125 /* LRTSDBPlayItemModel+Configurations.m in Sources */,
-				16019EC51FB433D800264EE0 /* LRTSDBTecentO2AdModel.m in Sources */,
+				16019EC51FB433D800264EE0 /* LRTSDBTecentO2AdModel.mm in Sources */,
 				B33CE7AF9482AD2861361C4B4D13BC96 /* NSNumber+KiwiAdditions.m in Sources */,
 				AA5D9CC9D6CDA309F795E264285180FF /* NSObject+KiwiMockAdditions.m in Sources */,
 				55150399E37D42EFD16CF1F831F78761 /* NSObject+KiwiSpyAdditions.m in Sources */,
@@ -3631,6 +3951,8 @@
 				1F5DB6110C251C3078156A5819C02760 /* NSProxy+KiwiVerifierAdditions.m in Sources */,
 				16955BF41FB2AE8F00585C8F /* NSString+LRTSAddition.m in Sources */,
 				F959FDB1ACA6861154381B7D58411530 /* NSValue+KiwiAdditions.m in Sources */,
+				16D9663C1FB54FD700684D70 /* NSObject+LRTSVipAndBoutique.m in Sources */,
+				16D966231FB54A5600684D70 /* LRTSLGDynamicEntity.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

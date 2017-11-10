@@ -44,4 +44,34 @@ typedef NS_ENUM(NSInteger, CommentType) {
 
 @property (nonatomic, assign) NSInteger      userState;
 
+
+#pragma -mark WCDB 数据绑定
+
+WCDB_PROPERTY(msgId)
+WCDB_PROPERTY(userId)
+WCDB_PROPERTY(userNickName)
+WCDB_PROPERTY(userCover)
+
+WCDB_PROPERTY(createTime)
+WCDB_PROPERTY(content)
+
+WCDB_PROPERTY(entityId)
+WCDB_PROPERTY(entityName)
+WCDB_PROPERTY(entityCover)
+WCDB_PROPERTY(entityType)
+WCDB_PROPERTY(entityAnthor)
+WCDB_PROPERTY(entityAnnouncer)
+
+WCDB_PROPERTY(commentId)
+WCDB_PROPERTY(commentType)
+
+WCDB_PROPERTY(cEntityType)
+WCDB_PROPERTY(cEntityId)
+WCDB_PROPERTY(entitySource)
+WCDB_PROPERTY(pContent)
+
+WCDB_PROPERTY(extInfo)
+WCDB_PROPERTY(readState)
+WCDB_PROPERTY(userState)
+
 @end

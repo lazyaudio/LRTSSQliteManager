@@ -69,4 +69,55 @@ typedef NS_ENUM(NSInteger, SourceType) {
 
 @property (nonatomic,assign) NSInteger typeId; // 分类id
 
+
+#pragma mark - WVDB 数据绑定
+
+WCDB_PROPERTY(pId)
+WCDB_PROPERTY(name)
+WCDB_PROPERTY(desc)
+WCDB_PROPERTY(author)
+WCDB_PROPERTY(announcerIds)
+
+WCDB_PROPERTY(announcer)
+WCDB_PROPERTY(sourceType)
+WCDB_PROPERTY(playCount)
+WCDB_PROPERTY(cover)
+WCDB_PROPERTY(sections)
+WCDB_PROPERTY(totalLength)
+WCDB_PROPERTY(updateTime)
+WCDB_PROPERTY(category)
+WCDB_PROPERTY(commentMean)
+WCDB_PROPERTY(commentCount)
+WCDB_PROPERTY(insertDBTime)
+WCDB_PROPERTY(nickName)
+WCDB_PROPERTY(insertType)
+WCDB_PROPERTY(userOrder)
+WCDB_PROPERTY(like)
+WCDB_PROPERTY(state)
+
+WCDB_PROPERTY(sort)
+WCDB_PROPERTY(extraInfos)
+WCDB_PROPERTY(payType)
+//
+WCDB_PROPERTY(strategy)
+WCDB_PROPERTY(freeEndTime)
+WCDB_PROPERTY(overEndTime)
+WCDB_PROPERTY(pType)
+WCDB_PROPERTY(pFlag)
+WCDB_PROPERTY(downloadedAudioCount)
+
+WCDB_PROPERTY(programmeVersion)
+WCDB_PROPERTY(proReward)
+WCDB_PROPERTY(sysLabels)
+WCDB_PROPERTY(tags)
+WCDB_PROPERTY(priceModel)
+WCDB_PROPERTY(cantDown)
+WCDB_PROPERTY(createTime)
+WCDB_PROPERTY(latestFollowLabel)
+WCDB_PROPERTY(latestFollowLabelTime)
+WCDB_PROPERTY(updateState)
+WCDB_PROPERTY(typeId)
+
+
+
 @end

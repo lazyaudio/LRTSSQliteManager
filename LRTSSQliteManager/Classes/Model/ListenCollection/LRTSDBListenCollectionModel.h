@@ -45,6 +45,28 @@ typedef NS_ENUM(NSInteger, LMListenCollectionType) {
 
 @property (nonatomic, strong) NSArray<LMSubEntity *> *subEntitys;
 
+
+WCDB_PROPERTY(folderId)
+WCDB_PROPERTY(collectFolderId)
+WCDB_PROPERTY(collectionName)
+WCDB_PROPERTY(collectionCover)
+WCDB_PROPERTY(itemsCount)
+WCDB_PROPERTY(collectedCount)
+WCDB_PROPERTY(updateTime)
+WCDB_PROPERTY(collectFolderTime)
+WCDB_PROPERTY(entityUpdateTime)
+WCDB_PROPERTY(commentCount)
+WCDB_PROPERTY(desc)
+WCDB_PROPERTY(colectionType)
+WCDB_PROPERTY(updateCount)
+WCDB_PROPERTY(lc_state)
+WCDB_PROPERTY(authorId)
+WCDB_PROPERTY(backFolderType)
+WCDB_PROPERTY(coverValid)
+WCDB_PROPERTY(referId)
+WCDB_PROPERTY(nickName)
+WCDB_PROPERTY(subEntitys)
+
 @end
 
 @interface LMSubEntity : NSObject
@@ -59,5 +81,16 @@ typedef NS_ENUM(NSInteger, LMListenCollectionType) {
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)subEntityWithDict:(NSDictionary *)dict;
 + (NSArray<LMSubEntity *> *)subEntitysWithDicts:(NSArray *)dicts;
+
+
+#pragma mark - WVDB 数据绑定
+
+WCDB_PROPERTY(cover)
+WCDB_PROPERTY(entityId)
+WCDB_PROPERTY(entityType)
+WCDB_PROPERTY(name)
+WCDB_PROPERTY(strategy)
+WCDB_PROPERTY(tag)
+
 
 @end

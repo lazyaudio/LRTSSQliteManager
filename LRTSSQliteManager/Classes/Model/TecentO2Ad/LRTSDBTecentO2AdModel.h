@@ -25,4 +25,22 @@
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 
+
+#pragma mark - WVDB 数据绑定
+
+WCDB_PROPERTY(width)
+WCDB_PROPERTY(height)
+WCDB_PROPERTY(scheduleId)
+WCDB_PROPERTY(gameId)
+WCDB_PROPERTY(locationId)
+WCDB_PROPERTY(channelId)
+WCDB_PROPERTY(desc)
+WCDB_PROPERTY(appName)
+WCDB_PROPERTY(sign)
+WCDB_PROPERTY(sourceUrl)
+WCDB_PROPERTY(pvUrl)
+WCDB_PROPERTY(cvUrl)
+WCDB_PROPERTY(downloadUrl)
+
+
 @end

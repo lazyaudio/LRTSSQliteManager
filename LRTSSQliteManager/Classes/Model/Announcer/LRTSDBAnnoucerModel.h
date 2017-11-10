@@ -67,4 +67,31 @@ typedef NS_ENUM(NSInteger, LMAnnouncerType) {
 //新用户
 @property (nonatomic, assign, getter=isMemberNew) BOOL memberNew;
 
+
+#pragma mark - WVDB 数据绑定
+
+WCDB_PROPERTY(aId)
+WCDB_PROPERTY(account)
+WCDB_PROPERTY(nickName)
+WCDB_PROPERTY(cover)
+WCDB_PROPERTY(isFollow)
+WCDB_PROPERTY(desc)
+WCDB_PROPERTY(sign)
+
+WCDB_PROPERTY(userState)
+WCDB_PROPERTY(isFollowLogin)
+WCDB_PROPERTY(aReferId)
+WCDB_PROPERTY(aType)
+WCDB_PROPERTY(recentProgramme)
+WCDB_PROPERTY(recentListen)
+WCDB_PROPERTY(programmeCount)
+WCDB_PROPERTY(bookCount)
+WCDB_PROPERTY(fansCount)
+WCDB_PROPERTY(followsCount)
+WCDB_PROPERTY(announcerDescription)
+WCDB_PROPERTY(personalSign)
+WCDB_PROPERTY(aCover)
+WCDB_PROPERTY(memberNew)
+
+
 @end

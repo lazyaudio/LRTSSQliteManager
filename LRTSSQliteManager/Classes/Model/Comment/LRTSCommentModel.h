@@ -37,4 +37,26 @@ typedef NS_ENUM(NSUInteger, LMCommentType) {
 @property (nonatomic, assign) NSInteger     isLike;          // 是否赞
 @property (nonatomic, assign) NSInteger     likeCounts;      // 赞的数目
 
+#pragma mark - WCDB 数据访问
+
+WCDB_PROPERTY(cId)
+WCDB_PROPERTY(commentType)
+WCDB_PROPERTY(cContent)
+WCDB_PROPERTY(cStarCount)
+WCDB_PROPERTY(cNickName)
+WCDB_PROPERTY(cLastModify)
+WCDB_PROPERTY(cCover)
+
+WCDB_PROPERTY(userState)
+
+WCDB_PROPERTY(isReg)
+
+WCDB_PROPERTY(cUserId)
+WCDB_PROPERTY(replyUserId)
+WCDB_PROPERTY(replyNickname)
+
+WCDB_PROPERTY(isLike)
+WCDB_PROPERTY(likeCounts)
+
+
 @end
