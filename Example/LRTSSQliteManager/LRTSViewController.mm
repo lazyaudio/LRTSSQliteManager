@@ -7,15 +7,23 @@
 //
 
 #import "LRTSViewController.h"
-#import "BookDetail.h"
+
 #import "BookDetail+WCTTableCoding.h"
 #import "LRTSOperation.h"
-
 #import "LRTSDBBookModel.h"
+
+#import "BookDetail.h"
+#import "Book.h"
+
+
+
+#define WCDB_PATH @"lrts2.db"
 
 @interface LRTSViewController (){
     Class _cls;
 }
+
+@property (nonatomic, strong) WCTDatabase *wcdb;
 
 @end
 
@@ -24,14 +32,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    [self initSQLWithWCDB];
+    [self initSQLWithWCDB];
     
-    LRTSDBBookModel *bookModel = [[LRTSDBBookModel alloc] init];
-    bookModel.bId = 1;
-//    bookModel.cover = @"www.baidu.com";
-    LRTSOperation *operation = [[LRTSOperation alloc] initWithModel:bookModel];
-    BOOL ret = [bookModel saved];
-    NSArray *array = nil;
+    
+    [self checkTransaction];
+    [self updateTable];
+//    LRTSDBBookModel *bookModel = [[LRTSDBBookModel alloc] init];
+//    bookModel.bId = 1;
+////    bookModel.cover = @"www.baidu.com";
+//    LRTSOperation *operation = [[LRTSOperation alloc] initWithModel:bookModel];
+//    BOOL ret = [bookModel saved];
+//    NSArray *array = nil;
 //    [bookModel saveModels:array];
     
 }
@@ -54,18 +65,8 @@
 //    NSString *className = NSStringFromClass(BookDetail.class);
 //    NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:className];
 //
-    LRTSDBBookModel *bookModel = [[LRTSDBBookModel alloc] init];
-    bookModel.bId = 1;
-    bookModel.commentCount = 3;
-    NSString *className = NSStringFromClass(LRTSDBBookModel.class);
-    NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:className];
     
-    NSString *tableName = className;
-    WCTDatabase *wcdb = [[WCTDatabase alloc] initWithPath:path];
-    
-    _cls = LRTSDBBookModel.class;
-    
-    BOOL ret = [wcdb createTableAndIndexesOfName:tableName withClass:_cls];
+//    [wcdb updateAllRowsInTable: onProperty: withValue:];
 
     
 //    LRTSOperation *operation = [[LRTSOperation alloc] initWithModel:bookDetail];
@@ -74,8 +75,83 @@
 //    BOOL ret = [operation insertObject:bookDetail into:@"name"];
 
 //    NSArray *book = [operation getAllObjectsOfClass:BookDetail.class forTable:@"name"];
+}
+
+#pragma mark - Init wcdb
+
+- (BOOL)initWCDBWithPath:(NSString *)path {
+    NSString *path1 = [NSTemporaryDirectory() stringByAppendingPathComponent:WCDB_PATH];
+    _wcdb = [[WCTDatabase alloc] initWithPath:path1];
+    if (_wcdb) {
+        return YES;
+    }
+    return NO;
+}
+
+#pragma mark - Create DBdatabase
+
+- (void)createDBdatabase {
+    LRTSDBBookModel *bookModel = [[LRTSDBBookModel alloc] init];
+    bookModel.bId = 1;
+    bookModel.commentCount = 3;
+    
+    NSString *className = NSStringFromClass(LRTSDBBookModel.class);
+    NSString *tableName = className;
+    
+    BOOL isSucceedWCDB = [self initWCDBWithPath:nil];
+    
+    _cls = LRTSDBBookModel.class;
+    
+    BOOL ret = [_wcdb createTableAndIndexesOfName:tableName withClass:_cls];
+}
+
+#pragma -mark 事物的连表操作
+
+- (BOOL)checkTransaction {
+    
+    [self initWCDBWithPath:nil];
+    
+    NSString *tableName = @"BOOKDETAIL";
+    [_wcdb createTableAndIndexesOfName:tableName withClass:BookDetail.class];
+    
+    NSMutableArray *objects = [[NSMutableArray alloc] init];
+    
+    BookDetail *bookDetail = [[BookDetail alloc] init];
+    bookDetail.bookName = @"鲁滨孙漂流记";
+    bookDetail.pubilsher = @"Jack";
+    bookDetail.bookID = 100;
+    [objects addObject:bookDetail];
+    
+    BookDetail *bookDetail1 = [[BookDetail alloc] init];
+    
+    bookDetail1.bookName = @"CEO 是怎么炼成的";
+    bookDetail1.pubilsher = @"Jack Bai";
+    bookDetail1.bookID = 101;
+    [objects addObject:bookDetail1];
+    
+    BOOL ret = [_wcdb insertObjects:objects into:tableName];
+    return ret;
+    
+//    [_wcdb update];
+}
+
+#pragma mark - 事物的连表更新
+
+- (BOOL)updateTable {
+    NSString *tableName = @"BOOK";
+    
+    Book *book = [[Book alloc] init];
+    book.bookID = 100;
+    book.autor = @"Jack";
+    book.totalPage = 10000;
+    
+    [_wcdb createTableAndIndexesOfName:tableName withClass:Book.class];
+    
+    BOOL isSucceed = [_wcdb insertObject:book into:tableName];
     
     
+    
+    return isSucceed;
 }
 
 //LMBaseModel:NSObject
@@ -170,12 +246,16 @@
 
 // （4）具体 model 的具体操作
 //
+
 // （5）数据的事务同意过程的处理
 //
+
 // （6）数据库安全的处理反注入
 //
+
 // （7）数据库加密
 //
+
 //
 //
 //

@@ -17,9 +17,15 @@
 @implementation BookDetail
 
 WCDB_IMPLEMENTATION(BookDetail)
+
+
 WCDB_SYNTHESIZE(BookDetail, bookID)
 WCDB_SYNTHESIZE(BookDetail, bookName)
 WCDB_SYNTHESIZE(BookDetail, upLoad)
 WCDB_SYNTHESIZE(BookDetail, pubilsher)
+
+WCDB_UNIQUE(BookDetail, bookID)
+
+
 
 @end

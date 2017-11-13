@@ -13,6 +13,7 @@
 		1683146D1FB143B500462AC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		1683146E1FB143B500462AC3 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		1683146F1FB145DD00462AC3 /* BookDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69D1FA9C6890020D43F /* BookDetail.mm */; };
+		168BA7381FB9936000B18E5D /* Book.mm in Sources */ = {isa = PBXBuildFile; fileRef = 168BA7371FB9936000B18E5D /* Book.mm */; };
 		34589DCF78D381F9675122BE /* Pods_LRTSSQliteManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A00FBAA6C25EEEE6FB812F /* Pods_LRTSSQliteManager_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		027FB7856D09E42E78AF2047 /* Pods-LRTSSQliteManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRTSSQliteManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LRTSSQliteManager_Example/Pods-LRTSSQliteManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		08FCADABC0B3EB1CC07F5F28 /* Pods-LRTSSQliteManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRTSSQliteManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LRTSSQliteManager_Tests/Pods-LRTSSQliteManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		168BA7361FB9936000B18E5D /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		168BA7371FB9936000B18E5D /* Book.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Book.mm; sourceTree = "<group>"; };
 		1696D69C1FA9C6890020D43F /* BookDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetail.h; sourceTree = "<group>"; };
 		1696D69D1FA9C6890020D43F /* BookDetail.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BookDetail.mm; sourceTree = "<group>"; };
 		1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "BookDetail+WCTTableCoding.mm"; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				1696D69D1FA9C6890020D43F /* BookDetail.mm */,
 				1696D69F1FA9C6890020D43F /* BookDetail+WCTTableCoding.h */,
 				1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */,
+				168BA7361FB9936000B18E5D /* Book.h */,
+				168BA7371FB9936000B18E5D /* Book.mm */,
 			);
 			name = Book;
 			sourceTree = "<group>";
@@ -422,6 +427,7 @@
 				1683146B1FB143B500462AC3 /* LRTSAppDelegate.m in Sources */,
 				1683146C1FB143B500462AC3 /* LRTSViewController.mm in Sources */,
 				1683146D1FB143B500462AC3 /* main.m in Sources */,
+				168BA7381FB9936000B18E5D /* Book.mm in Sources */,
 				1683146E1FB143B500462AC3 /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

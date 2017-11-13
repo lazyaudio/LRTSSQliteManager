@@ -1972,6 +1972,25 @@
 			path = "DBListenModel+Section";
 			sourceTree = "<group>";
 		};
+		168BA7331FB92AA900B18E5D /* DBModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB76677F9744815C3CEF7B25C5969FC4 /* LRTSDBModel.h */,
+				49597717F8E1ABAFE9B2C0EB818E0D8B /* LRTSDBModel.mm */,
+			);
+			name = DBModel;
+			path = BookModel/DBModel;
+			sourceTree = "<group>";
+		};
+		168BA7341FB92ADE00B18E5D /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				14A2A5B9068BC75F2D2839B847D5CE88 /* LRTSModel.h */,
+				73D82586FFB7D195939606F32F4AF2F9 /* LRTSModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
 		16955BDA1FB29E1400585C8F /* DBListenModel+WCTTabeCoding */ = {
 			isa = PBXGroup;
 			children = (
@@ -2074,6 +2093,8 @@
 		16955C1A1FB30BA100585C8F /* Utilts */ = {
 			isa = PBXGroup;
 			children = (
+				011AB9D57154A57653C1F1CE70192D14 /* LRTSPurchaseTool.h */,
+				2C65BFC0496336AB32193A3E4A5F5A42 /* LRTSPurchaseTool.m */,
 				16019EC61FB433FB00264EE0 /* DBPublicType */,
 				16019E921FB42F3700264EE0 /* DBMessageState */,
 				16A3D3851FB4015F00B32FF7 /* DBDownloadState */,
@@ -2497,12 +2518,8 @@
 				16955BFD1FB2F35600585C8F /* TagModel */,
 				168314831FB1B97D00462AC3 /* ListenModel */,
 				1683147E1FB1B87000462AC3 /* BookModel */,
-				FB76677F9744815C3CEF7B25C5969FC4 /* LRTSDBModel.h */,
-				49597717F8E1ABAFE9B2C0EB818E0D8B /* LRTSDBModel.mm */,
-				14A2A5B9068BC75F2D2839B847D5CE88 /* LRTSModel.h */,
-				73D82586FFB7D195939606F32F4AF2F9 /* LRTSModel.m */,
-				011AB9D57154A57653C1F1CE70192D14 /* LRTSPurchaseTool.h */,
-				2C65BFC0496336AB32193A3E4A5F5A42 /* LRTSPurchaseTool.m */,
+				168BA7331FB92AA900B18E5D /* DBModel */,
+				168BA7341FB92ADE00B18E5D /* BaseModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
