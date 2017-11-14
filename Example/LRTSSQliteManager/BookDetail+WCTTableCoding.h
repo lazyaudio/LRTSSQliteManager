@@ -15,7 +15,7 @@
 //@property(retain) NSString *pubilsher;
 
 @interface BookDetail (WCTTableCoding)<WCTTableCoding>
-
+ 
 WCDB_PROPERTY(bookID)
 WCDB_PROPERTY(bookName)
 WCDB_PROPERTY(upLoad)

@@ -336,6 +336,60 @@
     return mutiSelect.allMultiObjects;
 }
 
+#pragma mark - Transaction
+
+#pragma mark -Base Transaction
+
+- (BOOL)beginTransaction {
+    return [_wcdb beginTransaction];
+}
+
+- (BOOL)commitTransaction {
+    return [_wcdb commitTransaction];
+}
+
+- (BOOL)rollbackTransaction {
+    return [_wcdb rollbackTransaction];
+}
+
+#pragma mark -Concrete Transaction
+
+- (BOOL)insertOrReplaceObjectsInTransaction:(NSArray<LRTSObject *> *_Nullable)objects into:(NSString *_Nonnull)tableName {
+    if (tableName.length ==0 || objects.count == 0) return NO;
+    BOOL isResult = YES;
+    isResult = [_wcdb commitTransaction];
+    
+    for (LRTSObject *object in objects) {
+        isResult = [_wcdb insertOrReplaceObject:object into:tableName];
+    }
+    
+    if (isResult) {
+        isResult = [_wcdb commitTransaction];
+    } else {
+        isResult = [_wcdb rollbackTransaction];
+    }
+    
+    return isResult;
+}
+
+//- (BOOL)deleteObjectsInTransaction:(NSArray<LRTSObject *> *_Nullable)objects into:(NSString *_Nonnull)tableName {
+//    if (tableName.length ==0 || objects.count == 0) return NO;
+//    BOOL isResult = YES;
+//    isResult = [_wcdb commitTransaction];
+//
+//    for (LRTSObject *object in objects) {
+//        isResult = [_wcdb del];
+//    }
+//
+//    if (isResult) {
+//        isResult = [_wcdb commitTransaction];
+//    } else {
+//        isResult = [_wcdb rollbackTransaction];
+//    }
+//
+//    return isResult;
+//}
+
 #pragma  mark - setter & getter
 
 - (NSString *)databaseName {

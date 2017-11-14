@@ -35,7 +35,7 @@
     [self initSQLWithWCDB];
     
     
-    [self checkTransaction];
+//    [self checkTransaction];
     [self updateTable];
 //    LRTSDBBookModel *bookModel = [[LRTSDBBookModel alloc] init];
 //    bookModel.bId = 1;
@@ -138,20 +138,62 @@
 #pragma mark - 事物的连表更新
 
 - (BOOL)updateTable {
+    
+    BOOL isSucceed = YES;
+    
+    isSucceed = [self initWCDBWithPath:@""];
+    
     NSString *tableName = @"BOOK";
     
     Book *book = [[Book alloc] init];
-    book.bookID = 100;
-    book.autor = @"Jack";
-    book.totalPage = 10000;
+    book.bookID = 100111;
+    book.autor = @"Jack Bai";
+    book.totalPage = 110001111;
+    book.version = 1.2;
     
-    [_wcdb createTableAndIndexesOfName:tableName withClass:Book.class];
+//    NSData *dataCipher = [@"dataCipher" dataUsingEncoding:NSASCIIStringEncoding];
+//    [_wcdb setCipherKey:dataCipher];
+//    BOOL isSupportedCipher = [_wcdb backupWithCipher:dataCipher];
     
-    BOOL isSucceed = [_wcdb insertObject:book into:tableName];
+    isSucceed = [_wcdb createTableAndIndexesOfName:tableName withClass:Book.class];
     
+    isSucceed = [_wcdb insertOrReplaceObject:book into:tableName];
     
+//    BOOL isSucceed = [_wcdb insertObject:book into:tableName];
+//    [_wcdb insertOrReplaceObjects:<#(NSArray<WCTObject *> *)#> into:<#(NSString *)#>];
+//    [_wcdb];
+    
+//    NSArray *books = [_wcdb getAllObjectsOfClass:Book.class fromTable:tableName];
+    
+//在数据修改过程中可以采用相关事务机制来实现统一修改数据的处理，实现操作的序列化
     
     return isSucceed;
+}
+
+#pragma mark - Cipher 数据加密
+
+- (void)checkCipher {
+    BOOL isSucceed = YES;
+    
+    isSucceed = [self initWCDBWithPath:@""];
+    
+    NSString *tableName = @"BOOK";
+    
+    Book *book = [[Book alloc] init];
+    book.bookID = 100111;
+    book.autor = @"Jack Bai";
+    book.totalPage = 110001111;
+    book.version = 1.2;
+    
+    NSData *dataCipher = [@"dataCipher" dataUsingEncoding:NSASCIIStringEncoding];
+    [_wcdb setCipherKey:dataCipher];
+    BOOL isSupportedCipher = [_wcdb backupWithCipher:dataCipher];
+    
+    isSucceed = [_wcdb createTableAndIndexesOfName:tableName withClass:Book.class];
+    
+    isSucceed = [_wcdb insertOrReplaceObject:book into:tableName];
+    
+    NSArray *books = [_wcdb getAllObjectsOfClass:Book.class fromTable:tableName];
 }
 
 //LMBaseModel:NSObject
@@ -256,10 +298,6 @@
 // （7）数据库加密
 //
 
-//
-//
-//
-//
 //
 //
 

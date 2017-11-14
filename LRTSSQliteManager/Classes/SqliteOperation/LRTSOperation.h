@@ -194,4 +194,21 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
 - (NSArray * _Nullable)selectMutableObjectsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames where:(const LRTSCondition &)condition;
 
 
+#pragma mark - Transaction
+
+#pragma mark -Base Transaction
+
+- (BOOL)beginTransaction;
+
+- (BOOL)commitTransaction;
+
+- (BOOL)rollbackTransaction;
+
+
+#pragma mark -Concrete Transaction
+
+- (BOOL)insertOrReplaceObjectsInTransaction:(NSArray<LRTSObject *> *_Nullable)objects into:(NSString *_Nonnull)tableName;
+
+
+
 @end

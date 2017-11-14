@@ -18,10 +18,9 @@
 @property (nonatomic, assign) NSUInteger totalPage;
 @property (nonatomic, strong) BookDetail *bookeDetail;
 
+//就算不声明 WCDB_PROPERTY 也会对 Model 表进行相关的映射实现表格的创建
 WCDB_PROPERTY(autor)
 WCDB_PROPERTY(version)
 WCDB_PROPERTY(totalPage)
-
-
 
 @end
