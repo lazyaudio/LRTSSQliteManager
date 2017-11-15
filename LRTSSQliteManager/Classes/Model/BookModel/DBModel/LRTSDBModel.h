@@ -52,7 +52,7 @@ typedef  NS_ENUM(NSInteger, StrategyType) {
 };
 
 
-@interface LRTSDBModel : LRTSModel <LRTSDBOperationDelegate>
+@interface LRTSDBModel : LRTSModel <LRTSDBOperationDelegate, WCTTableCoding>
 
 
 @end

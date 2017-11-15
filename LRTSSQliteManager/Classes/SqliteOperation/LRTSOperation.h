@@ -42,6 +42,11 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
 //增、删、改、查
 
 #pragma mark - Operations For SQLlite
+
+#pragma mark - Add Column
+
+
+
 #pragma mark - Insert
 
 - (BOOL)insertObject:(LRTSObject *_Nullable)object into:(NSString * _Nonnull)tableName;
@@ -84,7 +89,7 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
  @param orderList 删除表格的相关顺序
  @return 返回表格操作结果
  */
-- (BOOL)deleteObjectsFormTable:(NSString *_Nonnull)tableName where:(const LRTSCondition &)condition orderBy:(const LRTSOrderByList &)orderList;
+//- (BOOL)deleteObjectsFormTable:(NSString *_Nonnull)tableName where:(const LRTSCondition &)condition orderBy:(const LRTSOrderByList &)orderList;
 
 #pragma mark - Update
 
@@ -98,6 +103,17 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
  @return 数据更新后返回结果
  */
 - (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName withValue:(const LRTSValue &)value onObject:(LRTSObject * _Nullable)object;
+
+- (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName withValue:(const LRTSValue &)value onObject:(LRTSObject * _Nullable)object where:(const LRTSCondition &)condition;
+
+- (BOOL)updateAllRowsInTable:(NSString *_Nonnull)tableName
+                onProperties:(const LRTSValueList &)valueList
+                     withRow:(LRTSOneRow *_Nonnull)row;
+
+- (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
+             onProperties:(const LRTSValueList &)valueList
+                  withRow:(LRTSOneRow *_Nonnull)row
+                    where:(const LRTSCondition &)condition;
 
 #pragma mark - Get
 #pragma mark - Get Object

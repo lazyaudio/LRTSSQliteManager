@@ -146,17 +146,22 @@
     NSString *tableName = @"BOOK";
     
     Book *book = [[Book alloc] init];
-    book.bookID = 100111;
+    
+    book.bookID = 1;
     book.autor = @"Jack Bai";
-    book.totalPage = 110001111;
+//    book.totalPage = 110;
     book.version = 1.2;
     
 //    NSData *dataCipher = [@"dataCipher" dataUsingEncoding:NSASCIIStringEncoding];
 //    [_wcdb setCipherKey:dataCipher];
 //    BOOL isSupportedCipher = [_wcdb backupWithCipher:dataCipher];
     
-    isSucceed = [_wcdb createTableAndIndexesOfName:tableName withClass:Book.class];
+//    [_wcdb createTableOfName:tableName withColumnDefList:{
+//        Book.version
+//    }];
     
+    isSucceed = [_wcdb createTableAndIndexesOfName:tableName withClass:Book.class];
+
     isSucceed = [_wcdb insertOrReplaceObject:book into:tableName];
     
 //    BOOL isSucceed = [_wcdb insertObject:book into:tableName];
@@ -180,9 +185,9 @@
     NSString *tableName = @"BOOK";
     
     Book *book = [[Book alloc] init];
-    book.bookID = 100111;
+    book.bookID = 1;
     book.autor = @"Jack Bai";
-    book.totalPage = 110001111;
+//    book.totalPage = 110001111;
     book.version = 1.2;
     
     NSData *dataCipher = [@"dataCipher" dataUsingEncoding:NSASCIIStringEncoding];

@@ -25,6 +25,10 @@ typedef WCTPropertyList LRTSValueList;
 
 typedef WCTResultList LRTSResultList;
 
+#pragma mark - WCTOneRow
+
+typedef WCTOneRow LRTSOneRow;
+
 //@interface LRTSDeclare : NSObject
 //
 //@end

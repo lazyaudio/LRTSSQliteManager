@@ -846,10 +846,7 @@
                 onProperties:(const WCTPropertyList &)propertyList
                      withRow:(WCTOneRow *)row;
 
-- (BOOL)updateRowsInTable:(NSString *)tableName
-             onProperties:(const WCTPropertyList &)propertyList
-                  withRow:(WCTOneRow *)row
-                    where:(const WCTCondition &)condition;
+ 
 
 - (BOOL)updateRowsInTable:(NSString *)tableName
              onProperties:(const WCTPropertyList &)propertyList

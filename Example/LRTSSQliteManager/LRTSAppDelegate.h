@@ -6,7 +6,8 @@
 //  Copyright (c) 2017 boilwater. All rights reserved.
 //
 
-@import UIKit;
+//@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface LRTSAppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -7,12 +7,19 @@
 //
 
 #import "LRTSAppDelegate.h"
+#import "LRTSTestViewController.h"
 
 @implementation LRTSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    LRTSTestViewController *viewController = [[LRTSTestViewController alloc] init];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = viewController;
+    [self.window makeKeyWindow];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

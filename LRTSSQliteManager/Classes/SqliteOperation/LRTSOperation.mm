@@ -43,7 +43,9 @@
     _pathCreatedSQLDatabase = path;
     NSString *tableName = _mNameTable;
     
-    _wcdb = [[WCTDatabase alloc] initWithPath:_pathCreatedSQLDatabase];
+    _wcdb = [[WCTDatabase alloc] initWithPath:[NSString stringWithFormat:@"%@.db", _pathCreatedSQLDatabase]];
+    
+    NSLog(@"SQLite path : %@", _pathCreatedSQLDatabase);
     if(!_wcdb) return nil;
     
     BOOL ret = [_wcdb createTableAndIndexesOfName:tableName withClass:_cls];
@@ -156,12 +158,13 @@
                                    where:condition];
 }
 
+/*
 - (BOOL)deleteObjectsFormTable:(NSString *)tableName where:(const LRTSCondition &)condition orderBy:(const LRTSOrderByList &)orderList {
     [self checkOperationTableName:tableName];
     return [_wcdb deleteObjectsFromTable:_mNameTable
                                    where:condition
                                  orderBy:orderList];
-}
+}*/
 
 #pragma mark - 改
 
@@ -179,6 +182,37 @@
     return [_wcdb updateAllRowsInTable:_mNameTable
                             onProperty:value
                             withObject:object];
+}
+
+- (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
+                withValue:(const LRTSValue &)value
+                 onObject:(LRTSObject * _Nullable)object
+                    where:(const LRTSCondition &)condition {
+    [self checkOperationTableName:tableName];
+    return [_wcdb updateRowsInTable:tableName
+                         onProperty:value
+                          withValue:object
+                              where:condition];
+}
+
+- (BOOL)updateAllRowsInTable:(NSString *_Nonnull)tableName
+                onProperties:(const LRTSValueList &)valueList
+                     withRow:(LRTSOneRow *_Nonnull)row {
+    [self checkOperationTableName:tableName];
+    return [_wcdb updateAllRowsInTable:tableName
+                          onProperties:valueList
+                               withRow:row];
+}
+
+- (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
+             onProperties:(const LRTSValueList &)valueList
+                  withRow:(LRTSOneRow *_Nonnull)row
+                    where:(const LRTSCondition &)condition {
+    [self checkOperationTableName:tableName];
+    return [_wcdb updateRowsInTable:tableName
+                       onProperties:valueList
+                            withRow:row
+                              where:condition];
 }
 
 #pragma  mark - 查
