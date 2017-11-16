@@ -5,8 +5,9 @@
 //  Created by JackJin on 2017/11/10.
 //
 
-#import <LRTSSQliteManager/LRTSSQliteManager.h>
+
 #import "LRTSDBModel.h"
+#import "LRTSLGDynamicEntity.h"
 
 typedef enum : NSUInteger {
     LMDynamicUserRoleTypeNone          = 0,//无角色
@@ -126,7 +127,7 @@ typedef enum : NSUInteger {
 /**
  *  动态实体
  */
-@property (nonatomic, strong) LMLGDynamicEntity * entity;
+@property (nonatomic, strong) LRTSLGDynamicEntity * entity;
 
 /**
  *  是否是充值会员
@@ -206,11 +207,13 @@ WCDB_PROPERTY(showRepublish)
 WCDB_PROPERTY(attributies)
 WCDB_PROPERTY(attributiesForDetail)
 WCDB_PROPERTY(haveLink)
-WCDB_PROPERTY(linkStrRange)
+
+//WCDB_PROPERTY(linkStrRange)
+
 WCDB_PROPERTY(linkAddress)
-//
 WCDB_PROPERTY(imageFilePath)
 WCDB_PROPERTY(resourceId)
 WCDB_PROPERTY(referId)
+
 
 @end

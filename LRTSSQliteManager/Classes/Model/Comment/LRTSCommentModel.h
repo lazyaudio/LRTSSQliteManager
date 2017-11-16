@@ -17,7 +17,9 @@ typedef NS_ENUM(NSUInteger, LMCommentType) {
 
 @interface LRTSCommentModel : LRTSDBModel
 
-@interface LMComment : LMBaseModel
+//@end
+//
+//@interface LMComment : LMBaseModel
 
 @property (nonatomic       ) NSInteger      cId;
 @property (nonatomic,assign) NSInteger      commentType;

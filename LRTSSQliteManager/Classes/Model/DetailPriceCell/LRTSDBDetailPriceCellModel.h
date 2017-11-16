@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, LMDetailPriceModelType) {
 
 @property (nonatomic, strong) NSArray *tags;    //标签
 
-@property (nonatomic, strong) LMListenPriceModel *priceModel;   //价格模型
+@property (nonatomic, strong) LRTSDBListenerPriceModel *priceModel;   //价格模型
 
 @property (nonatomic,assign) LMDetailPriceModelType detailType; // 详情类型
 

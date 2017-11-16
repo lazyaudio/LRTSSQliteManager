@@ -121,11 +121,19 @@
     LRTSDBBookModel *bookModel2 = [[LRTSDBBookModel alloc] init];
     bookModel2.bId = 1;
     bookModel2.name = @"《全力以赴》";
-    bookModel2.author = @"礼拜 yi";
+    bookModel2.author = @"星期五";
     
-    _isResult = [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookModel.class) withValue:LRTSDBBookModel.author onObject:bookModel2];
+//    _isResult = [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookModel.class) withValue:LRTSDBBookModel.author onObject:bookModel2];
     
+//    _isResult = [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookModel.class)
+//                                     onValues:{LRTSDBBookModel.bId, LRTSDBBookModel.author}
+//                                   withObject:bookModel2
+//                                        where:LRTSDBBookModel.bId == 100];
     
+    [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookModel.class)
+                        withValue:LRTSDBBookModel.author
+                         onObject:bookModel2
+                            where:LRTSDBBookModel.bId == 100];
 }
 
 #pragma mark -Select

@@ -9,6 +9,7 @@
 #import "LRTSDBListenerDiscountModel.h"
 #import "LRTSDBListenerDiscountModel+Configuration.h"
 #import "LRTSDBListenerBuyModel.h"
+#import "LRTSPurchaseTool.h"
 
 @implementation LRTSDBListenerPriceModel (PriceOperations)
 
@@ -20,12 +21,12 @@
         self.entityType = entityType;
         self.sectionCount = [[dict objectForKey:@"sections"] integerValue];
         self.estimatedSectionCount = [[dict objectForKey:@"estimatedSections"] integerValue];
-        self.payType = [[dict objectForKey:@"priceType"] integerValue];
+        self.payType = (LMPriceModelPayType)[[dict objectForKey:@"priceType"] integerValue];
         self.price = [[dict objectForKey:@"price"] integerValue];
         self.discountPrice = [[dict objectForKey:@"discountPrice"] integerValue];
         self.deadlineTime = [[dict objectForKey:@"deadlineTime"] doubleValue];
         self.canUseTicket = [[dict objectForKey:@"canUseTicket"] integerValue];
-        self.choosePriceType = [[dict objectForKey:@"choosePrice"] integerValue];
+        self.choosePriceType = (LMChoosePriceType)[[dict objectForKey:@"choosePrice"] integerValue];
         
         NSString *frees = [dict objectForKey:@"frees"];
         if (![frees isKindOfClass:[NSNull class]] && frees.length) {
@@ -41,7 +42,7 @@
         if (discountDicts.count) {
             self.discounts = [LRTSDBListenerDiscountModel discountModelsWithDicts:discountDicts];
             NSData *priceData = [NSJSONSerialization dataWithJSONObject:@{@"discounts":discountDicts} options:NSJSONWritingPrettyPrinted error:NULL];
-            _discountStr = [[NSString alloc] initWithData:priceData
+            self.discountStr = [[NSString alloc] initWithData:priceData
                                                  encoding:NSUTF8StringEncoding];
         }
     }
@@ -83,7 +84,7 @@
 
 - (NSArray *)priceModelAllPayIndexs{
     if (self.entityType == EntityTypeBook) {
-        return [LMPurchaseTool unintersectionIndexs:self.freeSectionIndexs
+        return [LRTSPurchaseTool unintersectionIndexs:self.freeSectionIndexs
                                          IndexCount:self.sectionCount];
     } else if (self.entityType == EntityTypeAlbum) {
         NSMutableArray *mArray = [NSMutableArray arrayWithArray:self.unbuySectionIndexs];
@@ -97,35 +98,35 @@
 #pragma mark - setter & getter
 //读取数据库使用
 - (void)setDiscountStr:(NSString *)discountStr{
-    _discountStr = discountStr;
+    self.discountStr = discountStr;
     if (!self.discounts.count && discountStr.length) {
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[discountStr dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:NULL];
-        self.discounts = [LMListenDiscountModel discountModelsWithDicts:[dict objectForKey:@"discounts"]];
+        self.discounts = [LRTSDBListenerDiscountModel discountModelsWithDicts:[dict objectForKey:@"discounts"]];
     }
 }
 
 
 - (void)setFreeSectionsStr:(NSString *)freeSectionsStr{
-    if (![_freeSectionsStr isEqualToString:freeSectionsStr]) {
-        _freeSectionsStr = freeSectionsStr;
+    if (![self.freeSectionsStr isEqualToString:freeSectionsStr]) {
+        self.freeSectionsStr = freeSectionsStr;
         
         if (self.entityType == EntityTypeBook) {
-            if ([_freeSectionsStr isEqualToString:@"all"]) {
-                self.freeSectionIndexs = [LMPurchaseTool unintersectionIndexs:nil
+            if ([self.freeSectionsStr isEqualToString:@"all"]) {
+                self.freeSectionIndexs = [LRTSPurchaseTool unintersectionIndexs:nil
                                                                    IndexCount:self.sectionCount];
             } else {
-                self.freeSectionIndexs = [LMPurchaseTool indexsWithSectionStr:freeSectionsStr];
+                self.freeSectionIndexs = [LRTSPurchaseTool indexsWithSectionStr:freeSectionsStr];
             }
         } else {
-            if (![_freeSectionsStr isEqualToString:@"all"]
-                && _freeSectionsStr.length > 0) {
+            if (![self.freeSectionsStr isEqualToString:@"all"]
+                && self.freeSectionsStr.length > 0) {
                 //                NSArray *strArray = [_freeSectionsStr componentsSeparatedByString:@","];
                 //                NSMutableArray *numArray = [NSMutableArray array];
                 //                for (NSString *str in strArray) {
                 //                    [numArray addObject:@(str.longLongValue)];
                 //                }
                 //                self.freeSectionIndexs = numArray.count?[numArray copy]:nil;
-                self.freeSectionIndexs = [LMPurchaseTool indexsWithSectionStr:_freeSectionsStr];
+                self.freeSectionIndexs = [LRTSPurchaseTool indexsWithSectionStr:self.freeSectionsStr];
             }
         }
         
@@ -133,26 +134,26 @@
 }
 
 - (void)setBuySectionsStr:(NSString *)buySectionsStr{
-    if (![_buySectionsStr isEqualToString:buySectionsStr]) {
-        _buySectionsStr = buySectionsStr;
+    if (![self.buySectionsStr isEqualToString:buySectionsStr]) {
+        self.buySectionsStr = buySectionsStr;
         
         if (self.entityType == EntityTypeBook) {
-            if ([_buySectionsStr isEqualToString:@"all"]) {
-                self.buySectionIndexs = [LMPurchaseTool unintersectionIndexs:nil
+            if ([self.buySectionsStr isEqualToString:@"all"]) {
+                self.buySectionIndexs = [LRTSPurchaseTool unintersectionIndexs:nil
                                                                   IndexCount:self.sectionCount];
             } else {
-                self.buySectionIndexs = [LMPurchaseTool indexsWithSectionStr:buySectionsStr];
+                self.buySectionIndexs = [LRTSPurchaseTool indexsWithSectionStr:buySectionsStr];
             }
         } else {
-            if (![_buySectionsStr isEqualToString:@"all"]
-                && _buySectionsStr.length > 0) {
+            if (![self.buySectionsStr isEqualToString:@"all"]
+                && self.buySectionsStr.length > 0) {
                 //                NSArray *strArray = [_buySectionsStr componentsSeparatedByString:@","];
                 //                NSMutableArray *numArray = [NSMutableArray array];
                 //                for (NSString *str in strArray) {
                 //                    [numArray addObject:@(str.longLongValue)];
                 //                }
                 //                self.buySectionIndexs = numArray.count?[numArray copy]:nil;
-                self.buySectionIndexs = [LMPurchaseTool indexsWithSectionStr:_buySectionsStr];
+                self.buySectionIndexs = [LRTSPurchaseTool indexsWithSectionStr:self.buySectionsStr];
             }
         }
         
@@ -161,10 +162,10 @@
 
 - (void)setAllSectionsStr:(NSString *)allSectionsStr{
     if (self.entityType == EntityTypeAlbum) {
-        if (![_allSectionsStr isEqualToString:allSectionsStr]) {
-            _allSectionsStr = allSectionsStr;
+        if (![self.allSectionsStr isEqualToString:allSectionsStr]) {
+            self.allSectionsStr = allSectionsStr;
             
-            NSArray *strArray = [_allSectionsStr componentsSeparatedByString:@","];
+            NSArray *strArray = [self.allSectionsStr componentsSeparatedByString:@","];
             NSMutableArray *numArray = [NSMutableArray array];
             for (NSString *str in strArray) {
                 [numArray addObject:@(str.longLongValue)];
@@ -184,9 +185,9 @@
 
 - (void)caculateUnbuyIndexs{
     if (self.entityType == EntityTypeBook) {
-        NSArray *tempIndexs = [LMPurchaseTool combineIndexs:self.freeSectionIndexs
+        NSArray *tempIndexs = [LRTSPurchaseTool combineIndexs:self.freeSectionIndexs
                                                  withIndexs:self.buySectionIndexs];
-        self.unbuySectionIndexs = [LMPurchaseTool unintersectionIndexs:tempIndexs
+        self.unbuySectionIndexs = [LRTSPurchaseTool unintersectionIndexs:tempIndexs
                                                             IndexCount:self.sectionCount];
     }
 }
@@ -196,11 +197,11 @@
         || buyModel.buyType == LMPriceModelPayTypeSubscribe) {
         self.buySectionsStr = @"all";
         self.unbuySectionIndexs = nil;
-        self.buySectionIndexs = [LMPurchaseTool unintersectionIndexs:self.unbuySectionIndexs
+        self.buySectionIndexs = [LRTSPurchaseTool unintersectionIndexs:self.unbuySectionIndexs
                                                           IndexCount:self.sectionCount];
     } else {
-        NSArray *newBuyIndexs = [LMPurchaseTool combineIndexs:self.buySectionIndexs withIndexs:buyModel.sectionIndexs];
-        self.buySectionsStr = [LMPurchaseTool sectionStrWithIndexs:newBuyIndexs];
+        NSArray *newBuyIndexs = [LRTSPurchaseTool combineIndexs:self.buySectionIndexs withIndexs:buyModel.sectionIndexs];
+        self.buySectionsStr = [LRTSPurchaseTool sectionStrWithIndexs:newBuyIndexs];
         self.buySectionIndexs = newBuyIndexs;
         [self caculateUnbuyIndexs];
     }
@@ -242,8 +243,8 @@
 
 - (LRTSDBListenerDiscountModel *)vipDiscount {
     LRTSDBListenerDiscountModel *discountModel = nil;
-    for (LMListenDiscountModel *discount in self.discounts) {
-        if (discount.discountType == LMListenDiscountTypeVIP){
+    for (LRTSDBListenerDiscountModel *discount in self.discounts) {
+        if (discount.discountType == LRTSDBListenerDiscountTypeVIP){
             discountModel = discount;
             break;
         }

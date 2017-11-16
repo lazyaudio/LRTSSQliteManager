@@ -6,6 +6,8 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
+#import "LRTSDBModel.h"
+#import "LRTSDBPublicTypeDefine.h"
 
 @interface LRTSDBLabelResourceModel : LRTSDBModel
 

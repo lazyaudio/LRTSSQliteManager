@@ -80,28 +80,33 @@
                           into:_mNameTable];
 }
 
-- (BOOL)insertObjects:(NSArray<LRTSObject *> *)objects into:(NSString *)tableName {
+- (BOOL)insertObjects:(NSArray<LRTSObject *> *)objects
+                 into:(NSString *)tableName {
     if(objects == nil) return NO;
     [self checkOperationTableName:tableName];
     return [_wcdb insertObjects:objects
                            into:_mNameTable];
 }
 
-- (BOOL)insertOrReplaceObject:(LRTSObject *)object into:(NSString *)tableName {
+- (BOOL)insertOrReplaceObject:(LRTSObject *)object
+                         into:(NSString *)tableName {
     if(object == nil) return NO;
     [self checkOperationTableName:tableName];
     return [_wcdb insertOrReplaceObject:object
                                    into:_mNameTable];
 }
 
-- (BOOL)insertOrReplaceObjects:(NSArray<LRTSObject *> *)objects into:(NSString *)tableName {
+- (BOOL)insertOrReplaceObjects:(NSArray<LRTSObject *> *)objects
+                          into:(NSString *)tableName {
     if(objects == nil) return NO;
     [self checkOperationTableName:tableName];
     return [_wcdb insertOrReplaceObjects:objects
                                     into:_mNameTable];
 }
 
-- (BOOL)insertObject:(LRTSObject *)object onValues:(const LRTSValueList &)valueList into:(NSString *)tableName {
+- (BOOL)insertObject:(LRTSObject *)object
+            onValues:(const LRTSValueList &)valueList
+                into:(NSString *)tableName {
     if(object == nil) return NO;
     [self checkOperationTableName:tableName];
     return [_wcdb insertObject:object
@@ -109,7 +114,9 @@
                           into:_mNameTable];
 }
 
-- (BOOL)insertObjects:(NSArray<LRTSObject *> *)objects onValues:(const LRTSValueList &)valueList into:(NSString *)tableName {
+- (BOOL)insertObjects:(NSArray<LRTSObject *> *)objects
+             onValues:(const LRTSValueList &)valueList
+                 into:(NSString *)tableName {
     if(objects == nil) return NO;
     [self checkOperationTableName:tableName];
     return [_wcdb insertObjects:objects
@@ -117,7 +124,9 @@
                            into:_mNameTable];
 }
 
-- (BOOL)insertOrReplaceObject:(LRTSObject *)object onValues:(const LRTSValueList &)valueList into:(NSString *)tableName {
+- (BOOL)insertOrReplaceObject:(LRTSObject *)object
+                     onValues:(const LRTSValueList &)valueList
+                         into:(NSString *)tableName {
     if(object == nil) return NO;
     [self checkOperationTableName:tableName];
     return [_wcdb insertOrReplaceObject:object
@@ -125,7 +134,9 @@
                                    into:_mNameTable];
 }
 
-- (BOOL)insertOrReplaceObjects:(NSArray<LRTSObject *> *)objects onValues:(const LRTSValueList &)valueList into:(NSString *)tableName {
+- (BOOL)insertOrReplaceObjects:(NSArray<LRTSObject *> *)objects
+                      onValues:(const LRTSValueList &)valueList
+                          into:(NSString *)tableName {
     if(objects == nil) return NO;
     [self checkOperationTableName:tableName];
     return [_wcdb insertOrReplaceObjects:objects
@@ -145,12 +156,14 @@
                                   where:condition];
 }
 
-- (BOOL)deleteObjectsFromTable:(NSString *)tableName where:(const LRTSCondition &)condition {
+- (BOOL)deleteObjectsFromTable:(NSString *)tableName
+                         where:(const LRTSCondition &)condition {
     [self checkOperationTableName:tableName];
     return [_wcdb deleteObjectsFromTable:_mNameTable where:condition];
 }
 
-- (BOOL)deleteObjectsFormTable:(NSString *)tableName where:(const LRTSCondition &)condition {
+- (BOOL)deleteObjectsFormTable:(NSString *)tableName
+                         where:(const LRTSCondition &)condition {
     if (![_mNameTable isEqualToString: tableName]) {
         _mNameTable = tableName;
     }
@@ -168,13 +181,16 @@
 
 #pragma mark - 改
 
-- (BOOL)updateRowsWithValue:(const LRTSValue &)value onObject:(LRTSObject *)object {
+- (BOOL)updateRowsWithValue:(const LRTSValue &)value
+                   onObject:(LRTSObject *)object {
     return [self updateRowsInTable:_mNameTable
                          withValue:value
                           onObject:object];
 }
 
-- (BOOL)updateRowsInTable:(NSString *)tableName withValue:(const LRTSValue &)value onObject:(LRTSObject *)object{
+- (BOOL)updateRowsInTable:(NSString *)tableName
+                withValue:(const LRTSValue &)value
+                 onObject:(LRTSObject *)object{
     if ([object isEqual:nil]) {
         return YES;
     }
@@ -196,7 +212,7 @@
 }
 
 - (BOOL)updateAllRowsInTable:(NSString *_Nonnull)tableName
-                onProperties:(const LRTSValueList &)valueList
+                     onValue:(const LRTSValueList &)valueList
                      withRow:(LRTSOneRow *_Nonnull)row {
     [self checkOperationTableName:tableName];
     return [_wcdb updateAllRowsInTable:tableName
@@ -205,13 +221,13 @@
 }
 
 - (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
-             onProperties:(const LRTSValueList &)valueList
-                  withRow:(LRTSOneRow *_Nonnull)row
+                  onValue:(const LRTSValueList &)valueList
+               withObject:(WCTObject *_Nonnull)object
                     where:(const LRTSCondition &)condition {
     [self checkOperationTableName:tableName];
     return [_wcdb updateRowsInTable:tableName
                        onProperties:valueList
-                            withRow:row
+                         withObject:object
                               where:condition];
 }
 

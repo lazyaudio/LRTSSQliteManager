@@ -22,7 +22,9 @@
 @property (assign, nonatomic) NSInteger      dHasLyric;             // 下载内容是否有文本
 @property (strong, nonatomic) NSString       *dSourceUrl;           // 下载资源的url
 @property (assign, nonatomic) EntityType     entityType;            // 实体类型
-@property (nonatomic, strong) id             belong;                // 属于的实体(书籍或者节目)
+
+//TODO 注册掉
+//@property (nonatomic, strong) id             belong;                // 属于的实体(书籍或者节目)
 @property (nonatomic, assign) NSTimeInterval insertDBTime;          // 插入数据库的时间
 @property (nonatomic, strong) NSString       *targetPath;           // 文件的本地下载目标路径
 
@@ -45,7 +47,9 @@ WCDB_PROPERTY(dSection)
 WCDB_PROPERTY(dHasLyric)
 WCDB_PROPERTY(dSourceUrl)
 WCDB_PROPERTY(entityType)
-WCDB_PROPERTY(belong)
+
+
+//WCDB_PROPERTY(belong)
 WCDB_PROPERTY(insertDBTime)
 WCDB_PROPERTY(targetPath)
 WCDB_PROPERTY(entityName)

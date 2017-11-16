@@ -66,9 +66,9 @@
 
 @end
 
-@interface LMRadioCategory (EntityConvert)
+@interface LRTSRadioCategory (EntityConvert)
 
-+ (LMRadioCategory *)convertToRadioCategoryFromEntity:(LRTSDBEntityModel *)entity;
++ (LRTSRadioCategory *)convertToRadioCategoryFromEntity:(LRTSDBEntityModel *)entity;
 
 @end
 

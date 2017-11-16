@@ -7,8 +7,9 @@
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
+#import "LRTSDBAudioTrackDelegate.h"
 
-@interface LRTSDBPlayItemModel : LRTSDBModel
+@interface LRTSDBPlayItemModel : LRTSDBModel <LRTSDBAudioTrackDelegate>
 
 @property (nonatomic, assign) NSInteger      pId;
 @property (nonatomic, copy  ) NSString       *pName;

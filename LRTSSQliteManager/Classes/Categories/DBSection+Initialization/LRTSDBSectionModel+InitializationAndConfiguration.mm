@@ -6,6 +6,8 @@
 //
 
 #import "LRTSDBSectionModel+InitializationAndConfiguration.h"
+#import "LRTSDBPlayItemModel.h"
+#import "LRTSDBDownloadItemModel.h"
 
 @implementation LRTSDBSectionModel (InitializationAndConfiguration)
 
@@ -44,7 +46,7 @@
 
 - (BOOL)isEqual:(id)object
 {
-    if (![object isKindOfClass:[LRTSDBSectionModel class]) {
+    if (![object isKindOfClass:[LRTSDBSectionModel class]]) {
         return NO;
     }
     LRTSDBSectionModel *section = (LRTSDBSectionModel *)object;
@@ -64,9 +66,9 @@
 
 #pragma mark - Playable Protocol Methods
           
-- (LMPlayItem *)convertToPlayItem
+- (LRTSDBPlayItemModel *)convertToPlayItem
 {
-    LMPlayItem *playItem = [[LMPlayItem alloc] init];
+    LRTSDBPlayItemModel *playItem = [[LRTSDBPlayItemModel alloc] init];
 
     playItem.pId = self.sId;
     playItem.pName = self.name;
@@ -78,9 +80,9 @@
     return playItem;
 }
   
-+ (LMBaseModel *)convertToBaseModel:(LMPlayItem *)playItem {
++ (LRTSDBModel *)convertToBaseModel:(LRTSDBPlayItemModel *)playItem {
   //mark for downloader debug
-    LMSection *section = [[LMSection alloc] init];
+    LRTSDBSectionModel *section = [[LRTSDBSectionModel alloc] init];
     section.sBookId = [playItem albumId];
     section.sId = playItem.pId;
     section.name = playItem.pName;
@@ -92,9 +94,9 @@
   
 #pragma mark - Downloadable Protocol Methods
   
-- (LMDownloadItem *)convertToDownloadItem
+- (LRTSDBDownloadItemModel *)convertToDownloadItem
 {
-    LMDownloadItem *downloadItem = [[LMDownloadItem alloc] init];
+    LRTSDBDownloadItemModel *downloadItem = [[LRTSDBDownloadItemModel alloc] init];
 
     downloadItem.dId = self.sId;
     downloadItem.dEntityId = self.sBookId;
@@ -105,12 +107,14 @@
     downloadItem.dHasLyric = self.haslyric;
     downloadItem.dSection = self.section;
 // 设置免流的下载地址，后台下载不能用NSURLProtocol截取
-    if ([LMProxyManager shareManager].isProxyOn) {
-        downloadItem.dSourceUrl = [[LMProxyManager shareManager] freeUrlWithOriginUrl:self.path];
-    }
-    else {
-        downloadItem.dSourceUrl = self.path;
-    }
+    
+//TODO 注册掉
+//    if ([LMProxyManager shareManager].isProxyOn) {
+//        downloadItem.dSourceUrl = [[LMProxyManager shareManager] freeUrlWithOriginUrl:self.path];
+//    }
+//    else {
+//        downloadItem.dSourceUrl = self.path;
+//    }
     return downloadItem;
 }
   

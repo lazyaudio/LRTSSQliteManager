@@ -27,7 +27,7 @@
 @property (nonatomic, strong)NSString *desc;                //书籍详情
 @property (assign,nonatomic) NSInteger payType;             //0免费1整本购买2分章购买
 @property (nonatomic,assign) NSInteger strategy;          // vip策略
-@property (nonatomic,strong) LMTag *tag;                    // 标签
+@property (nonatomic,strong) LRTSTagModel *tag;                    // 标签
 @property (nonatomic,assign) EntityPublishType publishType; // 跳转类型
 
 @end

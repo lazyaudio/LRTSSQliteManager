@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBCommentNoticeModel.h"
+#import "LRTSCommentModel.h"
 
 @interface LRTSDBCommentNoticeModel (InitializationAndConfiguration)
 
@@ -19,6 +20,6 @@
 - (BOOL)checkRemove;
 
 // 转换成LMComment
-- (LMComment *)commentModel;
+- (LRTSCommentModel *)commentModel;
 
 @end

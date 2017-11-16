@@ -6,6 +6,10 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
+#import "LRTSDBModel.h"
+#import "LRTSDBAdMacro.h"
+#import "LRTSDBPublicTypeDefine.h"
+
 
 typedef NS_ENUM(NSInteger, AdType) {
     AdTypeRecommend             = 1, // 精品推荐
@@ -59,6 +63,7 @@ typedef NS_ENUM(NSUInteger, LMAdSubType) {
     LMAdSubTypeO2       = 301,
     LMAdSubTypeMaila    = 2701,
 };
+
 
 @interface LRTSDBLaunchAdModel : LRTSDBModel
 
@@ -193,7 +198,6 @@ WCDB_PROPERTY(loadedStatisticUrls)
 WCDB_PROPERTY(advertSubType)
 WCDB_PROPERTY(attachModel)
 WCDB_PROPERTY(sdkAdModel)
-
 
 
 @end

@@ -8,7 +8,7 @@
 #import "LRTSDBAudioEntityModel.h"
 #import "LRTSTagModel.h"
 #import "LRTSLGDynamicEntity.h"
-#import "LRTSListenCollectionModel.h"
+#import "LRTSDBListenCollectionModel.h"
 
 
 @interface LRTSDBCollectionModel : LRTSDBAudioEntityModel
@@ -30,6 +30,6 @@
 //@property (nonatomic,assign) NSInteger strategy;          // 第1位:限时免费,第2位：会员书库,第3位:VIP整本抢先,第4位:VIP章节抢先
 @property (nonatomic,strong) LRTSTagModel *tag;
 
-WCDB_PROPERTY(
+//WCDB_PROPERTY(
 
 @end

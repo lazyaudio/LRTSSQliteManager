@@ -7,7 +7,7 @@
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
-#import "LRTSAudioEntityModel.h"
+#import "LRTSDBAudioEntityModel.h"
 
 typedef enum : NSUInteger {
     LMLGDynamicEntitySourceOriginal = 1,    //原创

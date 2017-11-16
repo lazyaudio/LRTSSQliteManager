@@ -11,7 +11,7 @@
 
 - (instancetype )initWithDict:(NSDictionary *)dic {
     if (self) {
-        self.tg_type = [dic[@"type"] integerValue];
+        self.tg_type = (LMTagType)[dic[@"type"] integerValue];
         self.tg_name = dic[@"name"];
         self.tg_bgColor = dic[@"bgColor"];
     }

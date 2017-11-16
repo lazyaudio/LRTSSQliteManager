@@ -7,8 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LRTSPurchaseTool : NSObject
-
 //合辑类型
 typedef NS_ENUM(NSUInteger, LMAlbumType) {
     LMAlbumTypeListen,  //听书合辑
@@ -31,5 +29,19 @@ typedef NS_ENUM(NSUInteger, LMChoosePriceType) {
     LMChoosePriceTypeDiscountAndVIP,  //会员和单价折扣购买
     LMChoosePriceTypeVIPOnly    //VIP单价购买(用于合辑)
 };
+
+@interface LRTSPurchaseTool : NSObject
+
++ (NSArray *)indexsWithSectionStr:(NSString *)string;
+
++ (NSString *)sectionStrWithIndexs:(NSArray *)indexs;
+
++ (NSArray *)combineIndexs:(NSArray *)aIndexs
+                withIndexs:(NSArray *)bIndexs;
+
++ (NSArray *)unintersectionIndexs:(NSArray *)indexs
+                       IndexCount:(NSInteger)count;
+
++ (NSString *)stringOfPrice:(double)price;
 
 @end

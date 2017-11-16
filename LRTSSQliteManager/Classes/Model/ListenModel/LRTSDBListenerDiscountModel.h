@@ -6,6 +6,7 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
+#import "LRTSDBModel.h"
 
 typedef NS_ENUM(NSInteger, LRTSDBListenerDiscountType) {
     LRTSDBListenerDiscountTypeNone,

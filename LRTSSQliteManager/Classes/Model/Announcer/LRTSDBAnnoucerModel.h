@@ -6,6 +6,8 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
+#import "LRTSDBModel.h"
+
 
 typedef NS_ENUM(NSInteger, FollowType) {
     FollowTypeUnKnow   = -1, // 未标记为任何类型

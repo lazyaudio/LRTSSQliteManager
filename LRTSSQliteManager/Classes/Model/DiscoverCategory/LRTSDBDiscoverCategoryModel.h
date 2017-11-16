@@ -6,13 +6,16 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
+#import "LRTSDBModel.h"
 
 @interface LRTSDBDiscoverCategoryModel : LRTSDBModel
 
 @end
 
 @interface LMDiscoveryCategoryGroup : LRTSDBModel
+
 @property (nonatomic, strong) NSArray *categories;
+
 @end
 
 @interface LMDiscoveryCategoryGroup (JsonParse)

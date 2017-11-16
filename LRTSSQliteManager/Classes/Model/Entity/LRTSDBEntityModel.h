@@ -6,7 +6,6 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
-#import "LRTSDBModel.h"
 #import "LRTSDBLaunchAdModel.h"
 #import "LRTSDBPublicTypeDefine.h"
 #import "LRTSTagModel.h"
@@ -29,10 +28,13 @@
 @property (nonatomic,assign) NSInteger et_sort;
 
 // 实体标签数组（主要用于书籍、节目封面或者列表中显示指定的标签）
-@property (nonatomic,strong) LRTSTagModel *et_tag;
+//TODO
+//@property (nonatomic,strong) LRTSTagModel *et_tag;
 
-// 附加的广告模型类
-@property (nonatomic,strong) LRTSDBLaunchAdModel *et_attatchAd;
+// 附加的广告模型
+//TODO
+//@property (nonatomic, strong) LRTSDBLaunchAdModel *et_attatchAd;
+
 
 /** 附带模型类信息
  由于实体类型为通用数据模型，通常做为混合展示界面的数据源，有些情况下基

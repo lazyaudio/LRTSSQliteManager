@@ -6,6 +6,9 @@
 //
 
 #import "LRTSDBListenerGroupDynamicModel.h"
+#import "NSObject+LRTSUserStateVerify.h"
+
+
 
 @interface LRTSDBListenerGroupDynamicModel (InitializationAndConfiguration)
 

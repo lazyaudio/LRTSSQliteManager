@@ -51,17 +51,26 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
 
 - (BOOL)insertObject:(LRTSObject *_Nullable)object into:(NSString * _Nonnull)tableName;
 
-- (BOOL)insertObjects:(NSArray<LRTSObject *> *_Nullable)objects into:(NSString *_Nonnull)tableName;
+- (BOOL)insertObjects:(NSArray<LRTSObject *> *_Nullable)objects
+                 into:(NSString *_Nonnull)tableName;
 
-- (BOOL)insertOrReplaceObject:(LRTSObject *_Nullable)object into:(NSString *_Nonnull)tableName;
+- (BOOL)insertOrReplaceObject:(LRTSObject *_Nullable)object
+                         into:(NSString *_Nonnull)tableName;
 
-- (BOOL)insertOrReplaceObjects:(NSArray<LRTSObject *> *_Nullable)objects into:(NSString *_Nonnull)tableName;
+- (BOOL)insertOrReplaceObjects:(NSArray<LRTSObject *> *_Nullable)objects
+                          into:(NSString *_Nonnull)tableName;
 
-- (BOOL)insertObject:(LRTSObject *_Nullable)object onValues:(const LRTSValueList &)valueList into:(NSString *_Nonnull)tableName;
+- (BOOL)insertObject:(LRTSObject *_Nullable)object
+            onValues:(const LRTSValueList &)valueList
+                into:(NSString *_Nonnull)tableName;
 
-- (BOOL)insertObjects:(NSArray<LRTSObject *> *_Nullable)objects onValues:(const LRTSValueList &)valueList into:(NSString *_Nonnull)tableName;
+- (BOOL)insertObjects:(NSArray<LRTSObject *> *_Nullable)objects
+             onValues:(const LRTSValueList &)valueList
+                 into:(NSString *_Nonnull)tableName;
 
-- (BOOL)insertOrReplaceObject:(LRTSObject *_Nullable)object onValues:(const LRTSValueList &)valueList into:(NSString *_Nonnull)tableName;
+- (BOOL)insertOrReplaceObject:(LRTSObject *_Nullable)object
+                     onValues:(const LRTSValueList &)valueList
+                         into:(NSString *_Nonnull)tableName;
 
 
 /**
@@ -72,13 +81,16 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
  @param tableName 修改相关 table 名字
  @return 修改相关字段是否成功
  */
-- (BOOL)insertOrReplaceObjects:(NSArray<LRTSObject *> *_Nullable)objects onValues:(const LRTSValueList &)valueList into:(NSString *_Nonnull)tableName;
+- (BOOL)insertOrReplaceObjects:(NSArray<LRTSObject *> *_Nullable)objects
+                      onValues:(const LRTSValueList &)valueList
+                          into:(NSString *_Nonnull)tableName;
 
 #pragma mark - Delete
 
 - (BOOL)deleteAllObjectsFromTable:(NSString *_Nonnull)tableName;
 
-- (BOOL)deleteObjectsFromTable:(NSString *_Nonnull)tableName where:(const LRTSCondition &)condition;
+- (BOOL)deleteObjectsFromTable:(NSString *_Nonnull)tableName
+                         where:(const LRTSCondition &)condition;
 
 
 /**
@@ -102,17 +114,22 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
  @param object 更新数据的具体的 model
  @return 数据更新后返回结果
  */
-- (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName withValue:(const LRTSValue &)value onObject:(LRTSObject * _Nullable)object;
+- (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
+                withValue:(const LRTSValue &)value
+                 onObject:(LRTSObject * _Nullable)object;
 
-- (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName withValue:(const LRTSValue &)value onObject:(LRTSObject * _Nullable)object where:(const LRTSCondition &)condition;
+- (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
+                withValue:(const LRTSValue &)value
+                 onObject:(LRTSObject * _Nullable)object
+                    where:(const LRTSCondition &)condition;
 
 - (BOOL)updateAllRowsInTable:(NSString *_Nonnull)tableName
-                onProperties:(const LRTSValueList &)valueList
+                onValue:(const LRTSValueList &)valueList
                      withRow:(LRTSOneRow *_Nonnull)row;
 
 - (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
-             onProperties:(const LRTSValueList &)valueList
-                  withRow:(LRTSOneRow *_Nonnull)row
+             onValue:(const LRTSValueList &)valueList
+                  withObject:(WCTObject *_Nonnull)object
                     where:(const LRTSCondition &)condition;
 
 #pragma mark - Get
@@ -120,9 +137,11 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
 
 - (nullable id)getOneObjectFormTable:(NSString * _Nonnull)tableName;
 
-- (nullable id)getOneObjectFormTable:(NSString * _Nonnull)tableName where:(const LRTSCondition &)condition;
+- (nullable id)getOneObjectFormTable:(NSString * _Nonnull)tableName
+                               where:(const LRTSCondition &)condition;
 
-- (nullable id)getOneObjectFormTable:(NSString *_Nonnull)tableName orderBy:(const LRTSOrderByList &)orderList;
+- (nullable id)getOneObjectFormTable:(NSString *_Nonnull)tableName
+                             orderBy:(const LRTSOrderByList &)orderList;
 
 /**
  获取当前数据库一组数据
@@ -132,15 +151,22 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
  @param orderList 数据的排列条件
  @return 返回数据库在相关条件下数据内容
  */
-- (nullable id)getOneObjectFormTable:(NSString * _Nonnull)tableName where:(const LRTSCondition &)condition orderBy:(const LRTSOrderByList &)orderList;
+- (nullable id)getOneObjectFormTable:(NSString * _Nonnull)tableName
+                               where:(const LRTSCondition &)condition
+                             orderBy:(const LRTSOrderByList &)orderList;
 
 #pragma mark - Get Part Of Object
 
-- (nullable id)getOneObjectOnResults:(const LRTSResultList &)resultList formTable:(NSString *_Nonnull)tableName;
+- (nullable id)getOneObjectOnResults:(const LRTSResultList &)resultList
+                           formTable:(NSString *_Nonnull)tableName;
 
-- (nullable id)getOneObjectOnResults:(const LRTSResultList &)resultList formTable:(NSString *_Nonnull)tableName where:(const LRTSCondition &)condition;
+- (nullable id)getOneObjectOnResults:(const LRTSResultList &)resultList
+                           formTable:(NSString *_Nonnull)tableName
+                               where:(const LRTSCondition &)condition;
 
-- (nullable id)getOneObjectOnResults:(const LRTSResultList &)resultList formTable:(NSString *_Nonnull)tableName orderBy:(const WCTOrderByList &)orderList;
+- (nullable id)getOneObjectOnResults:(const LRTSResultList &)resultList
+                           formTable:(NSString *_Nonnull)tableName
+                             orderBy:(const WCTOrderByList &)orderList;
 
 /**
  获取数据库内容中的一部分数据
@@ -151,16 +177,23 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
  @param orderList 数据的排列条件
  @return 返回查询的数据
  */
-- (nullable id)getOneObjectOnResults:(const LRTSResultList &)resultList formTable:(NSString *_Nonnull)tableName where:(const LRTSCondition &)condition orderBy:(const WCTOrderByList &)orderList;
+- (nullable id)getOneObjectOnResults:(const LRTSResultList &)resultList
+                           formTable:(NSString *_Nonnull)tableName
+                               where:(const LRTSCondition &)condition
+                             orderBy:(const WCTOrderByList &)orderList;
 
 #pragma mark - Get One Row
 
 - (nullable id)getOneRowOnResults:(const LRTSResultList &)resultList
                         fromTable:(NSString *_Nonnull)tableName;
 
-- (nullable id)getOneRowOnResults:(const LRTSResultList &)resultList formTable:(NSString *_Nonnull)tableName where:(const LRTSCondition &)condition;
+- (nullable id)getOneRowOnResults:(const LRTSResultList &)resultList
+                        formTable:(NSString *_Nonnull)tableName
+                            where:(const LRTSCondition &)condition;
 
-- (nullable id)getOneRowOnResults:(const LRTSResultList &)resultList formTable:(NSString *_Nonnull)tableName orderBy:(const WCTOrderByList &)orderList;
+- (nullable id)getOneRowOnResults:(const LRTSResultList &)resultList
+                        formTable:(NSString *_Nonnull)tableName
+                          orderBy:(const WCTOrderByList &)orderList;
 
 /**
  获取数据库中相关字段的一行内容
@@ -171,15 +204,20 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
  @param orderList 数据的排列条件
  @return 返回查询的数据
  */
-- (nullable id)getOneRowOnResults:(const LRTSResultList &)resultList formTable:(NSString *_Nonnull)tableName where:(const LRTSCondition &)condition orderBy:(const WCTOrderByList &)orderList;
+- (nullable id)getOneRowOnResults:(const LRTSResultList &)resultList
+                        formTable:(NSString *_Nonnull)tableName
+                            where:(const LRTSCondition &)condition
+                          orderBy:(const WCTOrderByList &)orderList;
 
 #pragma mark - Get Objects
 
 - (NSArray * _Nullable)getAllObjectsForTable:(NSString * _Nonnull)tableName;
 
-- (NSArray * _Nullable)getObjectsForTable:(NSString * _Nonnull)tableName where:(const LRTSCondition &)condition;
+- (NSArray * _Nullable)getObjectsForTable:(NSString * _Nonnull)tableName
+                                    where:(const LRTSCondition &)condition;
 
-- (NSArray * _Nullable)getObjectsForTable:(NSString *_Nonnull)tableName orderBy:(const LRTSOrderByList &)orderList;
+- (NSArray * _Nullable)getObjectsForTable:(NSString *_Nonnull)tableName
+                                  orderBy:(const LRTSOrderByList &)orderList;
 
 /**
  获取数据表格中多个数据 model 内容
@@ -189,15 +227,20 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
  @param orderList 数据的排列条件
  @return 返回查询的数据
  */
-- (NSArray * _Nullable)getObjectsForTable:(NSString * _Nonnull)tableName where:(const LRTSCondition &)condition orderBy:(const LRTSOrderByList &)orderList;
+- (NSArray * _Nullable)getObjectsForTable:(NSString * _Nonnull)tableName
+                                    where:(const LRTSCondition &)condition orderBy:(const LRTSOrderByList &)orderList;
 
 #pragma mark - Get Objects From Multi Tables
 
-- (NSArray * _Nullable)selectRowsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames;
+- (NSArray * _Nullable)selectRowsOnResults:(const LRTSResultList &)resultList
+                                fromTables:(NSArray<NSString *> *_Nonnull)tableNames;
 
-- (NSArray * _Nullable)selectRowsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames where:(const LRTSCondition &)condition;
+- (NSArray * _Nullable)selectRowsOnResults:(const LRTSResultList &)resultList
+                                fromTables:(NSArray<NSString *> *_Nonnull)tableNames
+                                     where:(const LRTSCondition &)condition;
 
-- (NSArray * _Nullable)selectMutableObjectsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames;
+- (NSArray * _Nullable)selectMutableObjectsOnResults:(const LRTSResultList &)resultList
+                                          fromTables:(NSArray<NSString *> *_Nonnull)tableNames;
 
 /**
  链表查询获取相关条件下，数据表格中字段内容
@@ -207,7 +250,9 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
  @param condition 条件设置
  @return 返回多表查询当前字段内容
  */
-- (NSArray * _Nullable)selectMutableObjectsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames where:(const LRTSCondition &)condition;
+- (NSArray * _Nullable)selectMutableObjectsOnResults:(const LRTSResultList &)resultList
+                                          fromTables:(NSArray<NSString *> *_Nonnull)tableNames
+                                               where:(const LRTSCondition &)condition;
 
 
 #pragma mark - Transaction

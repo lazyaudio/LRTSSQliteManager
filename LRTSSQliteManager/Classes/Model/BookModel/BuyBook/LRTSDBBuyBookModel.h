@@ -25,7 +25,7 @@
 @property (assign, nonatomic) NSInteger      state;         // 状态。1-连载中，2-完结
 @property (assign, nonatomic) NSInteger      payType;       // 支付类型0免费1整本2分章
 @property (nonatomic,assign) NSInteger strategy;            // vip策略
-@property (nonatomic,strong) LMTag *tag;
+@property (nonatomic,strong) LRTSTagModel *tag;
 @property (nonatomic,assign) EntityPublishType publishType; // 跳转类型
 
 @end

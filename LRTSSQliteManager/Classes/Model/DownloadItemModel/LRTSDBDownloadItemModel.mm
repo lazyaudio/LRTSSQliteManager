@@ -21,7 +21,9 @@ WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, dSection)
 WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, dHasLyric)
 WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, dSourceUrl)
 WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, entityType)
-WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, belong)
+
+//TODO
+//WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, belong)
 WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, insertDBTime)
 WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, targetPath)
 WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, entityName)

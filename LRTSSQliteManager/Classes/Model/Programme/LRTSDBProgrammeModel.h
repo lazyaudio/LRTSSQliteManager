@@ -7,6 +7,7 @@
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
+#import "LRTSDBListenerPriceModel.h"
 
 typedef NS_ENUM(NSInteger, SourceType) {
     SourceTypeOriginal   = 1,       // 原创
@@ -52,7 +53,7 @@ typedef NS_ENUM(NSInteger, SourceType) {
 @property (assign, nonatomic) NSUInteger proReward;         // 是否打赏节目（0:不是 1:是）
 @property (nonatomic, strong) NSArray *sysLabels; // 系统标签
 @property (nonatomic, copy) NSArray *tags; // 活动标签和要点标签
-@property (nonatomic, strong) LMListenPriceModel *priceModel;  // 价格信息
+@property (nonatomic, strong) LRTSDBListenerPriceModel *priceModel;  // 价格信息
 @property (nonatomic,assign) BOOL cantDown; // 0能下载1不能下载（v5.5.3）
 
 /** 标签版本(3.1.5)添加 */

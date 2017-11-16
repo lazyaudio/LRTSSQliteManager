@@ -6,6 +6,8 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
+#import "LRTSDBModel.h"
+#import "LRTSTagModel.h"
 
 @class LMSubEntity;
 
@@ -76,7 +78,7 @@ WCDB_PROPERTY(subEntitys)
 @property (nonatomic, assign) EntityType entityType;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) NSInteger strategy;
-@property (nonatomic, strong) LMTag *tag;
+@property (nonatomic, strong) LRTSTagModel *tag;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)subEntityWithDict:(NSDictionary *)dict;

@@ -11,6 +11,7 @@
 
 WCDB_IMPLEMENTATION(LRTSDBListenerGroupDynamicModel)
 
+
 WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, contentId)
 WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, userId)
 WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, userNick)
@@ -33,14 +34,18 @@ WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, showRepublish)
 WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, attributies)
 WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, attributiesForDetail)
 WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, haveLink)
-WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, linkStrRange)
+
+//TODO 注册掉在 Range 的范围属性
+//WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, linkStrRange)
+
 WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, linkAddress)
-//
 WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, imageFilePath)
 WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, resourceId)
 WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, referId)
+
 //WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, )
 //WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, )
 //WCDB_SYNTHESIZE(LRTSDBListenerGroupDynamicModel, )
+
 
 @end

@@ -7,6 +7,7 @@
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
+#import "LRTSDownloadState.h"
 
 
 @interface LRTSDBProgrammeAudioModel : LRTSDBModel

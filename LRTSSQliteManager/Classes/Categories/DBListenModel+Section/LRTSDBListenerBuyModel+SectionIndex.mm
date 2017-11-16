@@ -52,7 +52,7 @@
                                           priceModel.unbuySectionIndexs.count-positionOfIndex);
     NSArray *lastIndexs = [priceModel.unbuySectionIndexs subarrayWithRange:lastIndexsRange];
     
-    LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:@[@(sectionIndex)] priceModel:priceModel];
+    LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:@[@(sectionIndex)] priceModel:priceModel];
     if (priceModel.entityType == EntityTypeBook) {
         currentIndexBuyModel.title = @"本集";
     } else if (priceModel.entityType == EntityTypeAlbum){
@@ -61,7 +61,7 @@
     [buyModels addObject:currentIndexBuyModel];
     
     if (lastIndexs.count >1 && lastIndexs.count < 10) {
-        LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
+        LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
         if (priceModel.entityType == EntityTypeBook) {
             currentIndexBuyModel.title = [NSString stringWithFormat:@"剩余%zd集",lastIndexs.count];
         } else if (priceModel.entityType == EntityTypeAlbum){
@@ -70,7 +70,7 @@
         [buyModels addObject:currentIndexBuyModel];
     }
     if (lastIndexs.count >= 10) {
-        LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:[lastIndexs subarrayWithRange:NSMakeRange(0, 10)] priceModel:priceModel];
+        LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:[lastIndexs subarrayWithRange:NSMakeRange(0, 10)] priceModel:priceModel];
         if (priceModel.entityType == EntityTypeBook) {
             currentIndexBuyModel.title = @"后10集";
         } else if (priceModel.entityType == EntityTypeAlbum){
@@ -79,7 +79,7 @@
         [buyModels addObject:currentIndexBuyModel];
     }
     if (lastIndexs.count > 10 && lastIndexs.count < 50) {
-        LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
+        LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
         if (priceModel.entityType == EntityTypeBook) {
             currentIndexBuyModel.title = [NSString stringWithFormat:@"剩余%zd集",lastIndexs.count];
         } else if (priceModel.entityType == EntityTypeAlbum){
@@ -88,7 +88,7 @@
         [buyModels addObject:currentIndexBuyModel];
     }
     if (lastIndexs.count >= 50) {
-        LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:[lastIndexs subarrayWithRange:NSMakeRange(0, 50)] priceModel:priceModel];
+        LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:[lastIndexs subarrayWithRange:NSMakeRange(0, 50)] priceModel:priceModel];
         if (priceModel.entityType == EntityTypeBook) {
             currentIndexBuyModel.title = @"后50集";
         } else if (priceModel.entityType == EntityTypeAlbum){
@@ -97,9 +97,9 @@
         [buyModels addObject:currentIndexBuyModel];
     }
     if (lastIndexs.count > 50) {
-        LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
+        LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
         currentIndexBuyModel.title = @"自定义";
-        currentIndexBuyModel.action = AudioPayItemActionChooseCount;
+        currentIndexBuyModel.action = LRTSAudioPayItemActionChooseCount;
         [buyModels addObject:currentIndexBuyModel];
     }
     return [buyModels copy];
@@ -119,7 +119,7 @@
     NSMutableArray *buyModels = [NSMutableArray array];
     if (priceModel.payType == LMPriceModelPayTypeBook
         || priceModel.payType == LMPriceModelPayTypeSubscribe) {
-        LMListenBuyModel *currentIndexBuyModel = [[LMListenBuyModel alloc] init];
+        LRTSDBListenerBuyModel *currentIndexBuyModel = [[LRTSDBListenerBuyModel alloc] init];
         currentIndexBuyModel.sectionIndexs = priceModel.unbuySectionIndexs;
         if (priceModel.entityType == EntityTypeBook) {
             currentIndexBuyModel.title = priceModel.payType == LMPriceModelPayTypeBook?@"购买本书":@"订阅本书";
@@ -144,7 +144,7 @@
     NSRange lastIndexsRange = NSMakeRange(positionOfIndex,
                                           priceModel.unbuySectionIndexs.count-positionOfIndex);
     NSArray *lastIndexs = [priceModel.unbuySectionIndexs subarrayWithRange:lastIndexsRange];
-    LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:@[@(sectionId)] priceModel:priceModel];
+    LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:@[@(sectionId)] priceModel:priceModel];
     if (priceModel.entityType == EntityTypeBook) {
         currentIndexBuyModel.title = @"本集";
     } else if (priceModel.entityType == EntityTypeAlbum){
@@ -152,7 +152,7 @@
     }
     [buyModels addObject:currentIndexBuyModel];
     if (lastIndexs.count >1 && lastIndexs.count < 10) {
-        LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
+        LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
         if (priceModel.entityType == EntityTypeBook) {
             currentIndexBuyModel.title = [NSString stringWithFormat:@"剩余%zd集",lastIndexs.count];
         } else if (priceModel.entityType == EntityTypeAlbum){
@@ -161,7 +161,7 @@
         [buyModels addObject:currentIndexBuyModel];
     }
     if (lastIndexs.count >= 10) {
-        LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:[lastIndexs subarrayWithRange:NSMakeRange(0, 10)] priceModel:priceModel];
+        LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:[lastIndexs subarrayWithRange:NSMakeRange(0, 10)] priceModel:priceModel];
         if (priceModel.entityType == EntityTypeBook) {
             currentIndexBuyModel.title = @"后10集";
         } else if (priceModel.entityType == EntityTypeAlbum){
@@ -170,7 +170,7 @@
         [buyModels addObject:currentIndexBuyModel];
     }
     if (lastIndexs.count > 10 && lastIndexs.count < 50) {
-        LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
+        LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
         if (priceModel.entityType == EntityTypeBook) {
             currentIndexBuyModel.title = [NSString stringWithFormat:@"剩余%zd集",lastIndexs.count];
         } else if (priceModel.entityType == EntityTypeAlbum){
@@ -179,7 +179,7 @@
         [buyModels addObject:currentIndexBuyModel];
     }
     if (lastIndexs.count >= 50) {
-        LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:[lastIndexs subarrayWithRange:NSMakeRange(0, 50)] priceModel:priceModel];
+        LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:[lastIndexs subarrayWithRange:NSMakeRange(0, 50)] priceModel:priceModel];
         if (priceModel.entityType == EntityTypeBook) {
             currentIndexBuyModel.title = @"后50集";
         } else if (priceModel.entityType == EntityTypeAlbum){
@@ -188,9 +188,9 @@
         [buyModels addObject:currentIndexBuyModel];
     }
     if (lastIndexs.count > 50) {
-        LMListenBuyModel *currentIndexBuyModel = [LMListenBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
+        LRTSDBListenerBuyModel *currentIndexBuyModel = [LRTSDBListenerBuyModel buyModelWithIndexs:lastIndexs priceModel:priceModel];
         currentIndexBuyModel.title = @"自定义";
-        currentIndexBuyModel.action = AudioPayItemActionChooseCount;
+        currentIndexBuyModel.action = LRTSAudioPayItemActionChooseCount;
         [buyModels addObject:currentIndexBuyModel];
     }
     return [buyModels copy];

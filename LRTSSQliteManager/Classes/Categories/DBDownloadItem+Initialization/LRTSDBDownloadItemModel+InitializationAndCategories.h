@@ -5,7 +5,7 @@
 //  Created by JackJin on 2017/11/9.
 //
 
-#import "LRTSDBDownloadModel.h"
+#import "LRTSDBDownloadItemModel.h"
 #import "LRTSDBBookModel.h"
 #import "LRTSDBSectionModel.h"
 

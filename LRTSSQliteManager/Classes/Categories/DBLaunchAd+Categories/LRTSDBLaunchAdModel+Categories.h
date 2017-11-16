@@ -51,6 +51,7 @@
 
 //@class LMTecentO2AdModel;
 @interface LRTSDBLaunchAdModel (TencentO2)
+
 - (BOOL)isTencentO2LaunchAd;
 + (LRTSDBLaunchAdModel *)constructAdFromTencentO2LaunchAd:(LRTSDBTecentO2AdModel *)tencentAd;
 

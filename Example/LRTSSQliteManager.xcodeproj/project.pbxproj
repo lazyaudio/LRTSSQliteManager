@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		160874E61FBBE83E00F9857F /* LRTSTestViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 160874E51FBBE83E00F9857F /* LRTSTestViewController.mm */; };
+		167136531FBD70D20035A0A1 /* LRTSSQliteManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167136541FBD70D20035A0A1 /* LRTSSQliteManager.framework */; };
 		1683146A1FB143B500462AC3 /* BookDetail+WCTTableCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */; };
 		1683146B1FB143B500462AC3 /* LRTSAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LRTSAppDelegate.mm */; };
 		1683146C1FB143B500462AC3 /* LRTSViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LRTSViewController.mm */; };
@@ -15,7 +16,7 @@
 		1683146E1FB143B500462AC3 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		1683146F1FB145DD00462AC3 /* BookDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69D1FA9C6890020D43F /* BookDetail.mm */; };
 		168BA7381FB9936000B18E5D /* Book.mm in Sources */ = {isa = PBXBuildFile; fileRef = 168BA7371FB9936000B18E5D /* Book.mm */; };
-		34589DCF78D381F9675122BE /* Pods_LRTSSQliteManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A00FBAA6C25EEEE6FB812F /* Pods_LRTSSQliteManager_Example.framework */; };
+		184583C8960C6E75012533A4 /* Pods_LRTSSQliteManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A00FBAA6C25EEEE6FB812F /* Pods_LRTSSQliteManager_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -46,6 +47,7 @@
 		08FCADABC0B3EB1CC07F5F28 /* Pods-LRTSSQliteManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRTSSQliteManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LRTSSQliteManager_Tests/Pods-LRTSSQliteManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		160874E41FBBE83E00F9857F /* LRTSTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSTestViewController.h; sourceTree = "<group>"; };
 		160874E51FBBE83E00F9857F /* LRTSTestViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSTestViewController.mm; sourceTree = "<group>"; };
+		167136541FBD70D20035A0A1 /* LRTSSQliteManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LRTSSQliteManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		168BA7361FB9936000B18E5D /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		168BA7371FB9936000B18E5D /* Book.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Book.mm; sourceTree = "<group>"; };
 		1696D69C1FA9C6890020D43F /* BookDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetail.h; sourceTree = "<group>"; };
@@ -87,10 +89,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167136531FBD70D20035A0A1 /* LRTSSQliteManager.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				34589DCF78D381F9675122BE /* Pods_LRTSSQliteManager_Example.framework in Frameworks */,
+				184583C8960C6E75012533A4 /* Pods_LRTSSQliteManager_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +157,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				167136541FBD70D20035A0A1 /* LRTSSQliteManager.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
