@@ -37,6 +37,6 @@ WCDB_SYNTHESIZE(LRTSDBBookDetailModel, latestFollowLabelTime)
 
 
 //WCDB_SYNTHESIZE(LRTSDBBookDetailModel, )
-//WCDB_SYNTHESIZE(LRTSDBBookDetailModel, )
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, bookID)
 
 @end

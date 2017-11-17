@@ -155,10 +155,11 @@ typedef NS_ENUM(NSUInteger, LMAdSubType) {
 /** 子广告类型: 默认：0， 腾讯O2广告：301，麦啦：2071 */
 @property (nonatomic, assign) LMAdSubType       advertSubType;
 /** 附带的模型类(因为LMLaunchAd对象的字段不能和其他广告平台的数据字段一一对应上，比如腾讯O2广告，而调用的地方又很多，所以加了一个attachModel) */
-@property (nonatomic, strong) id attachModel;
-
+//TODO  注册掉
+//@property (nonatomic, strong) id attachModel;
+//TODO  注册掉
 /** 第三方SDK广告模型，目前仅用于百度信息流广告 */
-@property (nonatomic, strong) id sdkAdModel;
+//@property (nonatomic, strong) id sdkAdModel;
 
 
 #pragma mark - WVDB 数据绑定

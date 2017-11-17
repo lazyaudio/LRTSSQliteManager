@@ -45,8 +45,8 @@ WCDB_SYNTHESIZE(LRTSDBLaunchAdModel, showStatisticUrls)
 WCDB_SYNTHESIZE(LRTSDBLaunchAdModel, clickStatisticUrls)
 WCDB_SYNTHESIZE(LRTSDBLaunchAdModel, loadedStatisticUrls)
 WCDB_SYNTHESIZE(LRTSDBLaunchAdModel, advertSubType)
-WCDB_SYNTHESIZE(LRTSDBLaunchAdModel, attachModel)
-WCDB_SYNTHESIZE(LRTSDBLaunchAdModel, sdkAdModel)
+//WCDB_SYNTHESIZE(LRTSDBLaunchAdModel, attachModel)
+//WCDB_SYNTHESIZE(LRTSDBLaunchAdModel, sdkAdModel)
 
 
 //WCDB_SYNTHESIZE(LRTSDBLaunchAdModel, )

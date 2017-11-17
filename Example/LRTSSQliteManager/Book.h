@@ -15,8 +15,8 @@
 @property (nonatomic, assign) NSUInteger bookID;
 @property (nonatomic, strong) NSString *autor;
 @property (nonatomic, assign) NSUInteger version;
-//@property (nonatomic, assign) NSUInteger totalPage;
-//@property (nonatomic, strong) BookDetail *bookeDetail;
+@property (nonatomic, assign) NSUInteger totalPage;
+@property (nonatomic, strong) BookDetail *bookeDetail;
 @property(copy, nonatomic) NSString *pubilsher;
 @property(copy, nonatomic) NSString *bookName;
 

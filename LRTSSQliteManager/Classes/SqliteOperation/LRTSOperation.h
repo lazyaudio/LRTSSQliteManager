@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
 
 @property (nonatomic, strong, setter=setTableWithModel:) LRTSDBModel * _Nullable model;
 
-- (nullable instancetype)initWithModel:(LRTSDBModel *_Nullable)model;
+- (nullable instancetype)initWithModel:(LRTSDBModel *)model;
 
 - (nullable instancetype)initWithPath:(NSString *_Nullable)path;
 
@@ -124,11 +124,11 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
                     where:(const LRTSCondition &)condition;
 
 - (BOOL)updateAllRowsInTable:(NSString *_Nonnull)tableName
-                onValue:(const LRTSValueList &)valueList
+                withValues:(const LRTSValueList &)valueList
                      withRow:(LRTSOneRow *_Nonnull)row;
 
 - (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
-             onValue:(const LRTSValueList &)valueList
+             withValues:(const LRTSValueList &)valueList
                   withObject:(WCTObject *_Nonnull)object
                     where:(const LRTSCondition &)condition;
 
@@ -228,19 +228,15 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
  @return 返回查询的数据
  */
 - (NSArray * _Nullable)getObjectsForTable:(NSString * _Nonnull)tableName
-                                    where:(const LRTSCondition &)condition orderBy:(const LRTSOrderByList &)orderList;
+                                    where:(const LRTSCondition &)condition
+                                  orderBy:(const LRTSOrderByList &)orderList;
 
 #pragma mark - Get Objects From Multi Tables
 
-- (NSArray * _Nullable)selectRowsOnResults:(const LRTSResultList &)resultList
-                                fromTables:(NSArray<NSString *> *_Nonnull)tableNames;
 
 - (NSArray * _Nullable)selectRowsOnResults:(const LRTSResultList &)resultList
                                 fromTables:(NSArray<NSString *> *_Nonnull)tableNames
                                      where:(const LRTSCondition &)condition;
-
-- (NSArray * _Nullable)selectMutableObjectsOnResults:(const LRTSResultList &)resultList
-                                          fromTables:(NSArray<NSString *> *_Nonnull)tableNames;
 
 /**
  链表查询获取相关条件下，数据表格中字段内容
@@ -253,7 +249,6 @@ typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
 - (NSArray * _Nullable)selectMutableObjectsOnResults:(const LRTSResultList &)resultList
                                           fromTables:(NSArray<NSString *> *_Nonnull)tableNames
                                                where:(const LRTSCondition &)condition;
-
 
 #pragma mark - Transaction
 

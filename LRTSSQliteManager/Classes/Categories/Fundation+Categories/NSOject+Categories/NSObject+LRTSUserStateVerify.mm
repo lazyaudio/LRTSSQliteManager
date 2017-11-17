@@ -37,7 +37,7 @@
         SEL getSelector = @selector(userState);
         if ([obj respondsToSelector:setSelector] && [obj respondsToSelector:getSelector]) {
             long long userState = [obj userState];
-//TODO
+//TODO  注册掉
 //            [obj setUserState:(userState & (LMUserStateTypeUnverifiedAnnouncer ^ LONG_LONG_MAX))];
         }
     };

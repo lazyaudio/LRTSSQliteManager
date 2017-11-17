@@ -10,6 +10,7 @@
 
 @implementation LRTSDBModel
 
+
 - (BOOL)saved {
     return [[self lrtsOperation] insertOrReplaceObject:(NSObject<WCTTableCoding> *)self into:NSStringFromClass(self.class)];
 }

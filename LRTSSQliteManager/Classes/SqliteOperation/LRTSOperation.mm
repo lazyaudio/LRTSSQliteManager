@@ -207,12 +207,12 @@
     [self checkOperationTableName:tableName];
     return [_wcdb updateRowsInTable:tableName
                          onProperty:value
-                          withValue:object
+                          withObject:object
                               where:condition];
 }
 
 - (BOOL)updateAllRowsInTable:(NSString *_Nonnull)tableName
-                     onValue:(const LRTSValueList &)valueList
+                     withValues:(const LRTSValueList &)valueList
                      withRow:(LRTSOneRow *_Nonnull)row {
     [self checkOperationTableName:tableName];
     return [_wcdb updateAllRowsInTable:tableName
@@ -221,7 +221,7 @@
 }
 
 - (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
-                  onValue:(const LRTSValueList &)valueList
+                  withValues:(const LRTSValueList &)valueList
                withObject:(WCTObject *_Nonnull)object
                     where:(const LRTSCondition &)condition {
     [self checkOperationTableName:tableName];
@@ -358,24 +358,12 @@
 #pragma mark - Get Objects From Multi Tables
 #pragma mark -多表查询
 
-- (NSArray * _Nullable)selectRowsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames; {
-    return [self selectRowsOnResults:resultList
-                          fromTables:tableNames
-                               where:nil];
-}
-
 - (NSArray * _Nullable)selectRowsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames where:(const LRTSCondition &)condition; {
     if(0 == tableNames.count) return nil;
     WCTRowSelect *rowSelect = [[_wcdb prepareSelectRowsOnResults:resultList
                                                       fromTables:tableNames]
                                where:condition];
     return rowSelect.allRows;
-}
-
-- (NSArray * _Nullable)selectMutableObjectsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames; {
-    return [self selectMutableObjectsOnResults:resultList
-                                    fromTables:tableNames
-                                         where:nil];
 }
 
 - (NSArray * _Nullable)selectMutableObjectsOnResults:(const LRTSResultList &)resultList fromTables:(NSArray<NSString *> *_Nonnull)tableNames where:(const LRTSCondition &)condition; {

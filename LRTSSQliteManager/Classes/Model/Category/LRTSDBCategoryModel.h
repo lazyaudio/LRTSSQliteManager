@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger, LMCategoryLevel) {
     LMCategoryLevelSub, // 二级分类
 };
 
-//TODO
+//TODO  注册掉
 @interface LRTSDBCategoryModel : LRTSDBModel
 
 @property (assign, nonatomic) NSInteger cId;        // 分类ID

@@ -28,11 +28,11 @@
 @property (nonatomic,assign) NSInteger et_sort;
 
 // 实体标签数组（主要用于书籍、节目封面或者列表中显示指定的标签）
-//TODO
+//TODO  注册掉
 //@property (nonatomic,strong) LRTSTagModel *et_tag;
 
 // 附加的广告模型
-//TODO
+//TODO  注册掉
 //@property (nonatomic, strong) LRTSDBLaunchAdModel *et_attatchAd;
 
 
@@ -42,7 +42,8 @@
  1、（因为腾讯广告的模型类使用et_attatchAd的话需要转换一次，
  字段不匹配，所以加个id类型的属性用于携带附属信息）
  */
-@property (nonatomic,strong) id et_attatchModel;
+//TODO  注册掉
+//@property (nonatomic,strong) id et_attatchModel;
 
 // 友盟统计时需要的名称
 @property (nonatomic,strong) NSString *et_umCountName;

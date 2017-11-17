@@ -35,7 +35,7 @@ WCDB_PROPERTY(latestFollowLabelTime)
 
 
 //WCDB_PROPERTY()
-//WCDB_PROPERTY()
+WCDB_PROPERTY(bookID)
 
 
 @end

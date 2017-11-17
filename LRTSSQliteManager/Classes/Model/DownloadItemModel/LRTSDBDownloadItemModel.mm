@@ -22,7 +22,7 @@ WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, dHasLyric)
 WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, dSourceUrl)
 WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, entityType)
 
-//TODO
+//TODO  注册掉
 //WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, belong)
 WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, insertDBTime)
 WCDB_SYNTHESIZE(LRTSDBDownloadItemModel, targetPath)
