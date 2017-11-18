@@ -72,6 +72,6 @@
 @property (nonatomic, assign) NSTimeInterval latestFollowLabelTime; ///< 资源所挂的标签中，用户最新关注的那个标签的时间
 
 //TODO Temp paramter 
-@property (nonatomic, assign) NSInteger bookID;
+//@property (nonatomic, assign) NSInteger bookID;
 
 @end

@@ -17,4 +17,11 @@
 
 + (NSArray<LRTSDBBookDetailModel *> *)bookListForListDict:(NSArray *)listDict;
 
+
+#pragma mark - Operations For SQL
+
+//+ (LRTSDBBookDetailModel)getOneObjectFromTable:(NSInteger)columnIndex;
+
+
+
 @end

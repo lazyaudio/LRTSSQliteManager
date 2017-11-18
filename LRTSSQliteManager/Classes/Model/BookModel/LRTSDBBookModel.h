@@ -33,7 +33,7 @@
 @property (nonatomic) NSTimeInterval lastUpdateTime;  //最后更新时间
 
 @property (nonatomic) EnterPlayType enterPlayType;    //记住上次播放的入口 (可能已经废弃使用了)
-
+            
 //在推荐、排行、专题等客户端人为分类时用到
 @property (nonatomic) NSInteger bParentId;           //父分类id
 @property (nonatomic) NSInteger bCategoryId;         //分类id

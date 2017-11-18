@@ -34,4 +34,8 @@
 
 //- (BOOL)deleteModelWhere:(const LRTSCondition &)condition;
 
+//#pragma - mark Methods of DBModel
+
++ (LRTSDBModel *)getOneObjectFormTable:(NSInteger)columnIndex;
+
 @end

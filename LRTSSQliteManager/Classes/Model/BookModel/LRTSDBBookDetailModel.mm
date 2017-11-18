@@ -37,6 +37,48 @@ WCDB_SYNTHESIZE(LRTSDBBookDetailModel, latestFollowLabelTime)
 
 
 //WCDB_SYNTHESIZE(LRTSDBBookDetailModel, )
-WCDB_SYNTHESIZE(LRTSDBBookDetailModel, bookID)
+
+#pragma mark - BookModel
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, bId)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, hot)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, sections)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, state)
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, sort)
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, commentCount)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, isMarked)
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, name)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, author)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, announcer)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, cover)
+//WCDB_SYNTHESIZE(LRTSDBBookDetailModel, update)
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, refId)
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, categoryName)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, lastUpdateTime)
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, enterPlayType)
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, bParentId)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, bCategoryId)
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, downloadedSectionCount)
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, recordId)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, recordStatus)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, like)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, entityType)
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, extInfo)
+
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, strategy)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, freeEndTime)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, overEndTime)
+WCDB_SYNTHESIZE(LRTSDBBookDetailModel, updateState)
+
 
 @end

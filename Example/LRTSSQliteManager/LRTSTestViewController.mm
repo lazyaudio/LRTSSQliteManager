@@ -93,7 +93,7 @@
     _bookModel.like = 19;
     
     //初始话 BookDetailModel
-    _bookDetailModel.bookID = 100;
+//    _bookDetailModel.bookID = 100;
     _bookDetailModel.length = 10000;
     _bookDetailModel.bookVersion = @"广州出版社";
     _bookDetailModel.desc = @"广州市人民教育出版社";
@@ -212,9 +212,20 @@
   
     objects = [_operation getObjectsForTable:bookName where:LRTSDBBookModel.bId >= 4 orderBy:LRTSDBBookModel.bId.order(WCTOrderedAscending)];
     
-    
-    
 }
 
 
+
+
+
+
 @end
+
+
+
+
+
+
+
+
+
