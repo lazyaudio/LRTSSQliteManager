@@ -1,0 +1,29 @@
+//
+//  LRTSUserDefaultsUtilits.pch
+//  Pods
+//
+//  Created by JackJin on 2017/11/20.
+//
+//  本类为在使用 NSUserDefaults 使用中对 KEY 值实现的规范
+//
+//  规范范本：
+//  kUserDefaults + 模块 + 保存内容(自定义) + 保存类型 + Key;
+//
+//  实例：Common 中 LMCacheHelper dynamic_cache
+//
+//  kUserDefaults_Common_DynamicCache_Date_Key;
+
+
+#ifndef LRTSUserDefaultsUtilits_pch
+#define LRTSUserDefaultsUtilits_pch
+
+
+
+#endif /* LRTSUserDefaultsUtilits_pch */
+
+
+#pragma mark - Common
+
+#define kUSERDEFAULTS_COMMMON_DYNAMICCACHE_DATE_Key @"kUserDefaults_Common_DynamicCache_Date_Key"
+
+
