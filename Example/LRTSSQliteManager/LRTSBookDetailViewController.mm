@@ -63,6 +63,8 @@
 - (void)initParamters {
     _detailModel = [[LRTSDBBookDetailModel alloc] init];
     _operation = [[LRTSOperation alloc] initWithModel:_detailModel];
+    
+//    NSDictionary
 }
 
 #pragma mark -BookDetail Of Operations For SQL

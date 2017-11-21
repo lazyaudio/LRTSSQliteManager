@@ -76,6 +76,11 @@
 		1612A8EA48174B0F2F0C3D1E4AC48ED8 /* WCTSelect.h in Headers */ = {isa = PBXBuildFile; fileRef = F99E7EB9D6813CBE19A444F70BDE8E7F /* WCTSelect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		161C4C847DF6DE7A836E83B901117A3B /* fts3.h in Headers */ = {isa = PBXBuildFile; fileRef = C1FF0A78BB48D0DFA037E85CB11FF898 /* fts3.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		165CF948B4444B2D4A738A644DBD6991 /* KWMessagePattern.h in Headers */ = {isa = PBXBuildFile; fileRef = D23BD45B8F326BE02EB6E99E7486D8A2 /* KWMessagePattern.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		166C69881FC3C227004271F9 /* LRSTKeyValueStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 166C69861FC3C227004271F9 /* LRSTKeyValueStore.h */; };
+		166C69891FC3C227004271F9 /* LRSTKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 166C69871FC3C227004271F9 /* LRSTKeyValueStore.m */; };
+		166C698C1FC3C2A6004271F9 /* LRTSKeyValueModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 166C698A1FC3C2A6004271F9 /* LRTSKeyValueModel.h */; };
+		166C698D1FC3C2A6004271F9 /* LRTSKeyValueModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 166C698B1FC3C2A6004271F9 /* LRTSKeyValueModel.mm */; };
+		166C69911FC3CA85004271F9 /* LRTSKeyValueModel+WCTTableCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 166C698F1FC3CA85004271F9 /* LRTSKeyValueModel+WCTTableCoding.h */; };
 		16801030729AEF5A88BC5C05C2D85A65 /* KWAsyncVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 4521A147EEFE3E6CF47F3BE25DB79176 /* KWAsyncVerifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		169F44C15C9557EB585DFF0322E3C3F5 /* WCTTable+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3B1D0F4552B44A75E60A63D4D49FE1 /* WCTTable+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16E63A171892DA8272BFF250578ED519 /* thread_local.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E3393E7A63ECF35EEA9CB49AC7B79F8E /* thread_local.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -914,6 +919,11 @@
 		15F0ABD0542468E137D16CA7DD4F7F63 /* LRTSDBPlayHistoryModel.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBPlayHistoryModel.mm; sourceTree = "<group>"; };
 		1605E8D534383018C1F5ECF8B9570EA8 /* KWSymbolicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWSymbolicator.h; path = Classes/Core/KWSymbolicator.h; sourceTree = "<group>"; };
 		16124FA31FC2C37900B6F80B /* LRTSUserDefaultsUtilits.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSUserDefaultsUtilits.pch; sourceTree = "<group>"; };
+		166C69861FC3C227004271F9 /* LRSTKeyValueStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRSTKeyValueStore.h; sourceTree = "<group>"; };
+		166C69871FC3C227004271F9 /* LRSTKeyValueStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRSTKeyValueStore.m; sourceTree = "<group>"; };
+		166C698A1FC3C2A6004271F9 /* LRTSKeyValueModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSKeyValueModel.h; sourceTree = "<group>"; };
+		166C698B1FC3C2A6004271F9 /* LRTSKeyValueModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSKeyValueModel.mm; sourceTree = "<group>"; };
+		166C698F1FC3CA85004271F9 /* LRTSKeyValueModel+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSKeyValueModel+WCTTableCoding.h"; sourceTree = "<group>"; };
 		1692E8F635D31743E4F019F111C2FE67 /* LRTSDBBookDetailModel.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBBookDetailModel.mm; sourceTree = "<group>"; };
 		16B1CCC78A16C3EC8D9D08D70CA88E60 /* vdbesort.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = vdbesort.c; path = sqlcipher/src/vdbesort.c; sourceTree = "<group>"; };
 		179522D82467B941E42E102C5466F3AF /* mutex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mutex.h; path = sqlcipher/src/mutex.h; sourceTree = "<group>"; };
@@ -1793,6 +1803,7 @@
 		150DFF8BC3D20E5EBF62B07ECDD47B58 /* SqliteOperation */ = {
 			isa = PBXGroup;
 			children = (
+				166C69851FC3C1D6004271F9 /* KeyValueStore */,
 				C1178359E49E5932A0C19AA0CB8BC2B1 /* LRTSBaseOperation.h */,
 				E7837FBF2B14FEAC7B0634C5268ABB48 /* LRTSBaseOperation.mm */,
 				BD841953187090C98A8F561A9F291075 /* LRTSBookOperation.h */,
@@ -1833,6 +1844,26 @@
 				16124FA31FC2C37900B6F80B /* LRTSUserDefaultsUtilits.pch */,
 			);
 			path = NSUserDefaultUtilts;
+			sourceTree = "<group>";
+		};
+		166C69851FC3C1D6004271F9 /* KeyValueStore */ = {
+			isa = PBXGroup;
+			children = (
+				166C69931FC3CA8B004271F9 /* KeyValueModel+WCTTableCodig */,
+				166C69861FC3C227004271F9 /* LRSTKeyValueStore.h */,
+				166C69871FC3C227004271F9 /* LRSTKeyValueStore.m */,
+				166C698A1FC3C2A6004271F9 /* LRTSKeyValueModel.h */,
+				166C698B1FC3C2A6004271F9 /* LRTSKeyValueModel.mm */,
+			);
+			path = KeyValueStore;
+			sourceTree = "<group>";
+		};
+		166C69931FC3CA8B004271F9 /* KeyValueModel+WCTTableCodig */ = {
+			isa = PBXGroup;
+			children = (
+				166C698F1FC3CA85004271F9 /* LRTSKeyValueModel+WCTTableCoding.h */,
+			);
+			path = "KeyValueModel+WCTTableCodig";
 			sourceTree = "<group>";
 		};
 		18F60B061E53466A9A0D27A96A470016 /* Support Files */ = {
@@ -3458,6 +3489,7 @@
 				9754C75C21F39ED9880180C5A888588F /* KWBeforeAllNode.h in Headers */,
 				70AF8257EBAD9CA5BB5BC083C17A7B21 /* KWBeforeEachNode.h in Headers */,
 				FB902766CDFF2B5CC4C21971DE885D53 /* KWBeIdenticalToMatcher.h in Headers */,
+				166C69881FC3C227004271F9 /* LRSTKeyValueStore.h in Headers */,
 				E1DE22CA21F615E0C469B07D7BD03DC6 /* KWBeKindOfClassMatcher.h in Headers */,
 				ABAEB220D8F1F97279AE1FC528E8EF04 /* KWBeMemberOfClassMatcher.h in Headers */,
 				1F96D88C0D7B8E811143768F70DEC54A /* KWBeSubclassOfClassMatcher.h in Headers */,
@@ -3513,10 +3545,12 @@
 				CCB1BED993E1D3A08CA28C072818D533 /* KWNull.h in Headers */,
 				A226AAE1ED5EAADF031D9F8EE200E198 /* KWObjCUtilities.h in Headers */,
 				41ED16E59D55EBD39A816907201A90FE /* KWPendingNode.h in Headers */,
+				166C698C1FC3C2A6004271F9 /* LRTSKeyValueModel.h in Headers */,
 				9E842DCBEE5504B1DC8B8A8A6850B2EB /* KWProbe.h in Headers */,
 				447423B46DF3F053F72934986DAB4599 /* KWProbePoller.h in Headers */,
 				FA8820A9B211F92ED2ADF97F503502EB /* KWReceiveMatcher.h in Headers */,
 				EF787460589440DF143C814F84CA64C8 /* KWRegisterMatchersNode.h in Headers */,
+				166C69911FC3CA85004271F9 /* LRTSKeyValueModel+WCTTableCoding.h in Headers */,
 				CDF8DA51DBC9880DEE92C282BD1FC1F2 /* KWRegularExpressionPatternMatcher.h in Headers */,
 				F3A3E05FDF4E819622F38D7F503ECA88 /* KWReporting.h in Headers */,
 				EB7645869AC01EFCF97890D638882359 /* KWRespondToSelectorMatcher.h in Headers */,
@@ -3882,6 +3916,7 @@
 				DE51443F84DFFFB7633D85C257097937 /* KWBeBetweenMatcher.m in Sources */,
 				C892FBAA9C8A82D4E28C3A10D819DB75 /* KWBeEmptyMatcher.m in Sources */,
 				76F14C992CFFF06401BB053612016947 /* KWBeforeAllNode.m in Sources */,
+				166C698D1FC3C2A6004271F9 /* LRTSKeyValueModel.mm in Sources */,
 				05FE0F2F0AA21B529737BA004D7053B6 /* KWBeforeEachNode.m in Sources */,
 				D4D25E3DC1D8B567BF9B1B9A5567BF29 /* KWBeIdenticalToMatcher.m in Sources */,
 				DB71648982519BCB86F8474C6BDF33C7 /* KWBeKindOfClassMatcher.m in Sources */,
@@ -3909,6 +3944,7 @@
 				A5B563D9DDEF5338E9353A4F3C701F12 /* KWFailure.m in Sources */,
 				AFD2D4089547F692DE623D62EEC5F307 /* KWFormatter.m in Sources */,
 				0E13B04C70C4C2895C4DD9C7ACE957F3 /* KWFutureObject.m in Sources */,
+				166C69891FC3C227004271F9 /* LRSTKeyValueStore.m in Sources */,
 				6B71E732BCD10095E842764A1058D8C3 /* KWGenericMatcher.m in Sources */,
 				FCC998854ADBB58DCFF82E9A7DBE761D /* KWGenericMatchEvaluator.m in Sources */,
 				D7B3AEE6204645A834A2D8241E6D2052 /* KWGenericMatchingAdditions.m in Sources */,

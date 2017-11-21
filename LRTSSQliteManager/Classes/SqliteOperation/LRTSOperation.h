@@ -5,39 +5,31 @@
 //  Created by Jack Bai on 2017/11/1.
 //
 
-//#import "LRTSBaseOperation.h"
 #import <Foundation/Foundation.h>
 #import "LRTSDBModel.h"
 #import "LRTSDBBookModel.h"
 #import <WCDB/WCDB.h>
 
-typedef NS_ENUM(NSInteger, LRTSOperationdPathType) {
-    LRTSOperationPathTypeDefault,
-    LRTSOperationPathTypeDocument,
-    LRTSOperationPathTypeTmp
-};
 
 @interface LRTSOperation : NSObject
 
-@property (nonatomic) LRTSOperationdPathType pathType;
-
 @property (nonatomic, readonly) NSString  * _Nonnull databaseName;
 
-@property (readwrite, strong) NSString * _Nonnull tableName;
+@property (nonatomic, readonly) NSString * _Nonnull tableName;
 
-@property (nonatomic, strong, setter=setTableWithModel:) LRTSDBModel * _Nullable model;
+- (nullable instancetype)initWCDBWithName:(NSString *_Nullable)databaseName;
 
-- (nullable instancetype)initWithModel:(LRTSDBModel *)model;
+- (nullable instancetype)initWCDBWithPath:(NSString *_Nullable)databasePath;
 
-- (nullable instancetype)initWithPath:(NSString *_Nullable)path;
+- (BOOL)createTableWithDBModel:(LRTSDBModel * _Nonnull)model;
 
 + (nullable instancetype)wcdbWithModel:(LRTSDBModel * _Nonnull)model;
-
-+ (nullable instancetype)wcdbWithPath:(NSString *_Nullable)path;
 
 - (nullable instancetype)init UNAVAILABLE_ATTRIBUTE;
 
 + (nullable instancetype)new UNAVAILABLE_ATTRIBUTE;
+
+- (BOOL)isExistTableWithName:(NSString *)tableName;
 
 //增、删、改、查
 

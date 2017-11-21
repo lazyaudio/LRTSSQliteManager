@@ -7,7 +7,7 @@
 
 #import "LRTSOperation.h"
 
-#define NAME_SQLDATABASE @"lrts_wcbd_sqldatebase"
+#define NAME_SQLDATABASE @"LRTS_WCDB_DATABASE"
 
 @interface LRTSOperation () {
     Class _cls;
@@ -25,46 +25,52 @@
 
 #pragma  mark - public Methods
 
-- (instancetype)initWithModel:(LRTSDBModel *)model {
-    if (model == nil) return nil;
+- (nullable instancetype)initWCDBWithName:(NSString *_Nullable)databaseName {
     [self configurationParameter];
-    _cls = model.class;
-    NSString *path = [_pathCreatedSQLDatabase stringByAppendingPathComponent:_mNameSQLDatabase];
- 
-    NSString *tableName = NSStringFromClass(model.class);
-    if (!_mNameTable) {
-        _mNameTable = tableName;
-    }
-    return [self initWithPath:path];
+    if (0 != databaseName.length) _mNameSQLDatabase = databaseName;
+    NSString *pathSQLDB = [_pathCreatedSQLDatabase stringByAppendingPathComponent:_mNameSQLDatabase];
+    return [self initWCDBWithPath:pathSQLDB];
 }
 
-- (instancetype)initWithPath:(NSString *)path {
-    if(path.length == 0) return nil;
-    _pathCreatedSQLDatabase = path;
-    NSString *tableName = _mNameTable;
-    
-    _wcdb = [[WCTDatabase alloc] initWithPath:[NSString stringWithFormat:@"%@.db", _pathCreatedSQLDatabase]];
-    
-    NSLog(@"SQLite path : %@", _pathCreatedSQLDatabase);
-    if(!_wcdb) return nil;
-    
-    BOOL ret = [_wcdb createTableAndIndexesOfName:tableName withClass:_cls];
-    
-    if (ret) {
-        return self;
+- (nullable instancetype)initWCDBWithPath:(NSString *_Nullable)databasePath {
+    [self configurationParameter];
+    NSString *pathSQLDB;
+    //判断使未设置 database 名字，默认为:LRTS_WCDB_DATABASE.db
+    if (0 == databasePath.length) {
+        pathSQLDB = [_pathCreatedSQLDatabase stringByAppendingPathComponent:NAME_SQLDATABASE];
+    }else {
+        if ([databasePath isEqualToString: _pathCreatedSQLDatabase]) {
+            pathSQLDB = _pathCreatedSQLDatabase;
+        }else {
+            pathSQLDB = [databasePath stringByAppendingPathComponent:NAME_SQLDATABASE];
+        }
     }
+    _mNameSQLDatabase = [pathSQLDB lastPathComponent];
+    _wcdb = [[WCTDatabase alloc] initWithPath:[NSString stringWithFormat:@"%@.db", pathSQLDB]];
+    if (!_wcdb) return self;
+    
     return nil;
 }
 
+- (BOOL)createTableWithDBModel:(LRTSDBModel * _Nonnull)model {
+    if(nil == model) return NO;
+    
+    _cls = model.class;
+    NSString *tableName = NSStringFromClass(_cls);
+    _mNameTable = tableName;
+    
+    return [_wcdb createTableAndIndexesOfName:tableName withClass:_cls];
+}
+
+- (BOOL)isExistTableWithName:(NSString *)tableName {
+    return [_wcdb isTableExists:tableName];
+}
+
 + (instancetype)wcdbWithModel:(LRTSDBModel *)model {
-    return [[self alloc] initWithModel:model];
+    return [[self alloc] createTableWithModel:model];
 }
 
-+ (instancetype)wcdbWithPath:(NSString *)path {
-    return [[self alloc] initWithPath:path];
-}
-
-#pragma  mark -Operation For SQL 增删改查
+#pragma  mark - Operation For SQL 增删改查
 #pragma  mark - 增
 
 - (BOOL)insertObject:(LRTSObject *)object {
@@ -434,12 +440,6 @@
     return _mNameSQLDatabase;
 }
 
-- (void)setTableName:(NSString *)tableName {
-    if (tableName.length != 0 && ![_mNameTable isEqualToString:tableName]) {
-        _mNameTable = tableName;
-    }
-}
-
 - (NSString *)tableName {
     return [_mNameTable copy];
 }
@@ -455,12 +455,29 @@
 
 #pragma  mark - private Methods
 
+- (instancetype)createTableWithModel:(LRTSDBModel *)dbModel {
+    if(nil == dbModel) return nil;
+    if ([self initWCDBWithPath:@""]) {
+        BOOL ret = [_wcdb createTableAndIndexesOfName:NSStringFromClass(dbModel.class) withClass:dbModel.class];
+        if (ret) {
+            return self;
+        }
+    }
+    return nil;
+}
+
 - (void)checkOperationTableName:(NSString *)tableName {
     if (![_mNameTable isEqualToString:tableName]) {
         _mNameTable =  tableName;
     }
 }
 
+- (void)configurationParameter {
+    _pathCreatedSQLDatabase = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    _mNameSQLDatabase = NAME_SQLDATABASE;
+}
+
+/*
 - (void)configurationParameter {
     _pathCreatedSQLDatabase = [self savedWCDBDatabaseWithOperationPath:LRTSOperationPathTypeDefault];
     _mNameSQLDatabase = NAME_SQLDATABASE;
@@ -491,6 +508,7 @@
         }
     }
     return temPath;
-}
+}*/
+
 
 @end
