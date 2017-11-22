@@ -19,13 +19,16 @@ typedef NS_ENUM(NSInteger, LRSTKeyValueStoreDBPathType) {
 
 @property (nonatomic, assign) LRSTKeyValueStoreDBPathType dbPathType;
 
+- (instancetype)initKVSWithDatabaseName:(NSString *)databaseName;
+
+- (instancetype)initKVSWithDatabasePath:(NSString *)path;
+
 - (BOOL)createTableWithName:(NSString *)tableName;
 
 - (BOOL)isExistTableWithName:(NSString *)tableName;
 
 - (BOOL)clearAllObjectsOfTableWithName:(NSString *)tableName;
 
-- (void)close;
 
 #pragma mark - KeyValueStore Methods
 

@@ -6,8 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LRTSDBModel.h"
 
-@interface LRTSKeyValueModel : NSObject
+@interface LRTSKeyValueModel : LRTSDBModel
 
 @property (strong, nonatomic) NSString *itemKey;
 @property (strong, nonatomic) NSObject *itemValue;

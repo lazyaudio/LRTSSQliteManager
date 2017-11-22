@@ -23,7 +23,36 @@
 
 @implementation LRTSOperation
 
-#pragma  mark - public Methods
+#pragma mark - Life Cycle
+
+#pragma mark - Getter & Setter
+
+- (NSString *)databaseName {
+    return _mNameSQLDatabase;
+}
+
+- (NSString *)tableName {
+    return [_mNameTable copy];
+}
+
+- (void)setTableName:(NSString *)tableName {
+    _mNameTable = tableName;
+}
+
+- (void)setTableWithModel:(LRTSDBModel *)model {
+    if(model == nil) return;
+    __unsafe_unretained Class classModel = model.class;
+    if (_cls != classModel) {
+        _cls = classModel;
+        _mNameTable = NSStringFromClass(_cls);
+    }
+}
+
+#pragma mark - Event
+
+#pragma mark - Delegate
+
+#pragma mark - Public Method
 
 - (nullable instancetype)initWCDBWithName:(NSString *_Nullable)databaseName {
     [self configurationParameter];
@@ -39,15 +68,15 @@
     if (0 == databasePath.length) {
         pathSQLDB = [_pathCreatedSQLDatabase stringByAppendingPathComponent:NAME_SQLDATABASE];
     }else {
-        if ([databasePath isEqualToString: _pathCreatedSQLDatabase]) {
-            pathSQLDB = _pathCreatedSQLDatabase;
+        if (![databasePath isEqualToString: _pathCreatedSQLDatabase]) {
+            pathSQLDB = databasePath;
         }else {
             pathSQLDB = [databasePath stringByAppendingPathComponent:NAME_SQLDATABASE];
         }
     }
     _mNameSQLDatabase = [pathSQLDB lastPathComponent];
     _wcdb = [[WCTDatabase alloc] initWithPath:[NSString stringWithFormat:@"%@.db", pathSQLDB]];
-    if (!_wcdb) return self;
+    if (_wcdb) return self;
     
     return nil;
 }
@@ -56,8 +85,8 @@
     if(nil == model) return NO;
     
     _cls = model.class;
-    NSString *tableName = NSStringFromClass(_cls);
-    _mNameTable = tableName;
+    NSString *tableName = [self configurationTableName:model];
+    if (!tableName) return NO;
     
     return [_wcdb createTableAndIndexesOfName:tableName withClass:_cls];
 }
@@ -178,25 +207,25 @@
 }
 
 /*
-- (BOOL)deleteObjectsFormTable:(NSString *)tableName where:(const LRTSCondition &)condition orderBy:(const LRTSOrderByList &)orderList {
-    [self checkOperationTableName:tableName];
-    return [_wcdb deleteObjectsFromTable:_mNameTable
-                                   where:condition
-                                 orderBy:orderList];
-}*/
+ - (BOOL)deleteObjectsFormTable:(NSString *)tableName where:(const LRTSCondition &)condition orderBy:(const LRTSOrderByList &)orderList {
+ [self checkOperationTableName:tableName];
+ return [_wcdb deleteObjectsFromTable:_mNameTable
+ where:condition
+ orderBy:orderList];
+ }*/
 
 #pragma mark - 改
 
 - (BOOL)updateRowsWithValue:(const LRTSValue &)value
                    onObject:(LRTSObject *)object {
     return [self updateRowsInTable:_mNameTable
-                         withValue:value
-                          onObject:object];
+                         onValue:value
+                          withObject:object];
 }
 
 - (BOOL)updateRowsInTable:(NSString *)tableName
-                withValue:(const LRTSValue &)value
-                 onObject:(LRTSObject *)object{
+                onValue:(const LRTSValue &)value
+                 withObject:(LRTSObject *)object{
     if ([object isEqual:nil]) {
         return YES;
     }
@@ -207,18 +236,18 @@
 }
 
 - (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
-                withValue:(const LRTSValue &)value
-                 onObject:(LRTSObject * _Nullable)object
+                onValue:(const LRTSValue &)value
+                 withObject:(LRTSObject * _Nullable)object
                     where:(const LRTSCondition &)condition {
     [self checkOperationTableName:tableName];
     return [_wcdb updateRowsInTable:tableName
                          onProperty:value
-                          withObject:object
+                         withObject:object
                               where:condition];
 }
 
 - (BOOL)updateAllRowsInTable:(NSString *_Nonnull)tableName
-                     withValues:(const LRTSValueList &)valueList
+                  onValues:(const LRTSValueList &)valueList
                      withRow:(LRTSOneRow *_Nonnull)row {
     [self checkOperationTableName:tableName];
     return [_wcdb updateAllRowsInTable:tableName
@@ -227,7 +256,7 @@
 }
 
 - (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
-                  withValues:(const LRTSValueList &)valueList
+               onValues:(const LRTSValueList &)valueList
                withObject:(WCTObject *_Nonnull)object
                     where:(const LRTSCondition &)condition {
     [self checkOperationTableName:tableName];
@@ -416,44 +445,7 @@
     return isResult;
 }
 
-//- (BOOL)deleteObjectsInTransaction:(NSArray<LRTSObject *> *_Nullable)objects into:(NSString *_Nonnull)tableName {
-//    if (tableName.length ==0 || objects.count == 0) return NO;
-//    BOOL isResult = YES;
-//    isResult = [_wcdb commitTransaction];
-//
-//    for (LRTSObject *object in objects) {
-//        isResult = [_wcdb del];
-//    }
-//
-//    if (isResult) {
-//        isResult = [_wcdb commitTransaction];
-//    } else {
-//        isResult = [_wcdb rollbackTransaction];
-//    }
-//
-//    return isResult;
-//}
-
-#pragma  mark - setter & getter
-
-- (NSString *)databaseName {
-    return _mNameSQLDatabase;
-}
-
-- (NSString *)tableName {
-    return [_mNameTable copy];
-}
-
-- (void)setTableWithModel:(LRTSDBModel *)model {
-    if(model == nil) return;
-    __unsafe_unretained Class classModel = model.class;
-    if (_cls != classModel) {
-        _cls = classModel;
-        _mNameTable = NSStringFromClass(_cls);
-    }
-}
-
-#pragma  mark - private Methods
+#pragma mark - Private Method
 
 - (instancetype)createTableWithModel:(LRTSDBModel *)dbModel {
     if(nil == dbModel) return nil;
@@ -473,8 +465,15 @@
 }
 
 - (void)configurationParameter {
-    _pathCreatedSQLDatabase = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    _pathCreatedSQLDatabase = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     _mNameSQLDatabase = NAME_SQLDATABASE;
+}
+
+- (NSString *)configurationTableName:(LRTSDBModel *)model {
+    if (!_mNameTable) {
+        _mNameTable = NSStringFromClass(model.class);
+    }
+    return _mNameTable;
 }
 
 /*

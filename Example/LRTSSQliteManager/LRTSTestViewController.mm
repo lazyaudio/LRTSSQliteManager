@@ -17,6 +17,10 @@
 #import <LRTSSQliteManager/LRTSDBBookDetailModel.h>
 #import <LRTSSQliteManager/LRTSDBBookDetailModel+WCTTableCoding.h>
 
+//测试 LRTSKeyValueStroage
+#import "LRSTKeyValueStore.h"
+
+
 @interface LRTSTestViewController (){
     BOOL _isResult;
 }
@@ -38,9 +42,9 @@
     [self initHierarchy];
     
 //插入测试
-//    for(int i = 0; i < 5; i++) {
-//        [self insertOperations];
-//    }
+    for(int i = 0; i < 5; i++) {
+        [self insertOperations];
+   }
     
 //删除操作
 //    [self deleteOperations];
@@ -52,7 +56,7 @@
 //    [self selectOperations];
     
 //获取操作
-    [self getOperations];
+//    [self getOperations];
 
 }
 
@@ -79,11 +83,22 @@
 
 #pragma mark -Init Paramters
 - (void)initParamters {
-    _bookModel = [[LRTSDBBookModel alloc] init];
-    _bookDetailModel = [[LRTSDBBookDetailModel alloc] init];
-    _operation = [[LRTSOperation alloc] initWithModel:_bookModel];
     
-    LRTSOperation *bookOperation = [[LRTSOperation alloc] initWithModel:_bookDetailModel];
+//    LRSTKeyValueStore *keyValueStore = [[LRSTKeyValueStore alloc] init];
+//    [keyValueStore createTableWithName:@"KeyValueStore"];
+//    [keyValueStore putString:@"Good man!" withKey:@"man" into:@"KeyValueStore"];
+    
+    
+    _bookModel = [[LRTSDBBookModel alloc] init];
+//    _bookDetailModel = [[LRTSDBBookDetailModel alloc] init];
+    _operation = [LRTSOperation wcdbWithModel:_bookModel];
+    
+//    _operation = [[LRTSOperation alloc] initWCDBWithName:@"LazyAudio"];
+//    [_operation createTableWithDBModel:_bookModel];
+    /*
+//    _operation = [[LRTSOperation alloc] initWithModel:_bookModel];
+//
+//    LRTSOperation *bookOperation = [[LRTSOperation alloc] initWithModel:_bookDetailModel];
     
     //初始 BookModel
     _bookModel.bId = 100;
@@ -97,6 +112,7 @@
     _bookDetailModel.length = 10000;
     _bookDetailModel.bookVersion = @"广州出版社";
     _bookDetailModel.desc = @"广州市人民教育出版社";
+     */
 }
 
 
@@ -107,9 +123,8 @@
 - (void)insertOperations {
     BOOL isResult;
     //单个插入
-    /*
-    isResult = [_operation insertObject:_bookDetailModel into:NSStringFromClass(LRTSDBBookDetailModel.class)];
-     */
+    
+//    isResult = [_operation insertObject:_bookModel into:NSStringFromClass(LRTSDBBookModel.class)];
 
     //对表格的多任务 部分属性 插入数据
     NSMutableArray *objects = [[NSMutableArray alloc] init];
@@ -120,6 +135,7 @@
     bookModel2.name = @"《全力以赴》";
     bookModel2.author = @"礼拜";
     [objects addObject:bookModel2];
+    
     
     LRTSDBBookModel *bookModel3 = [[LRTSDBBookModel alloc] init];
     bookModel3.bId = 3;
@@ -147,6 +163,8 @@
     
     
     [_operation insertOrReplaceObjects:objects onValues:{LRTSDBBookModel.bId, LRTSDBBookModel.name} into:NSStringFromClass(LRTSDBBookModel.class)];
+    
+    NSArray *arror = [_operation getObjectsForTable:NSStringFromClass(LRTSDBBookModel.class) where:LRTSDBBookModel.name == [NSString stringWithFormat:@"%@%%", @"礼"]];
     
 }
 
@@ -180,7 +198,7 @@
 //                         onObject:bookModel2
 //                            where:LRTSDBBookModel.bId == 100];
     
-    [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookModel.class) withValues:{LRTSDBBookModel.author, LRTSDBBookModel.name} withObject:bookModel2 where:LRTSDBBookModel.bId == 100];
+//    [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookModel.class) withValues:{LRTSDBBookModel.author, LRTSDBBookModel.name} withObject:bookModel2 where:LRTSDBBookModel.bId == 100];
     
 }
 
@@ -194,6 +212,20 @@
     
     NSArray *mutableObjects = [_operation selectMutableObjectsOnResults:{LRTSDBBookModel.name.inTable(bookName), LRTSDBBookDetailModel.desc.inTable(bookDetailName)} fromTables:@[bookName, bookDetailName] where:LRTSDBBookModel.bId == 1];
     
+    //(1)results
+    //key[column_one, column_two ...]、key[column_one, column_two ...]
+    
+    //(2)tables @[table_one, table_two ...];
+    
+    /***********************************************
+    //(3)conditions
+    //LRTSDBModel.bid、LRTSDBModel.name、LRTSDBModel.bookDetail
+    //符号
+    //LRTSDBBookDetailModel.bid、数字、string
+    ************************************************/
+    
+    //
+
 }
 
 #pragma mark -Get

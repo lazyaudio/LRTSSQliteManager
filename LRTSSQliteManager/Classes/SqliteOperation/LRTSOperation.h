@@ -15,7 +15,7 @@
 
 @property (nonatomic, readonly) NSString  * _Nonnull databaseName;
 
-@property (nonatomic, readonly) NSString * _Nonnull tableName;
+@property (nonatomic, readwrite) NSString * _Nonnull tableName;
 
 - (nullable instancetype)initWCDBWithName:(NSString *_Nullable)databaseName;
 
@@ -23,13 +23,13 @@
 
 - (BOOL)createTableWithDBModel:(LRTSDBModel * _Nonnull)model;
 
-+ (nullable instancetype)wcdbWithModel:(LRTSDBModel * _Nonnull)model;
++ (nullable instancetype)wcdbWithModel:(LRTSDBModel *_Nonnull)model;
 
 - (nullable instancetype)init UNAVAILABLE_ATTRIBUTE;
 
 + (nullable instancetype)new UNAVAILABLE_ATTRIBUTE;
 
-- (BOOL)isExistTableWithName:(NSString *)tableName;
+- (BOOL)isExistTableWithName:(NSString *_Nullable)tableName;
 
 //增、删、改、查
 
@@ -107,20 +107,20 @@
  @return 数据更新后返回结果
  */
 - (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
-                withValue:(const LRTSValue &)value
-                 onObject:(LRTSObject * _Nullable)object;
+                onValue:(const LRTSValue &)value
+                 withObject:(LRTSObject * _Nullable)object;
 
 - (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
-                withValue:(const LRTSValue &)value
-                 onObject:(LRTSObject * _Nullable)object
+                onValue:(const LRTSValue &)value
+                 withObject:(LRTSObject * _Nullable)object
                     where:(const LRTSCondition &)condition;
 
 - (BOOL)updateAllRowsInTable:(NSString *_Nonnull)tableName
-                withValues:(const LRTSValueList &)valueList
+                onValues:(const LRTSValueList &)valueList
                      withRow:(LRTSOneRow *_Nonnull)row;
 
 - (BOOL)updateRowsInTable:(NSString *_Nonnull)tableName
-             withValues:(const LRTSValueList &)valueList
+             onValues:(const LRTSValueList &)valueList
                   withObject:(WCTObject *_Nonnull)object
                     where:(const LRTSCondition &)condition;
 

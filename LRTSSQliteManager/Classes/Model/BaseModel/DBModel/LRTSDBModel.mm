@@ -26,7 +26,8 @@
 #pragma mark - Private Methods
 
 - (LRTSOperation *)lrtsOperation {
-    return [[LRTSOperation alloc] initWithModel:(LRTSDBModel *)self];
+    return [LRTSOperation wcdbWithModel: (LRTSDBModel *)self];
+//    [[LRTSOperation alloc] initWithModel:(LRTSDBModel *)self];
 }
 
 @end
