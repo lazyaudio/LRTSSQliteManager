@@ -20,6 +20,12 @@
 //测试 LRTSKeyValueStroage
 #import "LRSTKeyValueStore.h"
 
+//LRTSDBMaker Test
+
+//LRTSRanksList
+#import "LRTSDBManager.h"
+
+
 
 @interface LRTSTestViewController (){
     BOOL _isResult;
@@ -38,13 +44,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initParamters];
-    [self initHierarchy];
+//    [self initParamters];
+//    [self initHierarchy];
     
 //插入测试
-    for(int i = 0; i < 5; i++) {
-        [self insertOperations];
-   }
+//    for(int i = 0; i < 5; i++) {
+//        [self insertOperations];
+//   }
     
 //删除操作
 //    [self deleteOperations];
@@ -58,6 +64,9 @@
 //获取操作
 //    [self getOperations];
 
+    
+//    测试 Maker
+    [self testDBMaker];
 }
 
 
@@ -73,6 +82,8 @@
 #pragma mark - Delegate
 
 #pragma mark - Public Method
+
+
 
 #pragma mark - Private Method
 
@@ -188,10 +199,10 @@
     
 //    _isResult = [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookModel.class) withValue:LRTSDBBookModel.author onObject:bookModel2];
     
-//    _isResult = [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookModel.class)
-//                                     onValues:{LRTSDBBookModel.bId, LRTSDBBookModel.author}
-//                                   withObject:bookModel2
-//                                        where:LRTSDBBookModel.bId == 100];
+    _isResult = [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookModel.class)
+                                     onValues:{LRTSDBBookModel.bId, LRTSDBBookModel.author}
+                                   withObject:bookModel2
+                                        where:LRTSDBBookModel.bId == 100];
     
 //    [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookModel.class)
 //                        withValue:LRTSDBBookModel.author
@@ -212,8 +223,9 @@
     
     NSArray *mutableObjects = [_operation selectMutableObjectsOnResults:{LRTSDBBookModel.name.inTable(bookName), LRTSDBBookDetailModel.desc.inTable(bookDetailName)} fromTables:@[bookName, bookDetailName] where:LRTSDBBookModel.bId == 1];
     
+    
     //(1)results
-    //key[column_one, column_two ...]、key[column_one, column_two ...]
+    //key[column_one, column_two ...],key[column_one, column_two ...]
     
     //(2)tables @[table_one, table_two ...];
     
@@ -246,8 +258,36 @@
     
 }
 
+#pragma mark -LRTSDBMaker
 
+- (void)testDBMaker {
+//    LRTSDBMaker *maker = [[LRTSDBMaker alloc] init];
+//    [maker updateWithDBMaker:^(LRTSDBMaker *maker) {
+//        maker.model(@"model").onProperty(@"property");
+//    }];
+//
+//    LRTSDBManager *manager = [[LRTSDBManager alloc] init];
+//    [manager selectMutailObjectsOnProperty:^(LRTSRanksList *ranksList) {
+//        ranksList.model(@"LRTSDBBookDetailModel").onProperty(@"bId");
+//        ranksList.model(@"LRTSDBookModel").onProperty(@"author");
+//    }];
+//    {LRTSDBBookModel.name.inTable(bookName), LRTSDBBookDetailModel.desc.inTable(bookDetailName)}
 
+//    NSArray *array = ;
+//    LRTSDBBookModel
+//    [manager selectMutailObjectsOnProperty:^(LRTSRanksList *ranksList) {
+//        ranksList.model(@"LRTSDBBookModel").onProperty(@"name");
+//        ranksList.model(@"LRTSDBBookDetailModel").onProperty(@"desc");
+//    } forTableModels:];
+    
+//    LRTSRanksList *RL = [[LRTSRanksList alloc] init];
+//    
+//    [RL updateWithLRTSRanksList:^(LRTSRanksList *rankList) {
+//        
+//    }];
+//    
+//    NSLog(@"RL:%@", RL.ranksList);
+}
 
 
 

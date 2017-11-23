@@ -99,6 +99,8 @@
 #import "LRTSDownloadState.h"
 #import "LRTSDBMessageHeader.h"
 #import "LRTSDBMessageState.h"
+#import "LRTSRanksList+Category.h"
+#import "LRTSRanksList.h"
 #import "LRTSDBPublicTypeDefine.h"
 #import "LRTSCellDataSourceDelegate.h"
 #import "LRTSDBAudioAlbumDelegate.h"

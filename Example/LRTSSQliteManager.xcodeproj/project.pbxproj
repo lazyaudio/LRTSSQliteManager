@@ -12,11 +12,13 @@
 		167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.mm */; };
 		1683146A1FB143B500462AC3 /* BookDetail+WCTTableCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */; };
 		1683146B1FB143B500462AC3 /* LRTSAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LRTSAppDelegate.mm */; };
-		1683146C1FB143B500462AC3 /* LRTSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LRTSViewController.m */; };
+		1683146C1FB143B500462AC3 /* LRTSViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LRTSViewController.mm */; };
 		1683146D1FB143B500462AC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		1683146E1FB143B500462AC3 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		1683146F1FB145DD00462AC3 /* BookDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69D1FA9C6890020D43F /* BookDetail.mm */; };
 		168BA7381FB9936000B18E5D /* Book.mm in Sources */ = {isa = PBXBuildFile; fileRef = 168BA7371FB9936000B18E5D /* Book.mm */; };
+		16E7DB221FC66F6A00ADC288 /* LRTSDBMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DB211FC66F6A00ADC288 /* LRTSDBMaker.m */; };
+		16E7DB361FC6AD5F00ADC288 /* LRTSDBManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DB351FC6AD5F00ADC288 /* LRTSDBManager.mm */; };
 		184583C8960C6E75012533A4 /* Pods_LRTSSQliteManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A00FBAA6C25EEEE6FB812F /* Pods_LRTSSQliteManager_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -57,6 +59,10 @@
 		1696D69D1FA9C6890020D43F /* BookDetail.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BookDetail.mm; sourceTree = "<group>"; };
 		1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "BookDetail+WCTTableCoding.mm"; sourceTree = "<group>"; };
 		1696D69F1FA9C6890020D43F /* BookDetail+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookDetail+WCTTableCoding.h"; sourceTree = "<group>"; };
+		16E7DB201FC66F6A00ADC288 /* LRTSDBMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBMaker.h; sourceTree = "<group>"; };
+		16E7DB211FC66F6A00ADC288 /* LRTSDBMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBMaker.m; sourceTree = "<group>"; };
+		16E7DB341FC6AD5F00ADC288 /* LRTSDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBManager.h; sourceTree = "<group>"; };
+		16E7DB351FC6AD5F00ADC288 /* LRTSDBManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBManager.mm; sourceTree = "<group>"; };
 		1D7A42E7E0F84CA9DD5EE498 /* LRTSSQliteManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LRTSSQliteManager.podspec; path = ../LRTSSQliteManager.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LRTSSQliteManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRTSSQliteManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,7 +75,7 @@
 		6003F59C195388D20070C39A /* LRTSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* LRTSAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSAppDelegate.mm; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* LRTSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* LRTSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSViewController.m; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* LRTSViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSViewController.mm; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* LRTSSQliteManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRTSSQliteManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -145,6 +151,17 @@
 			name = Book;
 			sourceTree = "<group>";
 		};
+		16E7DB1F1FC66F4A00ADC288 /* TestMaker */ = {
+			isa = PBXGroup;
+			children = (
+				16E7DB201FC66F6A00ADC288 /* LRTSDBMaker.h */,
+				16E7DB211FC66F6A00ADC288 /* LRTSDBMaker.m */,
+				16E7DB341FC6AD5F00ADC288 /* LRTSDBManager.h */,
+				16E7DB351FC6AD5F00ADC288 /* LRTSDBManager.mm */,
+			);
+			name = TestMaker;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +200,7 @@
 		6003F593195388D20070C39A /* Example for LRTSSQliteManager */ = {
 			isa = PBXGroup;
 			children = (
+				16E7DB1F1FC66F4A00ADC288 /* TestMaker */,
 				167F696D1FC027B000D04D46 /* BookDetailTest */,
 				160874E31FBBE80900F9857F /* TestViewController */,
 				1696D69B1FA9C63B0020D43F /* Book */,
@@ -190,7 +208,7 @@
 				6003F59D195388D20070C39A /* LRTSAppDelegate.mm */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LRTSViewController.h */,
-				6003F5A6195388D20070C39A /* LRTSViewController.m */,
+				6003F5A6195388D20070C39A /* LRTSViewController.mm */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -455,12 +473,14 @@
 				1683146F1FB145DD00462AC3 /* BookDetail.mm in Sources */,
 				1683146A1FB143B500462AC3 /* BookDetail+WCTTableCoding.mm in Sources */,
 				1683146B1FB143B500462AC3 /* LRTSAppDelegate.mm in Sources */,
-				1683146C1FB143B500462AC3 /* LRTSViewController.m in Sources */,
+				1683146C1FB143B500462AC3 /* LRTSViewController.mm in Sources */,
 				1683146D1FB143B500462AC3 /* main.m in Sources */,
+				16E7DB221FC66F6A00ADC288 /* LRTSDBMaker.m in Sources */,
 				167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.mm in Sources */,
 				168BA7381FB9936000B18E5D /* Book.mm in Sources */,
 				1683146E1FB143B500462AC3 /* Tests.m in Sources */,
 				160874E61FBBE83E00F9857F /* LRTSTestViewController.mm in Sources */,
+				16E7DB361FC6AD5F00ADC288 /* LRTSDBManager.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

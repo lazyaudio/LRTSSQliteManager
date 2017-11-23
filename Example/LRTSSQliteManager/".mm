@@ -27,7 +27,8 @@
 #import "LRTSDBBookDetailModel.h"
 #import "LRTSDBBookDetailModel+WCTTableCoding.h"
 #import "LRTSOperation.h"
-#import "LRSTKeyValueStore.h"
+
+
 
 @interface LRTSBookDetailViewController ()
 
@@ -52,7 +53,7 @@
 //    [self insertDetailBookModel];
     
 //getOneObject
-//    LRTSDBBookDetailModel *detailBook = [self getOneBookInfoFromDatabaseByBookId:2];
+    LRTSDBBookDetailModel *detailBook = [self getOneBookInfoFromDatabaseByBookId:2];
     
 }
 
@@ -84,9 +85,6 @@
 
 #pragma mark - BookDetail Of Operations For SQL
 
-#pragma mark -
-#pragma mark - LRTSOperation (1)
-
 #pragma mark -Insert
 
 - (void)insertDetailBookModel {
@@ -109,8 +107,6 @@
 //    }
 }
 
-#pragma mark -Delete
-
 - (void)deleteDetailBookModel {
     //删除所有的数据
     [_operation deleteAllObjectsFromTable:NSStringFromClass(LRTSDBBookDetailModel.class)];
@@ -119,90 +115,23 @@
     [_operation deleteObjectsFromTable:NSStringFromClass(LRTSDBBookDetailModel.class) where:LRTSDBBookDetailModel.bId == 100];
 }
 
-#pragma mark -Update
-
 - (void)updateDetailBookModel {
     if (!_detailModel) {
         _detailModel = [[LRTSDBBookDetailModel alloc] init];
     }
     _detailModel.bId = 1;
-    _detailModel.commentMean = @"118";
-    _detailModel.desc = @"LRTS Book Detail Model";
+    _detailModel.bookPrice = 118;
+    _detailModel.debugDescription = @"
     
-    //更新单个数据
     [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookDetailModel.class) onValue:LRTSDBBookDetailModel.bId withObject:_detailModel];
-    
-    //跟新在某一个数据条件 某一个参数 是使用 Model
-    [_operation updateRowsInTable:NSStringFromClass(LRTSDBBookDetailModel.class) onValue:LRTSDBBookDetailModel.author withObject:_detailModel where:LRTSDBBookDetailModel.bId == 10];
 }
 
-#pragma mark -Get
-
-- (void)getDBBookDetailModel {
-    //获取所有的数据
-    [_operation getAllObjectsForTable:NSStringFromClass(LRTSDBBookDetailModel.class)];
-    
-    //
-    [_operation getOneObjectFormTable:NSStringFromClass(LRTSDBBookDetailModel.class) where:LRTSDBBookDetailModel.bId == 100];
-}
-
-#pragma mark -
-#pragma mark - LRTSDBDetailBookModel (2)
-
-- (void)operationDetailBookModel {
-    LRTSDBBookDetailModel *bookDetailModel = [[LRTSDBBookDetailModel alloc] init];
-    
-    bookDetailModel.commentMean = @"LRTS Detail Model";
-    bookDetailModel.desc = @"Lazy Audio";
-    bookDetailModel.bId = 100;
-    
-    //保存
-    [bookDetailModel saved];
-    
-    //数据查询
-    [bookDetailModel getModelsWhere:LRTSDBBookDetailModel.bId == 100];
-    
-    //数据多组查询
-    NSMutableArray *modelsArray ;
-    [modelsArray addObject:bookDetailModel];
-    
-    LRTSDBBookDetailModel *bookDetailModel2 = [[LRTSDBBookDetailModel alloc] init];
-    bookDetailModel2.commentMean = @"LRTS Detail Model";
-    bookDetailModel2.desc = @"Lazy Audio";
-    bookDetailModel2.bId = 100;
-    
-    [modelsArray addObject:bookDetailModel2];
-    
-    [bookDetailModel saveModels:modelsArray];
-}
-
-#pragma mark -
-#pragma mark - LRTSKeyValueStorage (3)
-
-- (void)keyValueSrorage {
-    //创建数据库
-    LRSTKeyValueStore *keyValueStore = [[LRSTKeyValueStore alloc] initKVSWithDatabaseName:@"KeyValueStorage"];
-    [keyValueStore createTableWithName:@"valueStroage"];
-    
-    //数据插入
-    [keyValueStore putString:@"value" withKey:@"key" into:@"valueStroage"];
-    
-    //获取数据
-    [keyValueStore getStringWithKey:@"key" formTable:@"valueStroage"];
-    
-    //删除数据
-    [keyValueStore deleteValueWithKey:@"key" formTable:@"valueStroage"];
-    
-    //修改数据
-    [keyValueStore updateCrateTimeWithKey:@"CreateTime" fromTable:@"valueStroage"];
-}
-
-
-/*
 - (LRTSDBBookDetailModel *)getOneBookInfoFromDatabaseByBookId:(NSInteger)bookId {
     LRTSDBBookDetailModel *bookDetailModel = [_operation getOneObjectFormTable:NSStringFromClass(LRTSDBBookDetailModel.class) where:LRTSDBBookDetailModel.bId == bookId];
     return bookDetailModel;
 }
-*/
+
+
+
 
 @end
