@@ -25,21 +25,43 @@
 //
 //  就是做一个总的操作的接口层
 //
+/****************************************************************************/
+//（1）数据库的连表查询实现完成，在 Operation 数据库连表查询
+//
+//（2）在 LRTSDBDetailBookModel 的 .mm 文件中对属性 WCDB_SYNTHESIZE(tableName, property) 进行注册和修改即可
+//
+//（3）连表修改双表的数据采用任务的形式进行数据表格的修改
+//
+//（4）在实例中 Operation 数据查找中实现
+//
+//（5）实现
+//
+//（6）
+//
+//
+//
+//
+//
+/****************************************************************************/
+//
+//
+
 
 #import "LRTSBookDetailViewController.h"
 
-//
-
+#pragma mark -
 #import "LRTSDBBookDetailModel.h"
 #import "LRTSDBBookDetailModel+WCTTableCoding.h"
 #import "LRTSOperation.h"
+
+#pragma mark -
 #import "LRSTKeyValueStore.h"
+
 
 @interface LRTSBookDetailViewController ()
 
 @property (strong, nonatomic) LRTSOperation *operation;
 @property (strong, nonatomic) LRTSDBBookDetailModel *detailModel;
-
 
 @end
 
@@ -51,15 +73,6 @@
     [super viewDidLoad];
     
     [self initParamters];
-
-//DetailBook
-    
-//insert operation
-//    [self insertDetailBookModel];
-    
-//getOneObject
-//    LRTSDBBookDetailModel *detailBook = [self getOneBookInfoFromDatabaseByBookId:2];
-    
 }
 
 #pragma mark - Getter & Setter
@@ -150,6 +163,9 @@
     
     //
     [_operation getOneObjectFormTable:NSStringFromClass(LRTSDBBookDetailModel.class) where:LRTSDBBookDetailModel.bId == 100];
+    
+    //数据的连表查询
+    [_operation selectMutableObjectsOnResults:{LRTSDBBookDetailModel.bookPrice, LRTSDBBookModel.version} fromTables:@[NSStringFromClass(LRTSDBBookDetailModel.class), NSStringFromClass(LRTSDBBookModel.class)] where:LRTSDBBookDetailModel.bId == LRTSDBBookModel.version];
 }
 
 #pragma mark -
