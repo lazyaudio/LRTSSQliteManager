@@ -25,6 +25,9 @@
 //LRTSRanksList
 #import "LRTSDBManager.h"
 
+//测试 BookDetail
+#import "BookDetail.h"
+#import "BookDetail+WCTTableCoding.h"
 
 
 @interface LRTSTestViewController (){
@@ -35,6 +38,9 @@
 @property (nonatomic, strong) LRTSDBBookModel *bookModel;
 @property (nonatomic, strong) LRTSDBBookDetailModel *bookDetailModel;
 
+//
+@property (nonatomic, strong) BookDetail *bookD;
+
 @end
 
 @implementation LRTSTestViewController
@@ -44,12 +50,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self initParamters];
-//    [self initHierarchy];
+    [self initParamters];
+    [self initHierarchy];
     
 //插入测试
 //    for(int i = 0; i < 5; i++) {
-//        [self insertOperations];
+        [self insertOperations];
 //   }
     
 //删除操作
@@ -66,7 +72,7 @@
 
     
 //    测试 Maker
-    [self testDBMaker];
+//    [self testDBMaker];
 }
 
 
@@ -100,17 +106,21 @@
 //    [keyValueStore putString:@"Good man!" withKey:@"man" into:@"KeyValueStore"];
     
     
-    _bookModel = [[LRTSDBBookModel alloc] init];
+//    _bookModel = [[LRTSDBBookModel alloc] init];
 //    _bookDetailModel = [[LRTSDBBookDetailModel alloc] init];
-    _operation = [LRTSOperation wcdbWithModel:_bookModel];
+    _bookD = [[BookDetail alloc] init];
+    _operation = [LRTSOperation wcdbWithModel:_bookD];
     
+    _bookD.bookID = @"bookID1";
+    _bookD.bookName = 10086;
+    _bookD.upLoad = [NSDate date];
 //    _operation = [[LRTSOperation alloc] initWCDBWithName:@"LazyAudio"];
 //    [_operation createTableWithDBModel:_bookModel];
-    /*
+   
 //    _operation = [[LRTSOperation alloc] initWithModel:_bookModel];
 //
 //    LRTSOperation *bookOperation = [[LRTSOperation alloc] initWithModel:_bookDetailModel];
-    
+    /*
     //初始 BookModel
     _bookModel.bId = 100;
     _bookModel.hot = 100;
@@ -134,6 +144,8 @@
 - (void)insertOperations {
     BOOL isResult;
     //单个插入
+    
+    isResult = [_operation insertObject:_bookD into:NSStringFromClass(BookDetail.class)];
     
 //    isResult = [_operation insertObject:_bookModel into:NSStringFromClass(LRTSDBBookModel.class)];
 
@@ -266,7 +278,7 @@
 //        maker.model(@"model").onProperty(@"property");
 //    }];
 //
-//    LRTSDBManager *manager = [[LRTSDBManager alloc] init];
+    LRTSDBManager *manager = [[LRTSDBManager alloc] init];
 //    [manager selectMutailObjectsOnProperty:^(LRTSRanksList *ranksList) {
 //        ranksList.model(@"LRTSDBBookDetailModel").onProperty(@"bId");
 //        ranksList.model(@"LRTSDBookModel").onProperty(@"author");

@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LRTSDBModel.h"
 
-@interface BookDetail : NSObject
+@interface BookDetail : LRTSDBModel
 
-@property(assign, nonatomic) int bookID;
-@property(copy, nonatomic) NSString *bookName;
+@property(strong, nonatomic) NSString *bookID;
+@property(assign, nonatomic) NSUInteger bookName;
 @property(strong, nonatomic) NSDate *upLoad;
 @property(copy, nonatomic) NSString *pubilsher;
 

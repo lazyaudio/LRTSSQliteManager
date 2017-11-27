@@ -117,16 +117,16 @@
     NSMutableArray *objects = [[NSMutableArray alloc] init];
     
     BookDetail *bookDetail = [[BookDetail alloc] init];
-    bookDetail.bookName = @"鲁滨孙漂流记";
+//    bookDetail.bookName = @"鲁滨孙漂流记";
     bookDetail.pubilsher = @"Jack";
-    bookDetail.bookID = 100;
+//    bookDetail.bookID = 100;
     [objects addObject:bookDetail];
     
     BookDetail *bookDetail1 = [[BookDetail alloc] init];
     
-    bookDetail1.bookName = @"CEO 是怎么炼成的";
+//    bookDetail1.bookName = @"CEO 是怎么炼成的";
     bookDetail1.pubilsher = @"Jack Bai";
-    bookDetail1.bookID = 101;
+//    bookDetail1.bookID = 101;
     [objects addObject:bookDetail1];
     
     BOOL ret = [_wcdb insertObjects:objects into:tableName];

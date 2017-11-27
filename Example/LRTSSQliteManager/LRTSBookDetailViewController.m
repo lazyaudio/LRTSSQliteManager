@@ -48,7 +48,9 @@
 
 
 #import "LRTSBookDetailViewController.h"
+//#import "LRTSSelectOperation.h"
 
+/*
 #pragma mark -
 #import "LRTSDBBookDetailModel.h"
 #import "LRTSDBBookDetailModel+WCTTableCoding.h"
@@ -56,12 +58,12 @@
 
 #pragma mark -
 #import "LRSTKeyValueStore.h"
-
+*/
 
 @interface LRTSBookDetailViewController ()
 
-@property (strong, nonatomic) LRTSOperation *operation;
-@property (strong, nonatomic) LRTSDBBookDetailModel *detailModel;
+//@property (strong, nonatomic) LRTSOperation *operation;
+//@property (strong, nonatomic) LRTSDBBookDetailModel *detailModel;
 
 @end
 
@@ -94,13 +96,15 @@
     
 }
 
+
 #pragma mark -Init Paramters
 
 - (void)initParamters {
-    _detailModel = [[LRTSDBBookDetailModel alloc] init];
+//    _detailModel = [[LRTSDBBookDetailModel alloc] init];
     
 }
 
+/*
 #pragma mark - BookDetail Of Operations For SQL
 
 #pragma mark -
@@ -116,7 +120,7 @@
     _detailModel.bookVersion = @"版本1.0.0";
     _detailModel.desc = @"shantou university";
     
-    [_detailModel saved];
+//    [_detailModel saved];
     
 //    //循环加入数据
 //    NSInteger i = 1;
@@ -218,7 +222,7 @@
     //修改数据
     [keyValueStore updateCrateTimeWithKey:@"CreateTime" fromTable:@"valueStroage"];
 }
-
+*/
 
 /*
 - (LRTSDBBookDetailModel *)getOneBookInfoFromDatabaseByBookId:(NSInteger)bookId {

@@ -87,7 +87,6 @@
     return [self putValue:@[number] withKey:key into:tableName];
 }
 
-
 #pragma mark -Get
 
 - (id)getValueWithKey:(NSString *)key formTable:(NSString *)tableName {
@@ -140,7 +139,7 @@
 }
 
 - (BOOL)deleteValuesWithKeysPrefix:(NSString *)prefixString formTable:(NSString *)tableName {
-    
+    return [_operation deleteObjectsFromTable:tableName where:LRTSKeyValueModel.itemKey.like([NSString stringWithFormat:@"%%%@%%", prefixString])];
 }
 
 #pragma mark - Change CreateTime

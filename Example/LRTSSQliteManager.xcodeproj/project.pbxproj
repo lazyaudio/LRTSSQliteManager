@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		160874E61FBBE83E00F9857F /* LRTSTestViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 160874E51FBBE83E00F9857F /* LRTSTestViewController.mm */; };
+		16290E1A1FC7C65C00DC4F1E /* LRTSDBOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16290E191FC7C65C00DC4F1E /* LRTSDBOperation.mm */; };
+		16290E1E1FC7C70800DC4F1E /* LRTSDBInsertOrReplaceOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16290E1D1FC7C70800DC4F1E /* LRTSDBInsertOrReplaceOperation.mm */; };
+		16290E211FC7C71C00DC4F1E /* LRTSDeleteOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16290E201FC7C71C00DC4F1E /* LRTSDeleteOperation.mm */; };
+		16290E241FC7C73100DC4F1E /* LRTSSelectOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16290E231FC7C73100DC4F1E /* LRTSSelectOperation.mm */; };
 		167136531FBD70D20035A0A1 /* LRTSSQliteManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167136541FBD70D20035A0A1 /* LRTSSQliteManager.framework */; };
-		167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.mm */; };
-		1683146A1FB143B500462AC3 /* BookDetail+WCTTableCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */; };
+		167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.m */; };
 		1683146B1FB143B500462AC3 /* LRTSAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LRTSAppDelegate.mm */; };
 		1683146C1FB143B500462AC3 /* LRTSViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LRTSViewController.mm */; };
 		1683146D1FB143B500462AC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
@@ -50,14 +53,24 @@
 		08FCADABC0B3EB1CC07F5F28 /* Pods-LRTSSQliteManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRTSSQliteManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LRTSSQliteManager_Tests/Pods-LRTSSQliteManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		160874E41FBBE83E00F9857F /* LRTSTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSTestViewController.h; sourceTree = "<group>"; };
 		160874E51FBBE83E00F9857F /* LRTSTestViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSTestViewController.mm; sourceTree = "<group>"; };
+		16290E181FC7C65C00DC4F1E /* LRTSDBOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBOperation.h; sourceTree = "<group>"; };
+		16290E191FC7C65C00DC4F1E /* LRTSDBOperation.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBOperation.mm; sourceTree = "<group>"; };
+		16290E1C1FC7C70800DC4F1E /* LRTSDBInsertOrReplaceOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBInsertOrReplaceOperation.h; sourceTree = "<group>"; };
+		16290E1D1FC7C70800DC4F1E /* LRTSDBInsertOrReplaceOperation.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDBInsertOrReplaceOperation.mm; sourceTree = "<group>"; };
+		16290E1F1FC7C71C00DC4F1E /* LRTSDeleteOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDeleteOperation.h; sourceTree = "<group>"; };
+		16290E201FC7C71C00DC4F1E /* LRTSDeleteOperation.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSDeleteOperation.mm; sourceTree = "<group>"; };
+		16290E221FC7C73100DC4F1E /* LRTSSelectOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSSelectOperation.h; sourceTree = "<group>"; };
+		16290E231FC7C73100DC4F1E /* LRTSSelectOperation.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSSelectOperation.mm; sourceTree = "<group>"; };
+		16290E251FC7DEC200DC4F1E /* Book+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Book+WCTTableCoding.h"; sourceTree = "<group>"; };
+		16290E261FC7FB2A00DC4F1E /* LRTSRanksList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSRanksList.h; sourceTree = "<group>"; };
+		16290E271FC7FB2A00DC4F1E /* LRTSRanksList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSRanksList.m; sourceTree = "<group>"; };
 		167136541FBD70D20035A0A1 /* LRTSSQliteManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LRTSSQliteManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		167F696E1FC0281C00D04D46 /* LRTSBookDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSBookDetailViewController.h; sourceTree = "<group>"; };
-		167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSBookDetailViewController.mm; sourceTree = "<group>"; };
+		167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSBookDetailViewController.m; sourceTree = "<group>"; };
 		168BA7361FB9936000B18E5D /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		168BA7371FB9936000B18E5D /* Book.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Book.mm; sourceTree = "<group>"; };
 		1696D69C1FA9C6890020D43F /* BookDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetail.h; sourceTree = "<group>"; };
 		1696D69D1FA9C6890020D43F /* BookDetail.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BookDetail.mm; sourceTree = "<group>"; };
-		1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "BookDetail+WCTTableCoding.mm"; sourceTree = "<group>"; };
 		1696D69F1FA9C6890020D43F /* BookDetail+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookDetail+WCTTableCoding.h"; sourceTree = "<group>"; };
 		16E7DB201FC66F6A00ADC288 /* LRTSDBMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBMaker.h; sourceTree = "<group>"; };
 		16E7DB211FC66F6A00ADC288 /* LRTSDBMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBMaker.m; sourceTree = "<group>"; };
@@ -129,11 +142,33 @@
 			name = TestViewController;
 			sourceTree = "<group>";
 		};
+		16290E1B1FC7C69900DC4F1E /* ConcreteOperation */ = {
+			isa = PBXGroup;
+			children = (
+				16290E1C1FC7C70800DC4F1E /* LRTSDBInsertOrReplaceOperation.h */,
+				16290E1D1FC7C70800DC4F1E /* LRTSDBInsertOrReplaceOperation.mm */,
+				16290E1F1FC7C71C00DC4F1E /* LRTSDeleteOperation.h */,
+				16290E201FC7C71C00DC4F1E /* LRTSDeleteOperation.mm */,
+				16290E221FC7C73100DC4F1E /* LRTSSelectOperation.h */,
+				16290E231FC7C73100DC4F1E /* LRTSSelectOperation.mm */,
+			);
+			name = ConcreteOperation;
+			sourceTree = "<group>";
+		};
+		16290E281FC7FB2A00DC4F1E /* DBMutilTableMaker */ = {
+			isa = PBXGroup;
+			children = (
+				16290E261FC7FB2A00DC4F1E /* LRTSRanksList.h */,
+				16290E271FC7FB2A00DC4F1E /* LRTSRanksList.m */,
+			);
+			path = DBMutilTableMaker;
+			sourceTree = "<group>";
+		};
 		167F696D1FC027B000D04D46 /* BookDetailTest */ = {
 			isa = PBXGroup;
 			children = (
 				167F696E1FC0281C00D04D46 /* LRTSBookDetailViewController.h */,
-				167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.mm */,
+				167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.m */,
 			);
 			name = BookDetailTest;
 			sourceTree = "<group>";
@@ -144,9 +179,9 @@
 				1696D69C1FA9C6890020D43F /* BookDetail.h */,
 				1696D69D1FA9C6890020D43F /* BookDetail.mm */,
 				1696D69F1FA9C6890020D43F /* BookDetail+WCTTableCoding.h */,
-				1696D69E1FA9C6890020D43F /* BookDetail+WCTTableCoding.mm */,
 				168BA7361FB9936000B18E5D /* Book.h */,
 				168BA7371FB9936000B18E5D /* Book.mm */,
+				16290E251FC7DEC200DC4F1E /* Book+WCTTableCoding.h */,
 			);
 			name = Book;
 			sourceTree = "<group>";
@@ -158,8 +193,18 @@
 				16E7DB211FC66F6A00ADC288 /* LRTSDBMaker.m */,
 				16E7DB341FC6AD5F00ADC288 /* LRTSDBManager.h */,
 				16E7DB351FC6AD5F00ADC288 /* LRTSDBManager.mm */,
+				16290E1B1FC7C69900DC4F1E /* ConcreteOperation */,
 			);
 			name = TestMaker;
+			sourceTree = "<group>";
+		};
+		16FE3CC71FC7C17200581A3F /* ModelOperation */ = {
+			isa = PBXGroup;
+			children = (
+				16290E181FC7C65C00DC4F1E /* LRTSDBOperation.h */,
+				16290E191FC7C65C00DC4F1E /* LRTSDBOperation.mm */,
+			);
+			name = ModelOperation;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -200,10 +245,12 @@
 		6003F593195388D20070C39A /* Example for LRTSSQliteManager */ = {
 			isa = PBXGroup;
 			children = (
+				1696D69B1FA9C63B0020D43F /* Book */,
+				16290E281FC7FB2A00DC4F1E /* DBMutilTableMaker */,
+				16FE3CC71FC7C17200581A3F /* ModelOperation */,
 				16E7DB1F1FC66F4A00ADC288 /* TestMaker */,
 				167F696D1FC027B000D04D46 /* BookDetailTest */,
 				160874E31FBBE80900F9857F /* TestViewController */,
-				1696D69B1FA9C63B0020D43F /* Book */,
 				6003F59C195388D20070C39A /* LRTSAppDelegate.h */,
 				6003F59D195388D20070C39A /* LRTSAppDelegate.mm */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -470,14 +517,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16290E1E1FC7C70800DC4F1E /* LRTSDBInsertOrReplaceOperation.mm in Sources */,
 				1683146F1FB145DD00462AC3 /* BookDetail.mm in Sources */,
-				1683146A1FB143B500462AC3 /* BookDetail+WCTTableCoding.mm in Sources */,
 				1683146B1FB143B500462AC3 /* LRTSAppDelegate.mm in Sources */,
 				1683146C1FB143B500462AC3 /* LRTSViewController.mm in Sources */,
+				16290E211FC7C71C00DC4F1E /* LRTSDeleteOperation.mm in Sources */,
 				1683146D1FB143B500462AC3 /* main.m in Sources */,
 				16E7DB221FC66F6A00ADC288 /* LRTSDBMaker.m in Sources */,
-				167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.mm in Sources */,
+				167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.m in Sources */,
 				168BA7381FB9936000B18E5D /* Book.mm in Sources */,
+				16290E241FC7C73100DC4F1E /* LRTSSelectOperation.mm in Sources */,
+				16290E1A1FC7C65C00DC4F1E /* LRTSDBOperation.mm in Sources */,
 				1683146E1FB143B500462AC3 /* Tests.m in Sources */,
 				160874E61FBBE83E00F9857F /* LRTSTestViewController.mm in Sources */,
 				16E7DB361FC6AD5F00ADC288 /* LRTSDBManager.mm in Sources */,
