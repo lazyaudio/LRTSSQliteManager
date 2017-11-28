@@ -7,7 +7,8 @@
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSBaseCategoryModel.h"
-
+#import "LRTSDBModel.h"
+#import "LRTSDBEntityModel.h"
 
 typedef NS_ENUM(NSUInteger, LMCategoryLevel) {
     LMCategoryLevelTop, // 一级分类

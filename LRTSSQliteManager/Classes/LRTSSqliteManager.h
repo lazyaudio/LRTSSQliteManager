@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LRTSDBModel.h"
-#import "LRTSDBEntityModel.h"
+//#import "LRTSDBModel.h"
+//#import "LRTSDBEntityModel.h"
 
 @interface LRTSSqliteManager : NSObject
 

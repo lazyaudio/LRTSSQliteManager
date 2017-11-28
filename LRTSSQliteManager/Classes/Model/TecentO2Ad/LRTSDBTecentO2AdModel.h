@@ -6,6 +6,8 @@
 //
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
+#import "LRTSDBModel.h"
+
 
 @interface LRTSDBTecentO2AdModel : LRTSDBModel
 

@@ -7,6 +7,8 @@
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDownloadState.h"
+#import "LRTSDBModel.h"
+
 
 @interface LRTSDBSectionModel : LRTSDBModel
 

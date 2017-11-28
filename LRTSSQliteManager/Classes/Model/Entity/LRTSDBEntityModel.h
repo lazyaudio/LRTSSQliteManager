@@ -9,6 +9,8 @@
 #import "LRTSDBLaunchAdModel.h"
 #import "LRTSDBPublicTypeDefine.h"
 #import "LRTSTagModel.h"
+#import "LRTSDBModel.h"
+
 
 
 @interface LRTSDBEntityModel : LRTSDBModel

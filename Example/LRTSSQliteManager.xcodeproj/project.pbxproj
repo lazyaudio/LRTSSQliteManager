@@ -246,9 +246,9 @@
 			isa = PBXGroup;
 			children = (
 				1696D69B1FA9C63B0020D43F /* Book */,
-				16290E281FC7FB2A00DC4F1E /* DBMutilTableMaker */,
 				16FE3CC71FC7C17200581A3F /* ModelOperation */,
 				16E7DB1F1FC66F4A00ADC288 /* TestMaker */,
+				16290E281FC7FB2A00DC4F1E /* DBMutilTableMaker */,
 				167F696D1FC027B000D04D46 /* BookDetailTest */,
 				160874E31FBBE80900F9857F /* TestViewController */,
 				6003F59C195388D20070C39A /* LRTSAppDelegate.h */,

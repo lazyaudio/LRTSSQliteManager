@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRTSSQliteManager'
-  s.version          = '0.0.1'
-  s.summary          = 'A short description of LRTSSQliteManager.'
+  s.version          = '0.1.0'
+  s.summary          = 'LRTSSQliteManager 实现对公司的数据库操作的 SQL 的增删改查的操作语句替换的一种解决方案'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+依据微信的 WCDB 的开源函数库来实现对于数据库 SQL 中增删改和多种情况下的查找情况，来解决 “胶水代码问题”
                        DESC
 
   s.homepage         = 'https://github.com/boilwater/LRTSSQliteManager'
