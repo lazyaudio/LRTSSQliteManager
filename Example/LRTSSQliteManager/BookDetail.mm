@@ -9,11 +9,6 @@
 #import "BookDetail.h"
 #import <WCDB/WCDB.h>
 
-//@property int bookID;
-//@property(assign) const char *bookName;
-//@property(retain) NSDate *upLoad;
-//@property(retain) NSString *pubilsher;
-
 @implementation BookDetail
 
 WCDB_IMPLEMENTATION(BookDetail)
@@ -25,7 +20,5 @@ WCDB_SYNTHESIZE(BookDetail, pubilsher)
 
 
 WCDB_UNIQUE(BookDetail, bookID)
-
-
 
 @end
