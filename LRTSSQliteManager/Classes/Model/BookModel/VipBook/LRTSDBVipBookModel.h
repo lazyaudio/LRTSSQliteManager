@@ -8,6 +8,7 @@
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
 #import "LRTSTagModel.h"
+#import "LRTSDBPublicTypeDefine.h"
 
 
 @interface LRTSDBVipBookModel : LRTSDBModel

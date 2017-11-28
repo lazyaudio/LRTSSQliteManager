@@ -8,6 +8,7 @@
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
 #import "LRTSDBMessageState.h"
+#import "LRTSDBPublicTypeDefine.h"
 
 
 @interface LRTSSystemNotice : LRTSDBModel

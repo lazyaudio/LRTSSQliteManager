@@ -13,7 +13,7 @@
 		16290E211FC7C71C00DC4F1E /* LRTSDeleteOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16290E201FC7C71C00DC4F1E /* LRTSDeleteOperation.mm */; };
 		16290E241FC7C73100DC4F1E /* LRTSSelectOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16290E231FC7C73100DC4F1E /* LRTSSelectOperation.mm */; };
 		167136531FBD70D20035A0A1 /* LRTSSQliteManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167136541FBD70D20035A0A1 /* LRTSSQliteManager.framework */; };
-		167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.m */; };
+		167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.mm */; };
 		1683146B1FB143B500462AC3 /* LRTSAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LRTSAppDelegate.mm */; };
 		1683146C1FB143B500462AC3 /* LRTSViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LRTSViewController.mm */; };
 		1683146D1FB143B500462AC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
@@ -66,7 +66,7 @@
 		16290E271FC7FB2A00DC4F1E /* LRTSRanksList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSRanksList.m; sourceTree = "<group>"; };
 		167136541FBD70D20035A0A1 /* LRTSSQliteManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LRTSSQliteManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		167F696E1FC0281C00D04D46 /* LRTSBookDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSBookDetailViewController.h; sourceTree = "<group>"; };
-		167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSBookDetailViewController.m; sourceTree = "<group>"; };
+		167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSBookDetailViewController.mm; sourceTree = "<group>"; };
 		168BA7361FB9936000B18E5D /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		168BA7371FB9936000B18E5D /* Book.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Book.mm; sourceTree = "<group>"; };
 		1696D69C1FA9C6890020D43F /* BookDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetail.h; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				167F696E1FC0281C00D04D46 /* LRTSBookDetailViewController.h */,
-				167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.m */,
+				167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.mm */,
 			);
 			name = BookDetailTest;
 			sourceTree = "<group>";
@@ -524,7 +524,7 @@
 				16290E211FC7C71C00DC4F1E /* LRTSDeleteOperation.mm in Sources */,
 				1683146D1FB143B500462AC3 /* main.m in Sources */,
 				16E7DB221FC66F6A00ADC288 /* LRTSDBMaker.m in Sources */,
-				167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.m in Sources */,
+				167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.mm in Sources */,
 				168BA7381FB9936000B18E5D /* Book.mm in Sources */,
 				16290E241FC7C73100DC4F1E /* LRTSSelectOperation.mm in Sources */,
 				16290E1A1FC7C65C00DC4F1E /* LRTSDBOperation.mm in Sources */,
