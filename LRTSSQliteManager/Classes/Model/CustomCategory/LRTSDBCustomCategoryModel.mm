@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBCustomCategoryModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBCustomCategoryModel
 

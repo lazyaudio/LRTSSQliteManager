@@ -9,6 +9,7 @@
 #import "LRTSDBModel.h"
 #import "LRTSDBMessageState.h"
 #import "LRTSDBPublicTypeDefine.h"
+#import <WCDB/WCDB.h>
 
 
 @interface LRTSSystemNotice : LRTSDBModel

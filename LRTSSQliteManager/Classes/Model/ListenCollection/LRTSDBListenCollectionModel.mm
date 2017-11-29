@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBListenCollectionModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBListenCollectionModel
 

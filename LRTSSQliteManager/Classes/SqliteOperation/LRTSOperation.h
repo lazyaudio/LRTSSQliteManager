@@ -9,7 +9,7 @@
 #import "LRTSDBModel.h"
 #import "LRTSDBBookModel.h"
 #import <WCDB/WCDB.h>
-
+#import "LRTSDeclare.h"
 
 @interface LRTSOperation : NSObject
 
@@ -40,6 +40,7 @@
 
 
 #pragma mark - Insert
+
 
 - (BOOL)insertObject:(LRTSObject *_Nullable)object into:(NSString * _Nonnull)tableName;
 

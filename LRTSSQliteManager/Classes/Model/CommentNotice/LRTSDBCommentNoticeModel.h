@@ -8,6 +8,7 @@
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
 #import "LRTSDBMessageHeader.h"
+#import <WCDB/WCDB.h>
 
 typedef NS_ENUM(NSInteger, CommentType) {
     CommentTypeEntity,      // 对实体的评论

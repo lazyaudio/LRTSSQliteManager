@@ -7,6 +7,7 @@
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
+#import <WCDB/WCDB.h>
 
 typedef NS_ENUM(NSUInteger, LMCommentType) {
     LMCommentTypeNormal         = 1<<0,

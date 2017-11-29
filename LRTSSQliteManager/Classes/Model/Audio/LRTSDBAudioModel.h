@@ -7,6 +7,7 @@
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
+#import <WCDB/WCDB.h>
 
 //　发布声音的状态
 typedef NS_ENUM(NSUInteger, PublishStatus) {

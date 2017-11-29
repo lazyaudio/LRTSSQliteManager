@@ -13,13 +13,14 @@
 		16290E211FC7C71C00DC4F1E /* LRTSDeleteOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16290E201FC7C71C00DC4F1E /* LRTSDeleteOperation.mm */; };
 		16290E241FC7C73100DC4F1E /* LRTSSelectOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16290E231FC7C73100DC4F1E /* LRTSSelectOperation.mm */; };
 		167136531FBD70D20035A0A1 /* LRTSSQliteManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167136541FBD70D20035A0A1 /* LRTSSQliteManager.framework */; };
-		167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.mm */; };
-		1683146B1FB143B500462AC3 /* LRTSAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LRTSAppDelegate.mm */; };
+		167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.m */; };
+		1683146B1FB143B500462AC3 /* LRTSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LRTSAppDelegate.m */; };
 		1683146C1FB143B500462AC3 /* LRTSViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LRTSViewController.mm */; };
 		1683146D1FB143B500462AC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		1683146E1FB143B500462AC3 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		1683146F1FB145DD00462AC3 /* BookDetail.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1696D69D1FA9C6890020D43F /* BookDetail.mm */; };
 		168BA7381FB9936000B18E5D /* Book.mm in Sources */ = {isa = PBXBuildFile; fileRef = 168BA7371FB9936000B18E5D /* Book.mm */; };
+		16BFCF141FCEA5EA00252362 /* BookDetail+LRTSDBBookDetailOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16BFCF131FCEA5EA00252362 /* BookDetail+LRTSDBBookDetailOperation.mm */; };
 		16E7DB221FC66F6A00ADC288 /* LRTSDBMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DB211FC66F6A00ADC288 /* LRTSDBMaker.m */; };
 		16E7DB361FC6AD5F00ADC288 /* LRTSDBManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DB351FC6AD5F00ADC288 /* LRTSDBManager.mm */; };
 		16F0382E1FCD61D0000EBCEC /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 16F0382D1FCD61D0000EBCEC /* File.rtf */; };
@@ -67,12 +68,14 @@
 		16290E271FC7FB2A00DC4F1E /* LRTSRanksList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSRanksList.m; sourceTree = "<group>"; };
 		167136541FBD70D20035A0A1 /* LRTSSQliteManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LRTSSQliteManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		167F696E1FC0281C00D04D46 /* LRTSBookDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSBookDetailViewController.h; sourceTree = "<group>"; };
-		167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSBookDetailViewController.mm; sourceTree = "<group>"; };
+		167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSBookDetailViewController.m; sourceTree = "<group>"; };
 		168BA7361FB9936000B18E5D /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		168BA7371FB9936000B18E5D /* Book.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Book.mm; sourceTree = "<group>"; };
 		1696D69C1FA9C6890020D43F /* BookDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetail.h; sourceTree = "<group>"; };
 		1696D69D1FA9C6890020D43F /* BookDetail.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BookDetail.mm; sourceTree = "<group>"; };
 		1696D69F1FA9C6890020D43F /* BookDetail+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookDetail+WCTTableCoding.h"; sourceTree = "<group>"; };
+		16BFCF121FCEA5EA00252362 /* BookDetail+LRTSDBBookDetailOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BookDetail+LRTSDBBookDetailOperation.h"; sourceTree = "<group>"; };
+		16BFCF131FCEA5EA00252362 /* BookDetail+LRTSDBBookDetailOperation.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "BookDetail+LRTSDBBookDetailOperation.mm"; sourceTree = "<group>"; };
 		16E7DB201FC66F6A00ADC288 /* LRTSDBMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBMaker.h; sourceTree = "<group>"; };
 		16E7DB211FC66F6A00ADC288 /* LRTSDBMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSDBMaker.m; sourceTree = "<group>"; };
 		16E7DB341FC6AD5F00ADC288 /* LRTSDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSDBManager.h; sourceTree = "<group>"; };
@@ -88,7 +91,7 @@
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* LRTSSQliteManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LRTSSQliteManager-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* LRTSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* LRTSAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSAppDelegate.mm; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* LRTSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRTSAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* LRTSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRTSViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* LRTSViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LRTSViewController.mm; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -170,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				167F696E1FC0281C00D04D46 /* LRTSBookDetailViewController.h */,
-				167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.mm */,
+				167F696F1FC0281C00D04D46 /* LRTSBookDetailViewController.m */,
 			);
 			name = BookDetailTest;
 			sourceTree = "<group>";
@@ -178,12 +181,14 @@
 		1696D69B1FA9C63B0020D43F /* Book */ = {
 			isa = PBXGroup;
 			children = (
-				1696D69C1FA9C6890020D43F /* BookDetail.h */,
-				1696D69D1FA9C6890020D43F /* BookDetail.mm */,
-				1696D69F1FA9C6890020D43F /* BookDetail+WCTTableCoding.h */,
 				168BA7361FB9936000B18E5D /* Book.h */,
 				168BA7371FB9936000B18E5D /* Book.mm */,
 				16290E251FC7DEC200DC4F1E /* Book+WCTTableCoding.h */,
+				1696D69C1FA9C6890020D43F /* BookDetail.h */,
+				1696D69D1FA9C6890020D43F /* BookDetail.mm */,
+				1696D69F1FA9C6890020D43F /* BookDetail+WCTTableCoding.h */,
+				16BFCF121FCEA5EA00252362 /* BookDetail+LRTSDBBookDetailOperation.h */,
+				16BFCF131FCEA5EA00252362 /* BookDetail+LRTSDBBookDetailOperation.mm */,
 			);
 			name = Book;
 			sourceTree = "<group>";
@@ -254,7 +259,7 @@
 				167F696D1FC027B000D04D46 /* BookDetailTest */,
 				160874E31FBBE80900F9857F /* TestViewController */,
 				6003F59C195388D20070C39A /* LRTSAppDelegate.h */,
-				6003F59D195388D20070C39A /* LRTSAppDelegate.mm */,
+				6003F59D195388D20070C39A /* LRTSAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LRTSViewController.h */,
 				6003F5A6195388D20070C39A /* LRTSViewController.mm */,
@@ -523,12 +528,13 @@
 			files = (
 				16290E1E1FC7C70800DC4F1E /* LRTSDBInsertOrReplaceOperation.mm in Sources */,
 				1683146F1FB145DD00462AC3 /* BookDetail.mm in Sources */,
-				1683146B1FB143B500462AC3 /* LRTSAppDelegate.mm in Sources */,
+				1683146B1FB143B500462AC3 /* LRTSAppDelegate.m in Sources */,
+				16BFCF141FCEA5EA00252362 /* BookDetail+LRTSDBBookDetailOperation.mm in Sources */,
 				1683146C1FB143B500462AC3 /* LRTSViewController.mm in Sources */,
 				16290E211FC7C71C00DC4F1E /* LRTSDeleteOperation.mm in Sources */,
 				1683146D1FB143B500462AC3 /* main.m in Sources */,
 				16E7DB221FC66F6A00ADC288 /* LRTSDBMaker.m in Sources */,
-				167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.mm in Sources */,
+				167F69701FC0281C00D04D46 /* LRTSBookDetailViewController.m in Sources */,
 				168BA7381FB9936000B18E5D /* Book.mm in Sources */,
 				16290E241FC7C73100DC4F1E /* LRTSSelectOperation.mm in Sources */,
 				16290E1A1FC7C65C00DC4F1E /* LRTSDBOperation.mm in Sources */,

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRTSSQliteManager'
-  s.version          = '0.1.1'
+  s.version          = '0.2.0'
   s.summary          = 'LRTSSQliteManager 实现对公司的数据库操作的 SQL 的增删改查的操作语句替换的一种解决方案'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 依据微信的 WCDB 的开源函数库来实现对于数据库 SQL 中增删改和多种情况下的查找情况，来解决 “胶水代码问题”
                        DESC
 
-  s.homepage         = 'https://github.com/boilwater/LRTSSQliteManager'
+  s.homepage         = 'https://github.com/lazyaudio/LRTSSQliteManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'boilwater' => 'baill@adnonstop.com' }
-  s.source           = { :git => 'https://github.com/boilwater/LRTSSQliteManager.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lazyaudio/LRTSSQliteManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

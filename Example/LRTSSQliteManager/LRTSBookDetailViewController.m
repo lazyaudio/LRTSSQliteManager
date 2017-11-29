@@ -60,6 +60,10 @@
 #import "LRSTKeyValueStore.h"
 */
 
+#import "LRTSDBOperation.h"
+
+#import "BookDetail+LRTSDBBookDetailOperation.h"
+
 @interface LRTSBookDetailViewController ()
 
 //@property (strong, nonatomic) LRTSOperation *operation;
@@ -75,6 +79,9 @@
     [super viewDidLoad];
     
     [self initParamters];
+    
+//    [self dbOperationTest];
+    [self bookDetailCategoryOperation];
 }
 
 #pragma mark - Getter & Setter
@@ -230,5 +237,48 @@
     return bookDetailModel;
 }
 */
+
+/*****************************LRTSDBOperation 操作*********************/
+/*****************************LRTSDBOperation 操作*********************/
+/*****************************LRTSDBOperation 操作*********************/
+/*****************************LRTSDBOperation 操作*********************/
+
+#pragma mark -
+
+- (void)dbOperationTest {
+    BOOL ret = [[LRTSDBOperation instance] createBookDetailTable];
+    
+    
+    BookDetail *bookDetail = [[BookDetail alloc] init];
+    bookDetail.bookID = 1008611;
+    bookDetail.bookName = @"book";
+    bookDetail.upLoad = [NSDate date];
+    
+    [[LRTSDBOperation instance] insertObjectIntoBookDetailModelWithObject:bookDetail];
+    
+    BookDetail *newBookDetail = [[BookDetail alloc] init];
+    newBookDetail.bookID = 123456789;
+    newBookDetail.bookName = @"new Book";
+    
+    [[LRTSDBOperation instance] updateOneObjectFromBookDetailWithObject:newBookDetail whereBookId:1008611];
+}
+
+- (void)bookDetailCategoryOperation {
+    BookDetail *bookDetail = [[BookDetail alloc] init];
+    bookDetail.bookID = 10086114;
+    bookDetail.bookName = @"book";
+    bookDetail.upLoad = [NSDate date];
+    
+    [bookDetail insertObjectIntoBookDetail];
+    
+    [bookDetail deleteObjectFromBookDetailModelWithBookId:10086112];
+    
+    BookDetail *newBookDetail = [[BookDetail alloc] init];
+    newBookDetail.bookID = 123456789;
+    newBookDetail.bookName = @"new Book";
+    
+    [bookDetail updateOneObjectFromBookDetailWithObject:newBookDetail whereBookId:10086113];
+}
+
 
 @end

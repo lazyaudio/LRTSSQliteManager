@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBSectionModel.h"
+#import <WCDB/WCDB.h>
 
 @interface LRTSDBSectionModel (WCTTableCoding)
 

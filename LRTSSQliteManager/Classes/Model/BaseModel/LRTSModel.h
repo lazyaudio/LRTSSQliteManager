@@ -12,6 +12,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface LRTSModel : NSObject
 
 @end

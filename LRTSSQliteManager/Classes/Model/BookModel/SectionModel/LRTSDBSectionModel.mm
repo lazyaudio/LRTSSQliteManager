@@ -6,6 +6,8 @@
 //
 
 #import "LRTSDBSectionModel.h"
+#import <WCDB/WCDB.h>
+
 
 @implementation LRTSDBSectionModel
 

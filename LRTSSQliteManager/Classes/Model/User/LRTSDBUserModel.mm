@@ -6,6 +6,8 @@
 //
 
 #import "LRTSDBUserModel.h"
+#import <WCDB/WCDB.h>
+
 
 @implementation LRTSDBUserModel
 

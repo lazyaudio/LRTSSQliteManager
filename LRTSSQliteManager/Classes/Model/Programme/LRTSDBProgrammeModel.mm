@@ -6,6 +6,8 @@
 //
 
 #import "LRTSDBProgrammeModel.h"
+#import <WCDB/WCDB.h>
+
 
 @implementation LRTSDBProgrammeModel
 

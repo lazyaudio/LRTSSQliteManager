@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBListenerGroupDynamicModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBListenerGroupDynamicModel
 

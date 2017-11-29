@@ -6,6 +6,7 @@
 //
 
 #import "LRTSLGDynamicEntity.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSLGDynamicEntity
 

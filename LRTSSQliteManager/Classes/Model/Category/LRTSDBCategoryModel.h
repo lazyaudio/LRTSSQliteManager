@@ -9,6 +9,8 @@
 #import "LRTSBaseCategoryModel.h"
 #import "LRTSDBModel.h"
 #import "LRTSDBEntityModel.h"
+#import <WCDB/WCDB.h>
+
 
 typedef NS_ENUM(NSUInteger, LMCategoryLevel) {
     LMCategoryLevelTop, // 一级分类

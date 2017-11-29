@@ -8,6 +8,7 @@
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
 #import "LRTSDBMessageHeader.h"
+#import <WCDB/WCDB.h>
 
 typedef NS_ENUM(NSInteger, ChatMessageSendState) {
     ChatMessageSendStateFailure = -1,

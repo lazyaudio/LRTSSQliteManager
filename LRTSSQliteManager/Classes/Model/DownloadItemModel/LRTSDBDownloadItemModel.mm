@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBDownloadItemModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBDownloadItemModel
 

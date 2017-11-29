@@ -162,7 +162,7 @@
     
     isSucceed = [_wcdb createTableAndIndexesOfName:tableName withClass:Book.class];
 
-    isSucceed = [_wcdb insertOrReplaceObject:book into:tableName];
+//    isSucceed = [_wcdb insertOrReplaceObject:book into:tableName];
     
 //    BOOL isSucceed = [_wcdb insertObject:book into:tableName];
 //    [_wcdb insertOrReplaceObjects:<#(NSArray<WCTObject *> *)#> into:<#(NSString *)#>];
@@ -196,7 +196,7 @@
     
     isSucceed = [_wcdb createTableAndIndexesOfName:tableName withClass:Book.class];
     
-    isSucceed = [_wcdb insertOrReplaceObject:book into:tableName];
+//    isSucceed = [_wcdb insertOrReplaceObject:book into:tableName];
     
     NSArray *books = [_wcdb getAllObjectsOfClass:Book.class fromTable:tableName];
 }

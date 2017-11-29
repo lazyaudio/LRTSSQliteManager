@@ -9,6 +9,7 @@
 #import "LRTSDBModel.h"
 #import "LRTSDBAdMacro.h"
 #import "LRTSDBPublicTypeDefine.h"
+#import <WCDB/WCDB.h>
 
 
 typedef NS_ENUM(NSInteger, AdType) {

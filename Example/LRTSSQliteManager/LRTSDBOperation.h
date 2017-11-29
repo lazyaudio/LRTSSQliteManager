@@ -9,11 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "BookDetail.h"
 #import "Book.h"
-#import "LRTSRanksList.h"
-
-typedef void (^LRTSRanksListBlock)(LRTSRanksList *ranksList);
 
 @interface LRTSDBOperation : NSObject
+
++ (instancetype)instance;
 
 #pragma mark - BookDetailModel
 
@@ -37,7 +36,7 @@ typedef void (^LRTSRanksListBlock)(LRTSRanksList *ranksList);
 
 - (NSArray *)getRowsFromBookDetailAndBook;
 
-- (NSArray *)getRowsFromBookDetailAndBookOnProperty:(LRTSRanksListBlock)ranksList where:(NSInteger)bookID;
+//- (NSArray *)getRowsFromBookDetailAndBookOnProperty:(LRTSRanksListBlock)ranksList where:(NSInteger)bookID;
 
 
 

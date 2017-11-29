@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBPlayItemModel.h"
+#import <WCDB/WCDB.h>
 
 @interface LRTSDBPlayItemModel (WCTTableCoding)
 

@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBLabelResourceModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBLabelResourceModel
 

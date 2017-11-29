@@ -8,6 +8,7 @@
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
 #import "LRTSDBListenerPriceModel.h"
+#import <WCDB/WCDB.h>
 
 /**
  详情价格栏cell 模型类

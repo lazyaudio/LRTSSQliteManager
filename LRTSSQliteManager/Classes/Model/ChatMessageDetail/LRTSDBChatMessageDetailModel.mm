@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBChatMessageDetailModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBChatMessageDetailModel
 

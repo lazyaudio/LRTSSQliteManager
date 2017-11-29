@@ -8,7 +8,7 @@
 #import "LRTSKeyValueModel.h"
 #import <WCDB/WCDB.h>
 
-@interface LRTSKeyValueModel (WCTTableCoding)
+@interface LRTSKeyValueModel (WCTTableCoding)<WCTTableCoding>
 
 WCDB_PROPERTY(itemKey)
 WCDB_PROPERTY(itemValue)

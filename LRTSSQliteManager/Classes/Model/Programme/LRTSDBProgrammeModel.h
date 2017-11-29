@@ -8,6 +8,7 @@
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
 #import "LRTSDBListenerPriceModel.h"
+#import <WCDB/WCDB.h>
 
 typedef NS_ENUM(NSInteger, SourceType) {
     SourceTypeOriginal   = 1,       // 原创

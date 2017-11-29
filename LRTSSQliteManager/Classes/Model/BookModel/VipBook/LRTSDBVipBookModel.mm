@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBVipBookModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBVipBookModel
 

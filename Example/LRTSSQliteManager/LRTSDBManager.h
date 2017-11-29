@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LRTSRanksList.h"
+//#import "LRTSRanksList.h"
 #import "LRTSDBModel.h"
 
 @interface LRTSDBManager : NSObject

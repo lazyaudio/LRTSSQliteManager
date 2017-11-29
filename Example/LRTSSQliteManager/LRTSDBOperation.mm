@@ -20,13 +20,21 @@
 
 @property (nonatomic, strong) BookDetail *bookDetail;
 
-@property (nonatomic, strong) LRTSRanksList *kRanksList;
-
 @end
 
 @implementation LRTSDBOperation
 
 #pragma mark - Life Cycle
+
+static LRTSDBOperation *instance;
+
++ (instancetype)instance {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[LRTSDBOperation alloc] init];
+    });
+    return instance;
+}
 
 #pragma mark - Getter & Setter
 
@@ -45,13 +53,6 @@
     return _bookDetail;
 }
 
-- (LRTSRanksList *)kRanksList {
-    if (!_kRanksList) {
-        _kRanksList = [[LRTSRanksList alloc] init];
-    }
-    return _kRanksList;
-}
-
 #pragma mark - Event
 
 #pragma mark - Delegate
@@ -61,20 +62,20 @@
 #pragma mark -BookDetailModel Operations
 
 - (BOOL)createBookDetailTable {
-    return [_operation createTableWithDBModel:self.bookDetail];
+    return [self.operation createTableWithDBModel:self.bookDetail];
 }
 
 - (void)insertObjectIntoBookDetailModelWithObject:(BookDetail *)model {
-    [_operation insertOrReplaceObject:model into:NSStringFromClass(BookDetail.class)];
+    [self.operation insertOrReplaceObject:model into:NSStringFromClass(BookDetail.class)];
 }
 
 - (void)deleteObjectFromBookDetailModelWithBookId:(NSInteger)bookId {
-    [_operation deleteObjectsFromTable:NSStringFromClass(BookDetail.class) where:BookDetail.bookID == bookId];
+    [self.operation deleteObjectsFromTable:NSStringFromClass(BookDetail.class) where:BookDetail.bookID == bookId];
 }
 
 - (void)updateOneObjectFromBookDetailWithObject:(BookDetail *)model
                                     whereBookId:(NSInteger)bookId {
-    [_operation updateRowsInTable:NSStringFromClass(BookDetail.class) onValue:BookDetail.bookName withObject:model where:BookDetail.bookID == bookId];
+    [self.operation updateRowsInTable:NSStringFromClass(BookDetail.class) onValue:BookDetail.bookName withObject:model where:BookDetail.bookID == bookId];
 }
 
 - (id)getOneObjectFromBookeDetailModelWithBookId:(NSInteger)bookId {
@@ -86,19 +87,8 @@
 - (NSArray *)getRowsFromBookDetailAndBook {
     NSString *nameBookDetail = NSStringFromClass(BookDetail.class);
     NSString *nameBook = NSStringFromClass(Book.class);
-    return [_operation selectRowsOnResults:{BookDetail.bookName.inTable(nameBookDetail), Book.autor.inTable(nameBook)} fromTables:@[nameBook, nameBookDetail] where:Book.bookID == 1000];
+    return [self.operation selectRowsOnResults:{BookDetail.bookName.inTable(nameBookDetail), Book.autor.inTable(nameBook)} fromTables:@[nameBook, nameBookDetail] where:Book.bookID == 1000];
 }
-
-//- (NSArray *)getRowsFromBookDetailAndBookOnProperty:(LRTSRanksListBlock)ranksList where:(NSInteger)bookID {
-//    if (ranksList) {
-//        ranksList(self.kRanksList);
-//    }
-//    
-//    
-//    
-//}
-
-
 
 #pragma mark - Private Method
 

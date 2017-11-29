@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBCommentNoticeModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBCommentNoticeModel
 

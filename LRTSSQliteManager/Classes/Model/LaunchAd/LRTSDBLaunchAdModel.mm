@@ -7,6 +7,7 @@
 //
 
 #import "LRTSDBLaunchAdModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBLaunchAdModel
 

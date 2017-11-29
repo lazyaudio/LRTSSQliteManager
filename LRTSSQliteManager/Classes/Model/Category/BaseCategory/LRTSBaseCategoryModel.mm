@@ -6,6 +6,7 @@
 //
 
 #import "LRTSBaseCategoryModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSBaseCategoryModel
 

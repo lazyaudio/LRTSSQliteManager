@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBPlayHistoryModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBPlayHistoryModel
 

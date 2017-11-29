@@ -6,6 +6,8 @@
 //
 
 #import "LRTSDBProgrammeAudioModel.h"
+#import <WCDB/WCDB.h>
+
 
 @implementation LRTSDBProgrammeAudioModel
 

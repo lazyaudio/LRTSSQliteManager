@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBListenerDiscountModel.h"
+#import <WCDB/WCDB.h>
 
 @interface LRTSDBListenerDiscountModel (WCTTableCoding)
 

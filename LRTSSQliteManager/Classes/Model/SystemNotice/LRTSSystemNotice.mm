@@ -6,6 +6,7 @@
 //
 
 #import "LRTSSystemNotice.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSSystemNotice
 

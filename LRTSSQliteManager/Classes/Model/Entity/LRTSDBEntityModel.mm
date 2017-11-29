@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBEntityModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBEntityModel
 

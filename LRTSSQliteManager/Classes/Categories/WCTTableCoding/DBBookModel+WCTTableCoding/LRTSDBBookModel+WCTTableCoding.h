@@ -6,8 +6,9 @@
 //
 
 #import "LRTSDBBookModel.h"
+#import <WCDB/WCDB.h>
 
-@interface LRTSDBBookModel (WCTTableCoding)
+@interface LRTSDBBookModel (WCTTableCoding)<WCTTableCoding>
 
 WCDB_PROPERTY(bId)
 WCDB_PROPERTY(hot)

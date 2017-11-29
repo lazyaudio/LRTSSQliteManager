@@ -111,8 +111,8 @@
     _bookD = [[BookDetail alloc] init];
     _operation = [LRTSOperation wcdbWithModel:_bookD];
     
-    _bookD.bookID = @"bookID1";
-    _bookD.bookName = 10086;
+//    _bookD.bookID = @"bookID1";
+//    _bookD.bookName = 10086;
     _bookD.upLoad = [NSDate date];
 //    _operation = [[LRTSOperation alloc] initWCDBWithName:@"LazyAudio"];
 //    [_operation createTableWithDBModel:_bookModel];

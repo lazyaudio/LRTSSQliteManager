@@ -11,13 +11,6 @@
 //
 
 #import "LRTSModel.h"
-#import "WCTCodingMacro.h"
-#import "WCTCoding.h"
-#import "WCTBinding.h"
-#import "WCTProperty.h"
-#import "WCTAnyProperty.h"
-#import "WCTError.h"
-#import "LRTSDBOperationDelegate.h"
 
 
 /**
@@ -53,7 +46,7 @@ typedef  NS_ENUM(NSInteger, StrategyType) {
 };
 
 
-@interface LRTSDBModel : LRTSModel <LRTSDBOperationDelegate, WCTTableCoding>
+@interface LRTSDBModel : LRTSModel 
 
 
 @end

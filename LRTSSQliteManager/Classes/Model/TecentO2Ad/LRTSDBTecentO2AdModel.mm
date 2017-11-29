@@ -6,6 +6,8 @@
 //
 
 #import "LRTSDBTecentO2AdModel.h"
+#import <WCDB/WCDB.h>
+
 
 @implementation LRTSDBTecentO2AdModel
 

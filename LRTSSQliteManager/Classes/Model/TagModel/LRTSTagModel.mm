@@ -6,6 +6,8 @@
 //
 
 #import "LRTSTagModel.h"
+#import <WCDB/WCDB.h>
+
 
 @implementation LRTSTagModel
 

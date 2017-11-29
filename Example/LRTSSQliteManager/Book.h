@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <WCDB/WCDB.h>
 #import "BookDetail.h"
 
-@interface Book : NSObject<WCTTableCoding>
+@interface Book : NSObject
 
 @property (nonatomic, assign) NSUInteger bookID;
 @property (nonatomic, strong) NSString *autor;

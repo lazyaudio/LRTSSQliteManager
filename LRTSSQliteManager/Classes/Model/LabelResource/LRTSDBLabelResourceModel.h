@@ -8,6 +8,7 @@
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
 #import "LRTSDBPublicTypeDefine.h"
+#import <WCDB/WCDB.h>
 
 @interface LRTSDBLabelResourceModel : LRTSDBModel
 

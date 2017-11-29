@@ -11,8 +11,8 @@
 
 @interface BookDetail : LRTSDBModel
 
-@property(strong, nonatomic) NSString *bookID;
-@property(assign, nonatomic) NSUInteger bookName;
+@property(assign, nonatomic) NSInteger bookID;
+@property(strong, nonatomic) NSString *bookName;
 @property(strong, nonatomic) NSDate *upLoad;
 @property(copy, nonatomic) NSString *pubilsher;
 

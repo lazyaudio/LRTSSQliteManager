@@ -7,6 +7,7 @@
 
 #import <LRTSSQliteManager/LRTSSQliteManager.h>
 #import "LRTSDBModel.h"
+#import <WCDB/WCDB.h>
 
 //记录在数据库列表中的标识（服务于同步记录）
 typedef NS_ENUM(NSInteger, RecrodStateType) {

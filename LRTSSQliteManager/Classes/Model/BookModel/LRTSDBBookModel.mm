@@ -6,6 +6,7 @@
 //
 
 #import "LRTSDBBookModel.h"
+#import <WCDB/WCDB.h>
 
 @implementation LRTSDBBookModel
 

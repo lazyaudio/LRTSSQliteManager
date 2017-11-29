@@ -6,6 +6,7 @@
 //
 
 #import "LRTSTagModel.h"
+#import <WCDB/WCDB.h>
 
 @interface LRTSTagModel (WCTTableCoding)
 
