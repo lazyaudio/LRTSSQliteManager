@@ -18,6 +18,7 @@ WCDB_SYNTHESIZE(BookDetail, bookName)
 WCDB_SYNTHESIZE(BookDetail, upLoad)
 WCDB_SYNTHESIZE(BookDetail, pubilsher)
 
+//WCDB_SYNTHESIZE_COLUMN(BookDetail, pubilsher, @"出版")
 
 WCDB_UNIQUE(BookDetail, bookID)
 
