@@ -75,7 +75,7 @@
     playItem.pUrl = self.path;
     playItem.duration = self.length;
     playItem.section = self.section;
-    playItem.entityType = EntityTypeBook;
+    playItem.entityType = LRTSEntityTypeBook;
     playItem.haslyric = self.haslyric;
     return playItem;
 }
@@ -118,8 +118,8 @@
     return downloadItem;
 }
   
-- (EntityType )entityType{
-    return EntityTypeBook;
+- (LRTSEntityType )entityType{
+    return LRTSEntityTypeBook;
 }
 
 @end

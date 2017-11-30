@@ -41,7 +41,7 @@
     //分章抢先,列表不显示标签
     
     if ([self respondsToSelector:@selector(strategy)]) {
-        return ([self strategy] & (StrategyType_VIPBookStore | StrategyType_ScoopBook)) > 0;
+        return ([self strategy] & (LRTSStrategyType_VIPBookStore | LRTSStrategyType_ScoopBook)) > 0;
     }
     
     return NO;
@@ -57,7 +57,7 @@
 #endif
     
     if ([self respondsToSelector:@selector(strategy)]) {
-        return ([self strategy] & StrategyType_ScoopBook) > 0;
+        return ([self strategy] & LRTSStrategyType_ScoopBook) > 0;
     }
     
     return NO;
@@ -73,7 +73,7 @@
 #endif
     
     if ([self respondsToSelector:@selector(strategy)]) {
-        return ([self strategy] & (StrategyType_ScoopBook | StrategyType_ScoopSection)) > 0;
+        return ([self strategy] & (LRTSStrategyType_ScoopBook | LRTSStrategyType_ScoopSection)) > 0;
     }
     
     return NO;
@@ -105,7 +105,7 @@
 #endif
     
     if ([self respondsToSelector:@selector(strategy)]) {
-        return ([self strategy] & StrategyType_VIPFreeLimits) > 0;
+        return ([self strategy] & LRTSStrategyType_VIPFreeLimits) > 0;
     }
     return NO;
 }
@@ -120,7 +120,7 @@
 #endif
     
     if ([self respondsToSelector:@selector(strategy)]) {
-        return ([self strategy] & StrategyType_AllFreeLimits) > 0;
+        return ([self strategy] & LRTSStrategyType_AllFreeLimits) > 0;
     }
     
     return NO;
@@ -136,7 +136,7 @@
 #endif
     
     if ([self respondsToSelector:@selector(strategy)]) {
-        return ([self strategy] & (StrategyType_AllFreeLimits | StrategyType_VIPFreeLimits)) > 0;
+        return ([self strategy] & (LRTSStrategyType_AllFreeLimits | LRTSStrategyType_VIPFreeLimits)) > 0;
     }
     
     return NO;

@@ -19,6 +19,6 @@
 
 - (NSInteger)strategy;
 
-- (EntityType) entityType;
+- (LRTSEntityType) entityType;
 
 @end

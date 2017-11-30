@@ -48,6 +48,6 @@
 /**
  初始化函数
  */
-- (instancetype)initWithDetailType:(LMDetailPriceModelType)type;
+- (instancetype)initWithDetailType:(LRTSDetailPriceModelType)type;
 
 @end

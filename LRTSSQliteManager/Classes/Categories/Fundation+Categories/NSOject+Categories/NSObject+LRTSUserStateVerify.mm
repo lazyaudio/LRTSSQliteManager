@@ -11,7 +11,7 @@
 
 @implementation NSObject (LRTSUserStateVerify)
 
-- (BOOL)isTrueOfUserStateType:(LMUserStateType)type {
+- (BOOL)isTrueOfUserStateType:(LRTSUserStateType)type {
     SEL selector = @selector(userState);
     if ([self respondsToSelector:selector]) {
         return ([self userState] & type) > 0;
@@ -20,15 +20,15 @@
 }
 
 - (BOOL)isVIP {
-    return [self isTrueOfUserStateType:LMUserStateTypeVIP];
+    return [self isTrueOfUserStateType:LRTSUserStateTypeVIP];
 }
 
 - (BOOL)isVerifiedAnnouncer {
-    return [self isTrueOfUserStateType:LMUserStateTypeVerifiedAnnouncer];
+    return [self isTrueOfUserStateType:LRTSUserStateTypeVerifiedAnnouncer];
 }
 
 - (BOOL)isUnverifiedAnnouncer {
-    return [self isTrueOfUserStateType:LMUserStateTypeUnverifiedAnnouncer];
+    return [self isTrueOfUserStateType:LRTSUserStateTypeUnverifiedAnnouncer];
 }
 
 - (void)disableUnverifiedAnnouncerFlag {
@@ -38,7 +38,7 @@
         if ([obj respondsToSelector:setSelector] && [obj respondsToSelector:getSelector]) {
             long long userState = [obj userState];
 //TODO  注册掉
-//            [obj setUserState:(userState & (LMUserStateTypeUnverifiedAnnouncer ^ LONG_LONG_MAX))];
+//            [obj setUserState:(userState & (LRTSUserStateTypeUnverifiedAnnouncer ^ LONG_LONG_MAX))];
         }
     };
     

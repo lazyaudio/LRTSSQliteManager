@@ -38,7 +38,7 @@
 @property (strong,nonatomic) NSString *desc;    //简介、描述
 @property (strong,nonatomic) NSString *text;    //对应文本(类似于歌词)
 
-@property (assign, nonatomic) DownloadStatus downloadStatus;  // 下载状态
+@property (assign, nonatomic) LRTSDownloadStatus downloadStatus;  // 下载状态
 @property (assign, nonatomic) CGFloat downloadProgress; // 下载进度
 
 @property (nonatomic,assign) NSInteger  strategy; // 1 VIP限时免费 2 VIP限时免费（会员书库） 3 VIP整本抢先听 4 VIP章节抢先听 5 全部限免

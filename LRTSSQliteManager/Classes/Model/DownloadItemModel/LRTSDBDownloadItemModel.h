@@ -17,12 +17,12 @@
 @property (nonatomic, assign) NSInteger      dEntityId;             // 资源所属实体ID
 @property (assign, nonatomic) long long      fileSize;              // 下载文件大小
 @property (strong, nonatomic) NSString       *name;                 // 下载任务标题
-@property (assign, nonatomic) DownloadStatus downloadStatus;        // 下载状态
+@property (assign, nonatomic) LRTSDownloadStatus downloadStatus;        // 下载状态
 @property (assign, nonatomic) CGFloat        downloadProgress;      // 下载进度
 @property (assign, nonatomic) NSInteger      dSection;              // 下载资源在列表中的序号
 @property (assign, nonatomic) NSInteger      dHasLyric;             // 下载内容是否有文本
 @property (strong, nonatomic) NSString       *dSourceUrl;           // 下载资源的url
-@property (assign, nonatomic) EntityType     entityType;            // 实体类型
+@property (assign, nonatomic) LRTSEntityType     entityType;            // 实体类型
 
 //TODO 注册掉
 //@property (nonatomic, strong) id             belong;                // 属于的实体(书籍或者节目)

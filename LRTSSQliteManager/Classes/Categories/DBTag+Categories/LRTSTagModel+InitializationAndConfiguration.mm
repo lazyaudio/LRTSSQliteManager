@@ -11,7 +11,7 @@
 
 - (instancetype )initWithDict:(NSDictionary *)dic {
     if (self) {
-        self.tg_type = (LMTagType)[dic[@"type"] integerValue];
+        self.tg_type = (LRTSTagType)[dic[@"type"] integerValue];
         self.tg_name = dic[@"name"];
         self.tg_bgColor = dic[@"bgColor"];
     }
@@ -105,64 +105,64 @@
 }
 
 + (NSArray *)normalTags {
-    return @[@(LMListenBarBoutiqueTag),
-             @(LMListenBarAllCountdownTag),
-             @(LMVIPListenBarBookStoreTag),
-             @(LMVIPListenBarWholeAnticipateTag),
-             @(LMListenBarMarketingTag)];
+    return @[@(LRTSTagTypeListenBarBoutiqueTag),
+             @(LRTSTagTypeListenBarAllCountdownTag),
+             @(LRTSTagTypeVIPListenBarBookStoreTag),
+             @(LRTSTagTypeVIPListenBarWholeAnticipateTag),
+             @(LRTSTagTypeListenBarMarketingTag)];
 }
 
 + (NSArray *)boutiqueTags {
-    return @[@(LMListenBarBoutiqueTag)];
+    return @[@(LRTSTagTypeListenBarBoutiqueTag)];
 }
 
 + (NSArray *)marketTags {
-    return @[@(LMListenBarMarketingTag)];
+    return @[@(LRTSTagTypeListenBarMarketingTag)];
 }
 
 + (NSArray *)limitMarketTags {
-    return @[@(LMListenBarAllCountdownTag),
-             @(LMListenBarMarketingTag)];
+    return @[@(LRTSTagTypeListenBarAllCountdownTag),
+             @(LRTSTagTypeListenBarMarketingTag)];
 }
 
 + (NSArray *)novipTags {
-    return @[@(LMListenBarBoutiqueTag),
-             @(LMListenBarAllCountdownTag),
-             @(LMListenBarMarketingTag)];
+    return @[@(LRTSTagTypeListenBarBoutiqueTag),
+             @(LRTSTagTypeListenBarAllCountdownTag),
+             @(LRTSTagTypeListenBarMarketingTag)];
 }
 
 + (NSArray *)noboutiqueTags {
-    return @[@(LMListenBarAllCountdownTag),
-             @(LMVIPListenBarBookStoreTag),
-             @(LMVIPListenBarWholeAnticipateTag),
-             @(LMListenBarMarketingTag)];
+    return @[@(LRTSTagTypeListenBarAllCountdownTag),
+             @(LRTSTagTypeVIPListenBarBookStoreTag),
+             @(LRTSTagTypeVIPListenBarWholeAnticipateTag),
+             @(LRTSTagTypeListenBarMarketingTag)];
 }
 
 + (NSArray *)boutiqueVipTags {
-    return @[@(LMListenBarBoutiqueTag),
-             @(LMVIPListenBarBookStoreTag),
-             @(LMVIPListenBarWholeAnticipateTag)];
+    return @[@(LRTSTagTypeListenBarBoutiqueTag),
+             @(LRTSTagTypeVIPListenBarBookStoreTag),
+             @(LRTSTagTypeVIPListenBarWholeAnticipateTag)];
 }
 
 + (NSArray *)normalReadTags {
-    return @[@(LMReadCountdownTag),
-             @(LMReadRecommendSpecialTag),
-             @(LMReadRecommendHotTag),
-             @(LMReadRecommendPotentialTag),
-             @(LMReadRecommendBigGodTag),
-             @(LMReadMarketingTag)];
+    return @[@(LRTSTagTypeReadCountdownTag),
+             @(LRTSTagTypeReadRecommendSpecialTag),
+             @(LRTSTagTypeReadRecommendHotTag),
+             @(LRTSTagTypeReadRecommendPotentialTag),
+             @(LRTSTagTypeReadRecommendBigGodTag),
+             @(LRTSTagTypeReadMarketingTag)];
 }
 
 + (NSArray *)marketReadTags {
-    return @[@(LMReadMarketingTag)];
+    return @[@(LRTSTagTypeReadMarketingTag)];
 }
 
 + (NSArray *)noTimelimitReadTags {
-    return @[@(LMReadRecommendSpecialTag),
-             @(LMReadRecommendHotTag),
-             @(LMReadRecommendPotentialTag),
-             @(LMReadRecommendBigGodTag),
-             @(LMReadMarketingTag)];
+    return @[@(LRTSTagTypeReadRecommendSpecialTag),
+             @(LRTSTagTypeReadRecommendHotTag),
+             @(LRTSTagTypeReadRecommendPotentialTag),
+             @(LRTSTagTypeReadRecommendBigGodTag),
+             @(LRTSTagTypeReadMarketingTag)];
 }
 
 @end

@@ -15,18 +15,18 @@
 
 - (instancetype)initWithDict:(NSDictionary *)dict
                     entityId:(long)entityId
-                  entityType:(EntityType)entityType{
+                  entityType:(LRTSEntityType)entityType{
     if (self = [super init]) {
         self.entityId = entityId;
         self.entityType = entityType;
         self.sectionCount = [[dict objectForKey:@"sections"] integerValue];
         self.estimatedSectionCount = [[dict objectForKey:@"estimatedSections"] integerValue];
-        self.payType = (LMPriceModelPayType)[[dict objectForKey:@"priceType"] integerValue];
+        self.payType = (LRTSPriceModelPayType)[[dict objectForKey:@"priceType"] integerValue];
         self.price = [[dict objectForKey:@"price"] integerValue];
         self.discountPrice = [[dict objectForKey:@"discountPrice"] integerValue];
         self.deadlineTime = [[dict objectForKey:@"deadlineTime"] doubleValue];
         self.canUseTicket = [[dict objectForKey:@"canUseTicket"] integerValue];
-        self.choosePriceType = (LMChoosePriceType)[[dict objectForKey:@"choosePrice"] integerValue];
+        self.choosePriceType = (LRTSChoosePriceType)[[dict objectForKey:@"choosePrice"] integerValue];
         
         NSString *frees = [dict objectForKey:@"frees"];
         if (![frees isKindOfClass:[NSNull class]] && frees.length) {
@@ -74,7 +74,7 @@
 
 + (instancetype)priceModelWithDict:(NSDictionary *)dict
                           entityId:(long)entityId
-                        entityType:(EntityType)entityType{
+                        entityType:(LRTSEntityType)entityType{
     return [[self alloc] initWithDict:dict entityId:entityId entityType:entityType];
 }
 
@@ -83,10 +83,10 @@
 }
 
 - (NSArray *)priceModelAllPayIndexs{
-    if (self.entityType == EntityTypeBook) {
+    if (self.entityType == LRTSEntityTypeBook) {
         return [LRTSPurchaseTool unintersectionIndexs:self.freeSectionIndexs
                                          IndexCount:self.sectionCount];
-    } else if (self.entityType == EntityTypeAlbum) {
+    } else if (self.entityType == LRTSEntityTypeAlbum) {
         NSMutableArray *mArray = [NSMutableArray arrayWithArray:self.unbuySectionIndexs];
         [mArray addObjectsFromArray:self.buySectionIndexs];
         return [NSSet setWithArray:mArray].allObjects;
@@ -110,7 +110,7 @@
     if (![self.freeSectionsStr isEqualToString:freeSectionsStr]) {
         self.freeSectionsStr = freeSectionsStr;
         
-        if (self.entityType == EntityTypeBook) {
+        if (self.entityType == LRTSEntityTypeBook) {
             if ([self.freeSectionsStr isEqualToString:@"all"]) {
                 self.freeSectionIndexs = [LRTSPurchaseTool unintersectionIndexs:nil
                                                                    IndexCount:self.sectionCount];
@@ -137,7 +137,7 @@
     if (![self.buySectionsStr isEqualToString:buySectionsStr]) {
         self.buySectionsStr = buySectionsStr;
         
-        if (self.entityType == EntityTypeBook) {
+        if (self.entityType == LRTSEntityTypeBook) {
             if ([self.buySectionsStr isEqualToString:@"all"]) {
                 self.buySectionIndexs = [LRTSPurchaseTool unintersectionIndexs:nil
                                                                   IndexCount:self.sectionCount];
@@ -161,7 +161,7 @@
 }
 
 - (void)setAllSectionsStr:(NSString *)allSectionsStr{
-    if (self.entityType == EntityTypeAlbum) {
+    if (self.entityType == LRTSEntityTypeAlbum) {
         if (![self.allSectionsStr isEqualToString:allSectionsStr]) {
             self.allSectionsStr = allSectionsStr;
             
@@ -184,7 +184,7 @@
 }
 
 - (void)caculateUnbuyIndexs{
-    if (self.entityType == EntityTypeBook) {
+    if (self.entityType == LRTSEntityTypeBook) {
         NSArray *tempIndexs = [LRTSPurchaseTool combineIndexs:self.freeSectionIndexs
                                                  withIndexs:self.buySectionIndexs];
         self.unbuySectionIndexs = [LRTSPurchaseTool unintersectionIndexs:tempIndexs
@@ -193,8 +193,8 @@
 }
 
 - (void)updateWithFinishBuyModel:(LRTSDBListenerBuyModel *)buyModel{
-    if (buyModel.buyType == LMPriceModelPayTypeBook
-        || buyModel.buyType == LMPriceModelPayTypeSubscribe) {
+    if (buyModel.buyType == LRTSPriceModelPayTypeBook
+        || buyModel.buyType == LRTSPriceModelPayTypeSubscribe) {
         self.buySectionsStr = @"all";
         self.unbuySectionIndexs = nil;
         self.buySectionIndexs = [LRTSPurchaseTool unintersectionIndexs:self.unbuySectionIndexs
@@ -208,23 +208,23 @@
 }
 
 - (BOOL)isVIP {
-    return self.choosePriceType >= LMChoosePriceTypeVIP;
+    return self.choosePriceType >= LRTSChoosePriceTypeVIP;
 }
 
 - (NSInteger)matchPrice {
     NSInteger mPrice = 0;
     
     switch (self.choosePriceType) {
-        case LMChoosePriceTypeOriginal:
+        case LRTSChoosePriceTypeOriginal:
             mPrice = self.price;
             break;
-        case LMChoosePriceTypeDiscount:
+        case LRTSChoosePriceTypeDiscount:
             mPrice = self.discountPrice;
             break;
-        case LMChoosePriceTypeVIP:
+        case LRTSChoosePriceTypeVIP:
             mPrice = self.price;
             break;
-        case LMChoosePriceTypeDiscountAndVIP:
+        case LRTSChoosePriceTypeDiscountAndVIP:
             mPrice = self.discountPrice;
             break;
         default:

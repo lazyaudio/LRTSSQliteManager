@@ -21,7 +21,7 @@
         self.author = [data valueForKey:@"author"];
         self.announcer = [data valueForKey:@"announcer"];
         self.cover = [data valueForKey:@"cover"];
-        self.payType = (LMPriceModelPayType)
+        self.payType = (LRTSPriceModelPayType)
         [[data valueForKey:@"payType"] integerValue] ;
         self.freeEndTime = [[data objectForKey:@"freeEndTime"] doubleValue];
     }

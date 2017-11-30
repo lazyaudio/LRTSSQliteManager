@@ -32,7 +32,7 @@
 @property (strong,nonatomic) NSString *categoryName;  // 分类名称
 @property (nonatomic) NSTimeInterval lastUpdateTime;  //最后更新时间
 
-@property (nonatomic) EnterPlayType enterPlayType;    //记住上次播放的入口 (可能已经废弃使用了)
+@property (nonatomic) LRTSEnterPlayType enterPlayType;    //记住上次播放的入口 (可能已经废弃使用了)
             
 //在推荐、排行、专题等客户端人为分类时用到
 @property (nonatomic) NSInteger bParentId;           //父分类id
@@ -44,12 +44,12 @@
 @property (nonatomic) NSInteger recordId;            //收藏记录id
 @property (nonatomic) NSInteger recordStatus;        //记录状态，－1删除，0:新增 1:已同步
 @property (nonatomic) NSInteger like;                //赞
-@property (nonatomic) EntityType entityType;         //播音实体类型
+@property (nonatomic) LRTSEntityType entityType;         //播音实体类型
 
 
 @property (nonatomic, strong) NSString  *extInfo;    //额外的信息，包含链接信息
 
-@property (assign, nonatomic) LMPriceModelPayType payType;           //0免费 1整本 2分章 （5.5.5） 3订阅
+@property (assign, nonatomic) LRTSPriceModelPayType payType;           //0免费 1整本 2分章 （5.5.5） 3订阅
 @property (nonatomic, assign) NSInteger strategy;    // vip策略
 @property (nonatomic, assign) NSTimeInterval freeEndTime;           // 限免截止时间
 @property (nonatomic, assign,getter=isOverEndTime) BOOL overEndTime;// 是否已经超过了限免截止时间，超过了表示结束限免，即为收费书籍

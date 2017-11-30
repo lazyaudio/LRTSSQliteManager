@@ -20,7 +20,7 @@ typedef NS_OPTIONS(NSUInteger, LRTSAudioPayItemAction) {
 
 @property (nonatomic, assign) NSInteger viceCoinCount;
 
-@property (nonatomic, assign) LMPriceModelPayType buyType;
+@property (nonatomic, assign) LRTSPriceModelPayType buyType;
 
 @property (nonatomic, assign) LRTSAudioPayItemAction action;// 用来区分是否弹出自定义框
 

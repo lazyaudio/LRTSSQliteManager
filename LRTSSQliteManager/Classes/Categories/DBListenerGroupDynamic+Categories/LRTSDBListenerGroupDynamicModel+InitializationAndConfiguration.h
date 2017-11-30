@@ -19,6 +19,6 @@
  */
 - (void)checkLink;
 
-- (BOOL)isTrueOfStateType:(LMUserStateType)type;
+- (BOOL)isTrueOfStateType:(LRTSUserStateType)type;
 
 @end

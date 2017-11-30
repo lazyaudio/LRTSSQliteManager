@@ -24,7 +24,7 @@ typedef enum : NSUInteger {
 /**
  *  实体类型
  */
-@property (nonatomic, assign) EntityType entityType;
+@property (nonatomic, assign) LRTSEntityType entityType;
 
 /**
  *  动态实体名称

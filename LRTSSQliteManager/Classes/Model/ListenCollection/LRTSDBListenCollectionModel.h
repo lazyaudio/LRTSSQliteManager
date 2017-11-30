@@ -12,9 +12,11 @@
 
 @class LMSubEntity;
 
-typedef NS_ENUM(NSInteger, LMListenCollectionType) {
-    LMListenCollectionTypeMine = 1,          // 我创建的听单
-    LMListenCollectionTypeCollect = 2        // 我收藏的听单
+//LRTSListenCollectionType
+
+typedef NS_ENUM(NSInteger, LRTSListenCollectionType) {
+    LRTSListenCollectionTypeMine = 1,          // 我创建的听单
+    LRTSListenCollectionTypeCollect = 2        // 我收藏的听单
 };
 
 @interface LRTSDBListenCollectionModel : LRTSDBModel
@@ -33,7 +35,7 @@ typedef NS_ENUM(NSInteger, LMListenCollectionType) {
 @property (nonatomic, assign) NSInteger commentCount;
 @property (nonatomic, strong) NSString *desc;                               // 听单描述
 
-@property (nonatomic, assign) LMListenCollectionType colectionType;         // 听单类型
+@property (nonatomic, assign) LRTSListenCollectionType colectionType;         // 听单类型
 @property (nonatomic, assign) NSInteger updateCount;                        // 更新的条目数，默认为0，表示没有更新 (本地管理)
 @property (nonatomic, assign) NSInteger lc_state;                           // 状态标记 0正常 －1删除
 
@@ -76,7 +78,7 @@ WCDB_PROPERTY(subEntitys)
 
 @property (nonatomic, copy) NSString *cover;
 @property (nonatomic, assign) NSInteger entityId;
-@property (nonatomic, assign) EntityType entityType;
+@property (nonatomic, assign) LRTSEntityType entityType;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) NSInteger strategy;
 @property (nonatomic, strong) LRTSTagModel *tag;

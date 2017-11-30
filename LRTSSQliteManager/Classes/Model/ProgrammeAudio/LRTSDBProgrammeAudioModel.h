@@ -22,7 +22,7 @@
 @property (assign, nonatomic) NSInteger section;    // 第几个声音
 @property (assign, nonatomic) NSTimeInterval insertDBTime;// 插入数据库的时间
 @property (assign, nonatomic) CGFloat        downloadProgress; // 下载进度
-@property (assign, nonatomic) DownloadStatus downloadStatus;// 下载状态
+@property (assign, nonatomic) LRTSDownloadStatus downloadStatus;// 下载状态
 @property (assign, nonatomic) NSTimeInterval playTime;//播放进度
 @property (nonatomic, strong) NSString  *cover;     // 声音封面
 

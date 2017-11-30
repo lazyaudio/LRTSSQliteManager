@@ -8,9 +8,9 @@
 #import <Foundation/Foundation.h>
 #import "LRTSDBAudioAlbumDelegate.h"
 
-typedef NS_ENUM(NSInteger, AudioTrackLyricType) {
-    AudioLyricTypeNone,     // 没有歌词
-    AudioLyricTypeText,     // 静态文本
+typedef NS_ENUM(NSInteger, LRTSAudioTrackLyricType) {
+    LRTSAudioTrackLyricTypeNone,     // 没有歌词
+    LRTSAudioTrackLyricTypeText,     // 静态文本
 };
 
 /**
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, AudioTrackLyricType) {
 - (NSString *)trackUniqId;
 
 /** 歌词类型*/
-- (AudioTrackLyricType)lyricType;
+- (LRTSAudioTrackLyricType)lyricType;
 - (NSInteger)albumId;
 /** 最后一个track */
 - (BOOL)isLastTrack;

@@ -14,9 +14,11 @@
  详情价格栏cell 模型类
  */
 
-typedef NS_ENUM(NSInteger, LMDetailPriceModelType) {
-    LMDetailPriceModelTypeBook = 0, // 书籍
-    LMDetailPriceModelTypeProgramme // 节目
+//LRTSDetailPriceModelType
+
+typedef NS_ENUM(NSInteger, LRTSDetailPriceModelType) {
+    LRTSDetailPriceModelTypeBook = 0, // 书籍
+    LRTSDetailPriceModelTypeProgramme // 节目
 };
 
 @interface LRTSDBDetailPriceCellModel : LRTSDBModel
@@ -25,7 +27,7 @@ typedef NS_ENUM(NSInteger, LMDetailPriceModelType) {
 
 @property (nonatomic, strong) LRTSDBListenerPriceModel *priceModel;   //价格模型
 
-@property (nonatomic,assign) LMDetailPriceModelType detailType; // 详情类型
+@property (nonatomic,assign) LRTSDetailPriceModelType detailType; // 详情类型
 
 @property (nonatomic, assign) NSTimeInterval freeEndTime;       // 限免截止时间
 

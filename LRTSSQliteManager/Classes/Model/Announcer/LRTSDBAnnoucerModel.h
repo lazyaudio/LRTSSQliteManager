@@ -9,17 +9,19 @@
 #import "LRTSDBModel.h"
 #import <WCDB/WCDB.h>
 
+//LRTSFollowType
+//LRTSAnnouncerType
 
-typedef NS_ENUM(NSInteger, FollowType) {
-    FollowTypeUnKnow   = -1, // 未标记为任何类型
-    FollowTypeUnFollow = 0,  // 未关注
-    FollowTypeFollowed = 1,  // 关注
+typedef NS_ENUM(NSInteger, LRTSFollowType) {
+    LRTSFollowTypeUnKnow   = -1, // 未标记为任何类型
+    LRTSFollowTypeUnFollow = 0,  // 未关注
+    LRTSFollowTypeFollowed = 1,  // 关注
 };
 
 // 获取时所属的类别
-typedef NS_ENUM(NSInteger, LMAnnouncerType) {
-    LMAnnouncerTypeRecommend = 1,       // 推荐主播
-    LMAnnouncerTypeNewCome = 2          // 新晋主播
+typedef NS_ENUM(NSInteger, LRTSAnnouncerType) {
+    LRTSAnnouncerTypeRecommend = 1,       // 推荐主播
+    LRTSAnnouncerTypeNewCome = 2          // 新晋主播
 };
 
 @interface LRTSDBAnnoucerModel : LRTSDBModel
@@ -28,7 +30,7 @@ typedef NS_ENUM(NSInteger, LMAnnouncerType) {
 @property (nonatomic,strong) NSString   *account;       //主播账户
 @property (nonatomic,strong) NSString   *nickName;      //主播昵称
 @property (nonatomic,strong) NSString   *cover;         //主播头像
-@property (nonatomic,assign) FollowType isFollow;       //是否关注0:未关注　1:已经关注
+@property (nonatomic,assign) LRTSFollowType isFollow;       //是否关注0:未关注　1:已经关注
 @property (nonatomic,strong) NSString   *desc;          //主播简介
 @property (nonatomic,strong) NSString   *sign;          //个性签名
 
@@ -39,7 +41,7 @@ typedef NS_ENUM(NSInteger, LMAnnouncerType) {
 // 请求更多数据时的标示ID
 @property (nonatomic,assign) NSInteger aReferId;
 
-@property (assign,nonatomic) LMAnnouncerType aType;
+@property (assign,nonatomic) LRTSAnnouncerType aType;
 
 // 最近更新
 @property (nonatomic, strong) NSString *recentProgramme;

@@ -10,9 +10,11 @@
 #import "LRTSDBListenerPriceModel.h"
 #import <WCDB/WCDB.h>
 
-typedef NS_ENUM(NSInteger, SourceType) {
-    SourceTypeOriginal   = 1,       // 原创
-    SourceTypeCollection = 2        // 采集
+//LRTSSourceType
+
+typedef NS_ENUM(NSInteger, LRTSSourceType) {
+    LRTSSourceTypeOriginal   = 1,       // 原创
+    LRTSSourceTypeCollection = 2        // 采集
 };
 
 @interface LRTSDBProgrammeModel : LRTSDBModel
@@ -25,7 +27,7 @@ typedef NS_ENUM(NSInteger, SourceType) {
 @property (nonatomic, strong) NSArray        *announcerIds; //多主播
 
 @property (copy  , nonatomic) NSString       *announcer;    // 播音名
-@property (assign, nonatomic) SourceType     sourceType;    // 采集还是原创
+@property (assign, nonatomic) LRTSSourceType     LRTSSourceType;    // 采集还是原创
 @property (assign, nonatomic) NSInteger      playCount;     // 播放次数
 @property (copy  , nonatomic) NSString       *cover;        // 书籍封面
 @property (assign, nonatomic) NSInteger      sections;      // 声音数
@@ -43,7 +45,7 @@ typedef NS_ENUM(NSInteger, SourceType) {
 @property (nonatomic, assign) NSInteger      sort;                    //章节排序 0正序 1倒序(v6.0.6)
 @property (nonatomic, copy) NSArray *extraInfos; // 附加信息(v6.0.6), 富文本
 
-@property (assign, nonatomic) LMPriceModelPayType payType;           //0免费 1整本 2分章 （5.5.5） 3订阅
+@property (assign, nonatomic) LRTSPriceModelPayType payType;           //0免费 1整本 2分章 （5.5.5） 3订阅
 @property (nonatomic, assign) NSInteger strategy;          // vip策略
 @property (nonatomic, assign) NSTimeInterval freeEndTime;       // 限免截止时间
 @property (nonatomic, assign,getter=isOverEndTime) BOOL overEndTime;// 是否已经超过了限免截止时间，超过了表示结束限免，即为收费书籍
@@ -81,7 +83,7 @@ WCDB_PROPERTY(author)
 WCDB_PROPERTY(announcerIds)
 
 WCDB_PROPERTY(announcer)
-WCDB_PROPERTY(sourceType)
+WCDB_PROPERTY(LRTSSourceType)
 WCDB_PROPERTY(playCount)
 WCDB_PROPERTY(cover)
 WCDB_PROPERTY(sections)

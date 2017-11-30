@@ -12,7 +12,7 @@
 
 @interface LRTSDBListenerPriceModel : LRTSDBModel
 
-@property (nonatomic, assign) EntityType            entityType;
+@property (nonatomic, assign) LRTSEntityType            entityType;
 
 @property (nonatomic, assign) long                  entityId;
 
@@ -20,9 +20,9 @@
 @property (nonatomic, assign) NSInteger         estimatedSectionCount;  //预计章节数
 
 @property (nonatomic, assign) NSInteger             canUseTicket;  //可用听读卷
-@property (nonatomic, assign) LMChoosePriceType     choosePriceType;
+@property (nonatomic, assign) LRTSChoosePriceType     choosePriceType;
 
-@property (nonatomic, assign) LMPriceModelPayType             payType;
+@property (nonatomic, assign) LRTSPriceModelPayType             payType;
 
 //单位:厘
 @property (nonatomic, assign) NSInteger             price;

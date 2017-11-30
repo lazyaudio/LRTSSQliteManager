@@ -9,8 +9,10 @@
 #import "LRTSDBModel.h"
 #import <WCDB/WCDB.h>
 
+//LRTSPublishStatus
+
 //　发布声音的状态
-typedef NS_ENUM(NSUInteger, PublishStatus) {
+typedef NS_ENUM(NSUInteger, LRTSPublishStatus) {
     PublishDefault = 0,             // 默认状态
     PublishFailureForToken = 1,     // 获取token失败
     PublishFailureForFieldId = 2,   // 获取fileId失败
@@ -30,7 +32,7 @@ typedef NS_ENUM(NSUInteger, PublishStatus) {
 @property (nonatomic, assign) NSInteger fileId;                     // 已经发布声音的文件id
 @property (nonatomic, assign) NSInteger audioUserId;                // 用户id
 @property (nonatomic, strong) NSString *audioUserNick;              // 用户昵称
-@property (nonatomic, assign) PublishStatus pStatus;                // 声音发布状态(暂时不用)
+@property (nonatomic, assign) LRTSPublishStatus pStatus;                // 声音发布状态(暂时不用)
 
 
 #pragma mark - WCDB 数据绑定

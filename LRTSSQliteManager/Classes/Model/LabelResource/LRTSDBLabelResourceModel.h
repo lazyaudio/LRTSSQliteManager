@@ -21,7 +21,7 @@
 @property (nonatomic, copy) NSString *desc;
 @property (nonatomic, assign) NSInteger state; ///< 状态。1-连载中，2-全集
 @property (nonatomic, strong) NSArray *tags;
-@property (nonatomic, assign) EntityPublishType entityType; ///< 0书籍，2节目
+@property (nonatomic, assign) LRTSLRTSEntityPublishType entityType; ///< 0书籍，2节目
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 

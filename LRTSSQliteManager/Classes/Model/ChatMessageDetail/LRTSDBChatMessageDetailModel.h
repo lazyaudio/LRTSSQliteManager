@@ -10,21 +10,25 @@
 #import "LRTSDBMessageHeader.h"
 #import <WCDB/WCDB.h>
 
-typedef NS_ENUM(NSInteger, ChatMessageSendState) {
-    ChatMessageSendStateFailure = -1,
-    ChatMessageSendStateSuccess,
-    ChatMessageSendStateSending,
+//LRTSChatMessageSendState
+//LRTSChatMessageDisplayCreateTime
+//ChatMessageDetailFakeType
+
+typedef NS_ENUM(NSInteger, LRTSChatMessageSendState) {
+    LRTSChatMessageSendStateFailure = -1,
+    LRTSChatMessageSendStateSuccess,
+    LRTSChatMessageSendStateSending,
 };
 
-typedef NS_ENUM(NSInteger, ChatMessageDisplayCreateTime) {
-    ChatMessageDisplayCreateTimeNone = 0,  // 不知道是否显示还是隐藏
-    ChatMessageDisplayCreateTimeShow,
-    ChatMessageDisplayCreateTimeHide,
+typedef NS_ENUM(NSInteger, LRTSChatMessageDisplayCreateTime) {
+    LRTSChatMessageDisplayCreateTimeNone = 0,  // 不知道是否显示还是隐藏
+    LRTSChatMessageDisplayCreateTimeShow,
+    LRTSChatMessageDisplayCreateTimeHide,
 };
 
-typedef NS_ENUM(NSInteger, ChatMessageDetailFakeType) {
-    ChatMessageDetailFakeTypeTrue,
-    ChatMessageDetailFakeTypeFake
+typedef NS_ENUM(NSInteger, LRTSChatMessageDetailFakeType) {
+    LRTSChatMessageDetailFakeTypeTrue,
+    LRTSChatMessageDetailFakeTypeFake
 };
 
 /**
@@ -42,15 +46,15 @@ typedef NS_ENUM(NSInteger, ChatMessageDetailFakeType) {
 @property (nonatomic, assign) NSInteger             userState;
 @property (copy,   nonatomic) NSString              *content;            // 私信内容
 @property (assign, nonatomic) NSTimeInterval        createTime;          // 私信创建时间
-@property (assign, nonatomic) ChatMessageSendState  sendOk;              // 是否发送成功
-@property (assign, nonatomic) ReadState             readState;           // 已读未读状态
+@property (assign, nonatomic) LRTSChatMessageSendState  sendOk;              // 是否发送成功
+@property (assign, nonatomic) LRTSReadState             readState;           // 已读未读状态
 
 @property (assign, nonatomic) CGFloat               contentStrWidth;     // 内容宽度
 @property (assign, nonatomic) CGFloat               contentStrHeight;    // 内容高度
 
-@property (assign, nonatomic) ChatMessageDetailFakeType             fake;                // 手动写入的数据库中的不是服务器的真实数据
+@property (assign, nonatomic) LRTSChatMessageDetailFakeType             fake;                // 手动写入的数据库中的不是服务器的真实数据
 
-@property (assign, nonatomic) ChatMessageDisplayCreateTime displayCreateTime;   // 显示时间
+@property (assign, nonatomic) LRTSChatMessageDisplayCreateTime displayCreateTime;   // 显示时间
 
 
 

@@ -9,11 +9,13 @@
 #import "LRTSDBModel.h"
 #import <WCDB/WCDB.h>
 
-typedef NS_ENUM(NSUInteger, LMCommentType) {
-    LMCommentTypeNormal         = 1<<0,
-    LMCommentTypeGood           = 1<<1,
-    LMCommentTypeTop            = 1<<2,
-    LMCommentTypeRestoreGood    = 1<<3,// 恢复精彩评论
+//LRTSCommentType
+
+typedef NS_ENUM(NSInteger, LRTSCommentType) {
+    LRTSCommentTypeNormal         = 1<<0,
+    LRTSCommentTypeGood           = 1<<1,
+    LRTSCommentTypeTop            = 1<<2,
+    LRTSCommentTypeRestoreGood    = 1<<3,// 恢复精彩评论
 };
 
 @interface LRTSCommentModel : LRTSDBModel

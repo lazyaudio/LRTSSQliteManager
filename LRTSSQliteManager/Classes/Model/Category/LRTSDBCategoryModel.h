@@ -11,10 +11,11 @@
 #import "LRTSDBEntityModel.h"
 #import <WCDB/WCDB.h>
 
+//LRTSCategoryLevel
 
-typedef NS_ENUM(NSUInteger, LMCategoryLevel) {
-    LMCategoryLevelTop, // 一级分类
-    LMCategoryLevelSub, // 二级分类
+typedef NS_ENUM(NSUInteger, LRTSCategoryLevel) {
+    LRTSCategoryLevelTop, // 一级分类
+    LRTSCategoryLevelSub, // 二级分类
 };
 
 //TODO  注册掉
@@ -23,7 +24,7 @@ typedef NS_ENUM(NSUInteger, LMCategoryLevel) {
 @property (assign, nonatomic) NSInteger cId;        // 分类ID
 @property (strong, nonatomic) NSString  *cDesc;     // 分类描述
 @property (assign, nonatomic) NSInteger cType;      // 标签版本改为PublishType使用
-@property (assign, nonatomic) LMCategoryLevel level; // 分类的层级
+@property (assign, nonatomic) LRTSCategoryLevel level; // 分类的层级
 
 + (instancetype)categoryWithDic:(NSDictionary *)dic;
 

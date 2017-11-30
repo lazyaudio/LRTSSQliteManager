@@ -13,11 +13,11 @@
 
 - (instancetype)initWithDict:(NSDictionary *)dict
                     entityId:(long)entityId
-                  entityType:(EntityType)entityType;
+                  entityType:(LRTSEntityType)entityType;
 
 + (instancetype)priceModelWithDict:(NSDictionary *)dict
                           entityId:(long)entityId
-                        entityType:(EntityType)entityType;
+                        entityType:(LRTSEntityType)entityType;
 
 - (BOOL)isUnbuySectionForIndex:(NSInteger)index;
 
