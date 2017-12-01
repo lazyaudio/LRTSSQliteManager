@@ -10,7 +10,7 @@
 #import "LRTSTagModel.h"
 #import <WCDB/WCDB.h>
 
-@class LMSubEntity;
+@class LRTSSubEntity;
 
 //LRTSListenCollectionType
 
@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger, LRTSListenCollectionType) {
 
 @property (nonatomic, strong) NSString *nickName;                           // 听单创建者昵称
 
-@property (nonatomic, strong) NSArray<LMSubEntity *> *subEntitys;
+@property (nonatomic, strong) NSArray<LRTSSubEntity *> *subEntitys;
 
 
 WCDB_PROPERTY(folderId)
@@ -74,7 +74,7 @@ WCDB_PROPERTY(subEntitys)
 
 @end
 
-@interface LMSubEntity : NSObject
+@interface LRTSSubEntity : NSObject
 
 @property (nonatomic, copy) NSString *cover;
 @property (nonatomic, assign) NSInteger entityId;
@@ -85,7 +85,7 @@ WCDB_PROPERTY(subEntitys)
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)subEntityWithDict:(NSDictionary *)dict;
-+ (NSArray<LMSubEntity *> *)subEntitysWithDicts:(NSArray *)dicts;
++ (NSArray<LRTSSubEntity *> *)subEntitysWithDicts:(NSArray *)dicts;
 
 
 #pragma mark - WVDB 数据绑定

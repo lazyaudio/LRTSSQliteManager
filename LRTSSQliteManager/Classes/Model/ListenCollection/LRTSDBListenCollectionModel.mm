@@ -48,16 +48,16 @@ WCDB_SYNTHESIZE(LRTSDBListenCollectionModel, subEntitys)
 
 @end
 
-@implementation LMSubEntity
+@implementation LRTSSubEntity
 
-WCDB_IMPLEMENTATION(LMSubEntity)
+WCDB_IMPLEMENTATION(LRTSSubEntity)
 
-WCDB_SYNTHESIZE(LMSubEntity, cover)
-WCDB_SYNTHESIZE(LMSubEntity, entityId)
-WCDB_SYNTHESIZE(LMSubEntity, entityType)
-WCDB_SYNTHESIZE(LMSubEntity, name)
-WCDB_SYNTHESIZE(LMSubEntity, strategy)
-WCDB_SYNTHESIZE(LMSubEntity, tag)
+WCDB_SYNTHESIZE(LRTSSubEntity, cover)
+WCDB_SYNTHESIZE(LRTSSubEntity, entityId)
+WCDB_SYNTHESIZE(LRTSSubEntity, entityType)
+WCDB_SYNTHESIZE(LRTSSubEntity, name)
+WCDB_SYNTHESIZE(LRTSSubEntity, strategy)
+WCDB_SYNTHESIZE(LRTSSubEntity, tag)
 
 
 //WCDB_SYNTHESIZE(LMSubEntity, )

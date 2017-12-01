@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRTSSQliteManager'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'LRTSSQliteManager 实现对公司的数据库操作的 SQL 的增删改查的操作语句替换的一种解决方案'
 
 # This description is used to generate tags and improve search results.
