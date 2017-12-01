@@ -26,6 +26,6 @@
 @property (assign, nonatomic) NSInteger      payType;       // 支付类型0免费1整本2分章
 @property (nonatomic,assign) NSInteger strategy;            // vip策略
 @property (nonatomic,strong) LRTSTagModel *tag;
-@property (nonatomic,assign) LRTSLRTSEntityPublishType publishType; // 跳转类型
+@property (nonatomic,assign) LRTSEntityPublishType publishType; // 跳转类型
 
 @end

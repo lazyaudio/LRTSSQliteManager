@@ -88,7 +88,7 @@ typedef NS_ENUM(NSUInteger, LRTSAdSubType) {
 /** 广告描述 */
 @property (nonatomic, strong) NSString          *adDesc;
 /** 广告类型 */
-@property (nonatomic, assign) LRTSAdType            LRTSAdType;
+@property (nonatomic, assign) LRTSAdType            adType;
 /** 广告分类 */
 @property (nonatomic, assign) AdCategory        adCategory;
 
@@ -100,7 +100,7 @@ typedef NS_ENUM(NSUInteger, LRTSAdSubType) {
  */
 
 /** 广告处理行为类型,v3.0.3开始同publishType */
-@property (nonatomic, assign) LRTSLRTSEntityPublishType adClickType;
+@property (nonatomic, assign) LRTSEntityPublishType adClickType;
 /** 广告跳转链接/targetId，根据不同adPublishType含义不同，例如跳转到书籍详情，则该属性代表书籍ID */
 @property (nonatomic, strong) NSString          *adClickUrl;
 /** 广告生效日期(单位毫秒) */
@@ -122,7 +122,7 @@ typedef NS_ENUM(NSUInteger, LRTSAdSubType) {
  */
 
 /** 请求广告的页面 */
-@property (nonatomic, assign) LRTSLRTSEntityPublishType adPagePublishType;
+@property (nonatomic, assign) LRTSEntityPublishType adPagePublishType;
 /** 页面的TargetId，-1表示所有子栏目 */
 @property (nonatomic, assign) long targetId;
 /** 页面父TargetId，目前仅用在标签筛选页（PublishType为108），表示标签分类Id */

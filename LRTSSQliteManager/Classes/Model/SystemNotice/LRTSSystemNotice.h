@@ -24,7 +24,7 @@
 @property (assign, nonatomic) LRTSMessageState      readState;
 @property (strong, nonatomic) NSString       *title;
 
-@property (assign, nonatomic) LRTSLRTSEntityPublishType pulishType;
+@property (assign, nonatomic) LRTSEntityPublishType pulishType;
 @property (strong, nonatomic) NSString       *linkUrl;
 @property (strong, nonatomic) NSString       *urlParam;
 @property (strong, nonatomic) NSString       *pvUrl;

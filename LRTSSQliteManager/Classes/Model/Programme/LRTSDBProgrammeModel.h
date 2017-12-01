@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, LRTSSourceType) {
 @property (nonatomic, strong) NSArray        *announcerIds; //多主播
 
 @property (copy  , nonatomic) NSString       *announcer;    // 播音名
-@property (assign, nonatomic) LRTSSourceType     LRTSSourceType;    // 采集还是原创
+@property (assign, nonatomic) LRTSSourceType     sourceType;    // 采集还是原创
 @property (assign, nonatomic) NSInteger      playCount;     // 播放次数
 @property (copy  , nonatomic) NSString       *cover;        // 书籍封面
 @property (assign, nonatomic) NSInteger      sections;      // 声音数

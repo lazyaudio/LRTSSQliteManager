@@ -20,7 +20,7 @@
 @property (nonatomic,strong) NSString *et_name;         // 实体名称
 @property (nonatomic,strong) NSString *et_desc;         // 实体描述
 @property (nonatomic,strong) NSString *et_cover;        // 实体封面
-@property (nonatomic,assign) LRTSLRTSEntityPublishType et_type; // 实体类型
+@property (nonatomic,assign) LRTSEntityPublishType et_type; // 实体类型
 
 /** 以下为实体扩展属性 */
 

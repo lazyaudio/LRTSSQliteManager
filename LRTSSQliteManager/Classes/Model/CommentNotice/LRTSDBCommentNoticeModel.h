@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, LRTSCommentNoticeType) {
 @property (copy,   nonatomic) NSString       *entityAnnouncer;//被评论的原实体播音
 
 @property (assign, nonatomic) NSInteger      commentId;//产生评论通知的评论ID
-@property (assign, nonatomic) LRTSCommentNoticeType    LRTSCommentType;//评论类型
+@property (assign, nonatomic) LRTSCommentNoticeType    commentType;//评论类型
 
 @property (assign, nonatomic) LRTSEntityType     cEntityType;//被评论的实体类型
 @property (assign, nonatomic) NSInteger      cEntityId;//被评论的实体ID
