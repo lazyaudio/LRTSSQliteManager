@@ -139,6 +139,9 @@
 
 - (BOOL)updateTable {
     
+//    UIAlertView
+    UIAlertController
+    
     BOOL isSucceed = YES;
     
     isSucceed = [self initWCDBWithPath:@""];
